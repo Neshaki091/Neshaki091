@@ -127,7 +127,7 @@ Waterbase là dự án cá nhân tôi tự thiết kế kiến trúc và triển
 - ✅ **VPS deployment** với Nginx reverse proxy + SSL
 - ✅ **Prompt Engineering** cho RAG AI service (đang tiếp tục cải thiện)
 
-**Tech:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io` . `pgvector`, `RAG`
+**Tech:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io` . `pgvector` . `RAG`
 
 ---
 
