@@ -2,12 +2,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Huy%E1%BB%B3nh+C%C3%B4ng+Luy%E1%BB%87n;Backend+%26+AI+Engineer;BaaS+Builder+%7C+RAG+Specialist" alt="Typing SVG" />
 </h1>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=neshaki091&label=Profile%20views&color=00d9ff&style=flat" alt="neshaki091" />
-  <a href="https://github.com/neshaki091?tab=followers">
-    <img src="https://img.shields.io/github/followers/neshaki091?label=Followers&style=social" alt="followers" />
-  </a>
-</p>
 
 ---
 
