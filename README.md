@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Huy%E1%BB%B3nh+C%C3%B4ng+Luy%E1%BB%87n;Backend+%26+AI+Engineer;BaaS+Builder+%7C+RAG+Specialist" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Hu%E1%BB%B3nh+C%C3%B4ng+Luy%E1%BB%87n;Backend+%26+AI+Engineer;RAG+Researcher+%7C+BaaS+Builder" alt="Typing SVG" />
 </h1>
 
 
@@ -7,26 +7,34 @@
 
 ## 🧑‍💻 About Me
 
-Tôi là sinh viên **Đại học Giao thông Vận tải TP.HCM**, đam mê xây dựng hệ thống backend có kiến trúc rõ ràng và tích hợp AI thực tế.
+I'm a **Backend & AI Software Engineer** passionate about building high-performance systems and pushing the boundaries of RAG (Retrieval-Augmented Generation) technology. IT Graduate from **University of Transport Ho Chi Minh City** (GPA 3.26 / 4.0).
 
-- 🚀 Đang xây dựng **[Waterbase](https://web.waterbase.click)** — BaaS platform tự thiết kế và triển khai
-- 🧠 Đã triển khai **RAG AI pipeline** trong môi trường hackathon 36h
-- 🔣 Triển khai **Turboquant** thuật toán nén lượng tử tối ưu của google 
-- 📐 Quan tâm đến **Clean Architecture**, **SOLID principles**
-- 📋 Quản lý dự án với **Jira** & phương pháp Agile
-- 📱 Hiểu biết **Flutter** & **mobile-first development**
-- 🌱 Đang học sâu hơn về **Prompt Engineering** & **LLM fine-tuning**
-- 📫 Liên hệ tôi qua email hoặc GitHub
+- 🎓 **Graduate Thesis**: ARQ-RAG - High-performance RAG system with Rust-based SIMD-optimized vector quantization (2-4bit compression)
+- 🚀 **Founder of [Waterbase](https://web.waterbase.click)** - Self-hosted BaaS platform (Firebase alternative)
+- 🏆 **Hackathon Champion**: Led a team to build an Internal AI Assistant with RAG pipeline in 36 hours
+- 👨‍💼 **Team Leader**: Led a 6-member team to develop an Enterprise Java RAG Chatbot system
+- 📐 Passionate about **Clean Architecture**, **SOLID principles**, and **High-Performance Computing**
+- 🌱 Currently researching **Vector Quantization**, **SIMD optimization**, and **Large-scale RAG systems**
 
 ---
 
 ## 🛠️ Tech Stack
 
-### 🔙 Backend
+### 🔙 Backend & Systems
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+
+### 🤖 AI & ML
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white)
 
 ### 🗄️ Database & Infrastructure
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -34,13 +42,9 @@ Tôi là sinh viên **Đại học Giao thông Vận tải TP.HCM**, đam mê x�
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-EA6D4A?style=for-the-badge&logo=qdrant&logoColor=white)
 
-### 🤖 AI & ML
-![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-### 🌐 Frontend & Mobile
+### 🌐 Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -56,79 +60,158 @@ Tôi là sinh viên **Đại học Giao thông Vận tải TP.HCM**, đam mê x�
 
 ## 🏆 Featured Projects
 
-### 🧠 Internal Assistant — Hackathon 2026 (Team Leader · RAG/AI Backend)
+### 1. 🔬 ARQ-RAG - Adaptive Retrieval with Quantization (Thesis)
 
-> *Built in 36 hours. Deployed. Working demo.*
+**Graduate Thesis** | *Rust • SIMD • Vector Quantization • High-Performance Computing*
 
-**Vai trò:** Team Leader & chịu toàn bộ phần AI Backend — RAG pipeline, intent parsing, workflow automation.
+> A high-performance RAG system that breaks the memory wall through advanced vector quantization (2-4bit).
 
-Một nền tảng AI assistant dùng nội bộ doanh nghiệp, giúp nhân viên tra cứu chính sách và thực hiện hành động tự động (xin nghỉ phép, gửi email) chỉ bằng hội thoại tự nhiên.
+**Key Contributions:**
+- 🚀 **TurboQuant Engine**: Custom Rust-based vector quantization core with SIMD AVX2 optimization
+- 💾 **Memory Efficiency**: 8-16x compression ratio (Float32 → 2-4bit) with mmap support
+- ⚡ **SIMD Acceleration**: 8x query parallel processing using AVX2 256-bit registers
+- 🔄 **Adaptive Routing**: Dynamic query difficulty detection with adjustable search parameters
+- 📊 **Cluster-centric Scan**: Optimized memory cache usage through query batching by cluster
 
-**Điểm kỹ thuật nổi bật tôi xây dựng:**
+**Technical Highlights:**
+- Implemented ITQ (Iterative Quantization) with Orthogonal Procrustes optimization
+- Max-Lloyd quantization with percentile-based outlier clipping (P01-P99)
+- ADC (Asymmetric Distance Computation) via Lookup Tables
+- IVF (Inverted File Index) for coarse-grained search space pruning
 
-| Thành phần | Công nghệ | Mô tả |
-|---|---|---|
-| **RAG Pipeline** | Gemini Embedding + Supabase pgvector | Chunk tài liệu nội bộ → embed → semantic search → anti-hallucination answer |
-| **Intent Parser** | TinyFish AI → Gemini fallback → Keyword | 3-tier fallback system, phân loại intent có cấu trúc JSON |
-| **Workflow Engine** | n8n Webhooks | Trigger tự động: Google Sheet, Gmail, Calendar |
-| **Multi-tenant** | Supabase + clientId isolation | Hỗ trợ nhiều công ty trên cùng hạ tầng |
-| **Content Moderation** | Gemini AI | Detect & lọc nội dung độc hại realtime |
+**Repository**: [github.com/neshaki091/arq-rag](https://github.com/neshaki091/arq-rag) *(Coming Soon)*
 
+---
+
+### 2. 💧 Waterbase - Backend as a Service Platform
+
+**Personal Project** | *Live: [web.waterbase.click](https://web.waterbase.click)*
+
+> Firebase alternative - Self-hosted BaaS platform for Vietnamese developers.
+
+**Architecture:**
+```
+┌─────────────┐     ┌─────────────────────────────────────────────┐
+│    Nginx    │────▶│  Microservices (Docker Compose)             │
+│   Gateway   │     │  ┌─────────┐ ┌─────────┐ ┌──────────────┐  │
+└─────────────┘     │  │  Auth   │ │  App    │ │  WaterDB     │  │
+                    │  │ Service │ │ Service │ │  Service     │  │
+                    │  └─────────┘ └─────────┘ └──────────────┘  │
+                    │  ┌─────────┐ ┌─────────┐ ┌──────────────┐  │
+                    │  │ Storage │ │  Rule   │ │  Realtime    │  │
+                    │  │ Service │ │ Service │ │  Service     │  │
+                    │  └─────────┘ └─────────┘ └──────────────┘  │
+                    └─────────────────────────────────────────────┘
+                                      │
+                    ┌─────────────────┴─────────────────┐
+                    │    MongoDB + Redis + RabbitMQ     │
+                    └───────────────────────────────────┘
+```
+
+**Services:**
+| Service | Description |
+|---------|-------------|
+| `auth-services` | JWT Authentication, Owner management |
+| `app-services` | App registry, API key management |
+| `waterdb-services` | Database CRUD with security rules |
+| `rtwaterdb-services` | Realtime database via WebSocket |
+| `storage-services` | File storage |
+| `rule-services` | Security rules engine |
+| `analytics-service` | Usage tracking & quotas |
+| `rag-ai-service` | AI assistant integration |
+
+**Key Learnings:**
+- ✅ Clean Architecture in production
+- ✅ SOLID principles: SRP, DIP
+- ✅ Docker Compose with 9 microservices
+- ✅ VPS deployment with Nginx reverse proxy + SSL
+- ✅ Prompt Engineering for RAG AI service
+
+**Tech Stack:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io`
+
+---
+
+### 3. 🧠 Internal AI Assistant — Hackathon 2026 (Team Leader)
+
+**Hackathon Champion** | *36-hour build • Deployed Working Demo*
+
+> An enterprise internal AI assistant helping employees query policies and execute automated actions (leave requests, email sending) via natural conversation.
+
+**My Role:** Team Leader & Full AI Backend — RAG pipeline, intent parsing, workflow automation.
+
+**Technical Highlights:**
+
+| Component | Technology | Description |
+|-----------|------------|-------------|
+| **RAG Pipeline** | Gemini Embedding + Supabase pgvector | Document chunking → embedding → semantic search → anti-hallucination answer |
+| **Intent Parser** | TinyFish AI → Gemini fallback → Keyword | 3-tier fallback system with structured JSON intent classification |
+| **Workflow Engine** | n8n Webhooks | Automated triggers: Google Sheets, Gmail, Calendar |
+| **Multi-tenant** | Supabase + clientId isolation | Support multiple companies on shared infrastructure |
+| **Content Moderation** | Gemini AI | Real-time detection & filtering of harmful content |
+
+**Pipeline Flow:**
 ```
 RAG Flow: User Query → Gemini Embedding → pgvector Search → Gemini Summarize → Response
 Intent Flow: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword fallback
 ```
 
-**Tech:** `Node.js` · `Express` · `Supabase (pgvector)` · `Gemini API` · `n8n` · `Socket.io`
+**Tech Stack:** `Node.js` · `Express` · `Supabase (pgvector)` · `Gemini API` · `n8n` · `Socket.io`
 
 ---
 
-### 💧 Waterbase — Backend as a Service Platform (Dự án cá nhân)
+### 4. 📚 Enterprise RAG Chatbot System — University Project (Team Leader)
 
-> *Firebase alternative. Self-hosted. Production deployed.*
+**University Project** | *6-Member Team • 5-Week Sprint*
 
-🌐 **Live:** [web.waterbase.click](https://web.waterbase.click) · API: [api.waterbase.click](https://api.waterbase.click)
+> A comprehensive RAG (Retrieval-Augmented Generation) chatbot system supporting Vietnamese students, comparing RAG vs Fine-tuning approaches.
 
-Waterbase là dự án cá nhân tôi tự thiết kế kiến trúc và triển khai — một nền tảng BaaS tương tự Firebase, dành cho developer Việt Nam.
+**My Role:** Team Leader (TV1) — System Design, Core Infrastructure, Benchmark Dataset, Code Review
 
-**Kiến trúc Microservices:**
-
+**System Architecture:**
 ```
-                    ┌─────────────┐
-                    │    Nginx    │  ← API Gateway
-                    └──────┬──────┘
-           ┌───────────────┼───────────────┐
-    ┌──────▼──────┐ ┌─────▼─────┐ ┌──────▼──────┐
-    │auth-services│ │app-services│ │waterdb-svc  │
-    └─────────────┘ └───────────┘ └─────────────┘
-    ┌─────────────┐ ┌─────────────┐ ┌───────────┐
-    │storage-svc  │ │rule-services│ │rtwaterdb  │  ← WebSocket
-    └─────────────┘ └─────────────┘ └───────────┘
-         │               │               │
-    ┌────▼───────────────▼───────────────▼────┐
-    │     MongoDB + Redis + RabbitMQ          │
-    └─────────────────────────────────────────┘
+[Web Client (React/Thymeleaf)]
+            │
+            ▼
+┌─────────────────────────────────────────────────────────┐
+│            Java Spring Boot Server                      │
+│  ┌────────────────────┐    ┌────────────────────────┐   │
+│  │  Spring Security   │    │    LangChain4j       │   │
+│  │   (JWT Filter)     │    │   (RAG Pipeline)     │   │
+│  └─────────┬──────────┘    └───────────┬────────────┘   │
+└────────────┼────────────────────────────┼──────────────┘
+             │                            │
+             ▼                            ▼
+    ┌────────────────┐          ┌────────────────────┐
+    │  Supabase DB   │          │  Python Services   │
+    │  (pgvector)    │          │  - FastAPI Bridge  │
+    └───────┬────────┘          │  - Fine-tuned LLM  │
+            │                   └────────────────────┘
+            │
+    ┌───────▼────────┐
+    │  Qdrant Vector │
+    │     Search     │
+    └────────────────┘
 ```
 
-| Service | Mô tả |
-|---|---|
-| `auth-services` | Authentication, JWT, Owner management |
-| `app-services` | App registry, API key management |
-| `waterdb-services` | Database CRUD với security rules |
-| `rtwaterdb-services` | Realtime database qua WebSocket |
-| `storage-services` | File storage |
-| `rule-services` | Security rules engine |
-| `analytics-service` | Usage tracking & quotas |
-| `rag-ai-service` | AI assistant tích hợp |
+**Key Features Implemented:**
 
-**Điều tôi học được từ dự án này:**
-- ✅ Thiết kế **Clean Architecture** thực tế (đã tự phân tích & nhận ra điểm cần cải thiện)
-- ✅ Áp dụng **SOLID**: SRP (tách Service/Controller/Repository), DIP (abstraction layer)
-- ✅ **Docker Compose** orchestration với 9 services
-- ✅ **VPS deployment** với Nginx reverse proxy + SSL
-- ✅ **Prompt Engineering** cho RAG AI service (đang tiếp tục cải thiện)
+| Module | Tech | Description |
+|--------|------|-------------|
+| **Auth System** | Spring Security + JWT | Role-based access (Student/Admin) with refresh tokens |
+| **Document Processing** | Apache Tika + VN Text Splitter | PDF/TXT upload, semantic chunking, pgvector storage |
+| **RAG Pipeline** | LangChain4j + Groq API | Query rewriting with Llama 3.1, Qdrant ANN search, subject-scoped retrieval |
+| **Fine-tuning Bridge** | WebClient + FastAPI | Java-Python microservice bridge for LoRA fine-tuned models |
+| **A/B Testing** | Blind Test System | Side-by-side RAG vs Fine-tuning comparison with user voting |
+| **Analytics** | LLM-as-a-Judge | Auto-eval with OpenRouter (Gemma) for faithfulness scoring |
 
-**Tech:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io` . `pgvector` . `RAG`
+**Development Highlights:**
+- ✅ Designed complete SRS (System Requirements Specification)
+- ✅ Established Database Owner Matrix for 6 team members
+- ✅ Implemented RBAC with 2 roles: Student (chat, rate) and Admin (upload, dashboard, benchmark)
+- ✅ Created common infrastructure: ApiResponse wrapper, GlobalExceptionHandler, BaseEntity
+- ✅ Code review and finalization for Production deployment
+
+**Tech Stack:** `Java 17` · `Spring Boot 3.x` · `Python` · `FastAPI` · `Supabase` · `Qdrant` · `LangChain4j` · `React`
 
 ---
 
@@ -145,22 +228,26 @@ Waterbase là dự án cá nhân tôi tự thiết kế kiến trúc và triển
 
 ---
 
-## 🎯 Hiện tại đang focus
+## 🎯 Current Focus
 
 ```
-☑  Waterbase v2.0 — Refactor backend theo Repository Pattern + DI
-☑  Prompt Engineering — Tinh chỉnh RAG prompt cho tiếng Việt
-☐  Flutter mobile SDK cho Waterbase
+☑  ARQ-RAG Thesis — Rust core with SIMD AVX2 optimization
+☑  TurboQuant Engine — 4-bit vector quantization with mmap
+☑  Waterbase v2.0 — Refactoring to Repository Pattern + DI
 ☐  Nghiên cứu RAG advanced: HyDE, re-ranking, multi-hop reasoning
+☐  Explore GPU-accelerated vector search
 ```
 
 ---
 
-## 📫 Liên hệ
+## 📫 Contact
 
 <p align="center">
   <a href="https://github.com/neshaki091">
     <img src="https://img.shields.io/badge/GitHub-neshaki091-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://web.waterbase.click">
+    <img src="https://img.shields.io/badge/Waterbase-Live_Demo-00D9FF?style=for-the-badge&logo=rocket" />
   </a>
 </p>
 
@@ -171,5 +258,5 @@ Waterbase là dự án cá nhân tôi tự thiết kế kiến trúc và triển
 </p>
 
 <p align="center">
-  <i>"Build to learn. Deploy to prove."</i>
+  <i>"Build to learn. Deploy to prove. Optimize to scale."</i>
 </p>
