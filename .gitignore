@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE & AI Assistant Specific Directories
+.trae/
+.vscode/
+.idea/
+
+# Latex / LaTeX & Academic Draft Projects
+Overleaf_Project/
+report_tex/
+
+# Build & Dist Artifacts
+dist/
+dist-ssr/
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Logs & Temporary Files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# System Files
+.DS_Store
+Thumbs.db

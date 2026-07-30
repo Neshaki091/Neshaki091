@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về tôi",
+    "skills": "Kỹ năng",
+    "projects": "Dự án",
+    "research": "Nghiên cứu",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "badge": "Sinh viên Backend & AI RAG",
+    "titlePrefix": "Xin chào, tôi là ",
+    "name": "Huỳnh Công Luyện",
+    "tagline": "Sinh viên CNTT giàu kinh nghiệm thực tiễn về Hệ thống RAG Hiệu năng cao & Hạ tầng Backend",
+    "subtext": "Đam mê thiết kế engine lượng tử hóa vector bằng Rust SIMD, kiến trúc microservices và các sản phẩm thực tế.",
+    "ctaProjects": "Xem Dự Án",
+    "ctaCv": "Tải CV",
+    "ctaContact": "Liên Hệ"
+  },
+  "about": {
+    "title": "Về Bản Thân",
+    "subtitle": "Quá trình phát triển, Học vấn & Cột mốc",
+    "bio": "Tôi là sinh viên năm cuối chuyên ngành CNTT tại Đại học Giao thông Vận tải TP.HCM với GPA 3.26/4.0. Tôi tập trung tích lũy nhiều kinh nghiệm thực tiễn qua các dự án thực tế về kiến trúc Backend, Tính toán hiệu năng cao (HPC), Vector Database và các hệ thống RAG.",
+    "education": "Đại học Giao thông Vận tải TP.HCM",
+    "degree": "Cử nhân Công nghệ Thông tin (2022 - 2026)",
+    "gpa": "GPA: 3.26 / 4.0",
+    "timelineTitle": "Hành trình & Cột mốc"
+  },
+  "skills": {
+    "title": "Kỹ Năng & Công Nghệ",
+    "subtitle": "Năng lực chuyên môn tích lũy qua các dự án thực tế"
+  },
+  "projects": {
+    "title": "Dự Án Nổi Bật",
+    "subtitle": "Các sản phẩm & dự án tiêu biểu tôi đã thiết kế và lập trình",
+    "viewDemo": "Demo Trực Tiếp",
+    "github": "Mã Nguồn GitHub",
+    "metricsTitle": "Chỉ Số Kỹ Thuật Nổi Bật"
+  },
+  "research": {
+    "title": "Nghiên Cứu & Luận Văn",
+    "subtitle": "Đề tài khóa luận tốt nghiệp về RAG & Vector Engine",
+    "abstractTitle": "ARQ-RAG Thesis Engine Abstract",
+    "highlightsTitle": "Điểm Nổi Bật Kỹ Thuật"
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Hãy kết nối để thảo luận về cơ hội nghề nghiệp và hợp tác dự án",
+    "directEmail": "Email Trực Tiếp",
+    "socials": "Liên Kết & Dự Án Trực Tuyến",
+    "formName": "Họ và Tên",
+    "formEmail": "Địa chỉ Email",
+    "formMessage": "Nội dung Tin nhắn",
+    "send": "Gửi Email Trực Tiếp"
+  }
+}
