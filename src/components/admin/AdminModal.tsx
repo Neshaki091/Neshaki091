@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, Lock, Key, Mail, Database, ShieldCheck, Server, Edit3, Plus, Trash2, Save, RefreshCw, Languages, Globe, ShieldAlert, Sun, Moon, Cpu, Code, BookOpen, Link, UserCheck, Upload, Archive } from 'lucide-react';
+import { ArrowLeft, Lock, Key, Mail, Database, ShieldCheck, Server, Edit3, Plus, Trash2, Save, Languages, Globe, ShieldAlert, Sun, Moon, Cpu, Code, BookOpen, Link, UserCheck, Upload, Archive } from 'lucide-react';
 import { isSupabaseConfigured, supabase, saveTranslationToSupabase, verifyAdminSecretFromSupabase, updateAdminSecretOnSupabase, uploadAvatarToImageBucket } from '../../lib/supabase';
 import { useContentStore, ResearchHighlightItem } from '../../stores/contentStore';
 import { useThemeStore } from '../../stores/themeStore';

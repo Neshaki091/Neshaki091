@@ -2,12 +2,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Hu%E1%BB%B3nh+C%C3%B4ng+Luy%E1%BB%87n;Backend+%26+AI+Engineer;RAG+Researcher+%7C+BaaS+Builder" alt="Typing SVG" />
 </h1>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=neshaki091&label=Profile%20views&color=00d9ff&style=flat" alt="neshaki091" />
-  <a href="https://github.com/neshaki091?tab=followers">
-    <img src="https://img.shields.io/github/followers/neshaki091?label=Followers&style=social" alt="followers" />
-  </a>
-</p>
 
 ---
 
@@ -15,12 +9,23 @@
 
 I'm a **Backend & AI Engineer** passionate about building high-performance systems and pushing the boundaries of RAG (Retrieval-Augmented Generation) technology. Currently a senior student at **University of Transport Ho Chi Minh City**.
 
+<<<<<<< HEAD
+- 🚀 Đang xây dựng **[Waterbase](https://web.waterbase.click)** — BaaS platform tự thiết kế và triển khai
+- 🧠 Đã triển khai **RAG AI pipeline** trong môi trường hackathon 36h
+- 🔣 Triển khai **Turboquant** thuật toán nén lượng tử tối ưu của google 
+- 📐 Quan tâm đến **Clean Architecture**, **SOLID principles**
+- 📋 Quản lý dự án với **Jira** & phương pháp Agile
+- 📱 Hiểu biết **Flutter** & **mobile-first development**
+- 🌱 Đang học sâu hơn về **Prompt Engineering** & **LLM fine-tuning**
+- 📫 Liên hệ tôi qua email hoặc GitHub
+=======
 - 🎓 **Graduate Thesis**: ARQ-RAG - High-performance RAG system with Rust-based SIMD-optimized vector quantization (2-4bit compression)
 - 🚀 **Founder of [Waterbase](https://web.waterbase.click)** - Self-hosted BaaS platform (Firebase alternative)
 - 🏆 **Hackathon Champion**: Led a team to build an Internal AI Assistant with RAG pipeline in 36 hours
 - 👨‍💼 **Team Leader**: Led a 6-member team to develop an Enterprise Java RAG Chatbot system
 - 📐 Passionate about **Clean Architecture**, **SOLID principles**, and **High-Performance Computing**
 - 🌱 Currently researching **Vector Quantization**, **SIMD optimization**, and **Large-scale RAG systems**
+>>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 ---
 
@@ -66,7 +71,11 @@ I'm a **Backend & AI Engineer** passionate about building high-performance syste
 
 ## 🏆 Featured Projects
 
+<<<<<<< HEAD
+### 🧠 Internal Assistant — Hackathon 2026 (Team Leader · RAG/AI Backend)
+=======
 ### 1. 🔬 ARQ-RAG - Adaptive Retrieval with Quantization (Thesis)
+>>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 **Graduate Thesis** | *Rust • SIMD • Vector Quantization • High-Performance Computing*
 
@@ -210,6 +219,9 @@ Intent Flow: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword fallback
 | **A/B Testing** | Blind Test System | Side-by-side RAG vs Fine-tuning comparison with user voting |
 | **Analytics** | LLM-as-a-Judge | Auto-eval with OpenRouter (Gemma) for faithfulness scoring |
 
+<<<<<<< HEAD
+**Tech:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io` . `pgvector` . `RAG`
+=======
 **Development Highlights:**
 - ✅ Designed complete SRS (System Requirements Specification)
 - ✅ Established Database Owner Matrix for 6 team members
@@ -218,6 +230,7 @@ Intent Flow: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword fallback
 - ✅ Code review and finalization for Production deployment
 
 **Tech Stack:** `Java 17` · `Spring Boot 3.x` · `Python` · `FastAPI` · `Supabase` · `Qdrant` · `LangChain4j` · `React`
+>>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 ---
 

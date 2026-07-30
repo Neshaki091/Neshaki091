@@ -111,7 +111,7 @@ export async function uploadAvatarToImageBucket(file: File): Promise<{ success: 
 
   try {
     const fileName = `avatar_${Date.now()}_${file.name.replace(/\s+/g, '_')}`;
-    const { data, error } = await supabase.storage.from('image').upload(fileName, file, {
+    const { error } = await supabase.storage.from('image').upload(fileName, file, {
       cacheControl: '3600',
       upsert: true,
     });
@@ -135,7 +135,7 @@ export async function createBackupInRecoveryBucket(backupState: object): Promise
     const jsonString = JSON.stringify(backupState, null, 2);
     const blob = new Blob([jsonString], { type: 'application/json' });
 
-    const { data, error } = await supabase.storage.from('recovery').upload(fileName, blob, {
+    const { error } = await supabase.storage.from('recovery').upload(fileName, blob, {
       contentType: 'application/json',
       upsert: true,
     });

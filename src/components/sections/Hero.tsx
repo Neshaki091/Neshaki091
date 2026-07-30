@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Terminal, ArrowRight, Cpu, ShieldCheck, User } from 'lucide-react';
+import { ArrowRight, Cpu, ShieldCheck, User } from 'lucide-react';
 import { useContentStore } from '../../stores/contentStore';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
