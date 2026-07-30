@@ -9,23 +9,15 @@
 
 I'm a **Backend & AI Engineer** passionate about building high-performance systems and pushing the boundaries of RAG (Retrieval-Augmented Generation) technology. Currently a senior student at **University of Transport Ho Chi Minh City**.
 
-<<<<<<< HEAD
-- 🚀 Đang xây dựng **[Waterbase](https://web.waterbase.click)** — BaaS platform tự thiết kế và triển khai
-- 🧠 Đã triển khai **RAG AI pipeline** trong môi trường hackathon 36h
-- 🔣 Triển khai **Turboquant** thuật toán nén lượng tử tối ưu của google 
-- 📐 Quan tâm đến **Clean Architecture**, **SOLID principles**
-- 📋 Quản lý dự án với **Jira** & phương pháp Agile
-- 📱 Hiểu biết **Flutter** & **mobile-first development**
-- 🌱 Đang học sâu hơn về **Prompt Engineering** & **LLM fine-tuning**
-- 📫 Liên hệ tôi qua email hoặc GitHub
-=======
 - 🎓 **Graduate Thesis**: ARQ-RAG - High-performance RAG system with Rust-based SIMD-optimized vector quantization (2-4bit compression)
 - 🚀 **Founder of [Waterbase](https://web.waterbase.click)** - Self-hosted BaaS platform (Firebase alternative)
 - 🏆 **Hackathon Champion**: Led a team to build an Internal AI Assistant with RAG pipeline in 36 hours
 - 👨‍💼 **Team Leader**: Led a 6-member team to develop an Enterprise Java RAG Chatbot system
+- 🔣 **TurboQuant Implementation**: Optimal quantum compression algorithm
+- 📋 **Agile & Jira**: Project management and execution
+- 📱 **Mobile First**: Knowledge of Flutter & mobile-first development
 - 📐 Passionate about **Clean Architecture**, **SOLID principles**, and **High-Performance Computing**
 - 🌱 Currently researching **Vector Quantization**, **SIMD optimization**, and **Large-scale RAG systems**
->>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 ---
 
@@ -71,11 +63,7 @@ I'm a **Backend & AI Engineer** passionate about building high-performance syste
 
 ## 🏆 Featured Projects
 
-<<<<<<< HEAD
-### 🧠 Internal Assistant — Hackathon 2026 (Team Leader · RAG/AI Backend)
-=======
 ### 1. 🔬 ARQ-RAG - Adaptive Retrieval with Quantization (Thesis)
->>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 **Graduate Thesis** | *Rust • SIMD • Vector Quantization • High-Performance Computing*
 
@@ -219,9 +207,6 @@ Intent Flow: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword fallback
 | **A/B Testing** | Blind Test System | Side-by-side RAG vs Fine-tuning comparison with user voting |
 | **Analytics** | LLM-as-a-Judge | Auto-eval with OpenRouter (Gemma) for faithfulness scoring |
 
-<<<<<<< HEAD
-**Tech:** `Node.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker` · `Nginx` · `React` · `Socket.io` . `pgvector` . `RAG`
-=======
 **Development Highlights:**
 - ✅ Designed complete SRS (System Requirements Specification)
 - ✅ Established Database Owner Matrix for 6 team members
@@ -230,7 +215,6 @@ Intent Flow: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword fallback
 - ✅ Code review and finalization for Production deployment
 
 **Tech Stack:** `Java 17` · `Spring Boot 3.x` · `Python` · `FastAPI` · `Supabase` · `Qdrant` · `LangChain4j` · `React`
->>>>>>> 3d4fd84 (feat: integrate Supabase Cloud DB, full-screen CMS, Google Smart Translate, and storage buckets)
 
 ---
 
