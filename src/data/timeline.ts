@@ -2,7 +2,7 @@ import { TimelineItem } from '../types';
 
 export const timelineData: TimelineItem[] = [
   {
-    year: '2022 - Present',
+    year: '2022 - 2026',
     title: {
       en: 'IT Student @ UTH',
       vi: 'Sinh viên CNTT @ UTH'
@@ -12,8 +12,8 @@ export const timelineData: TimelineItem[] = [
       vi: 'Đại học Giao thông Vận tải TP.HCM'
     },
     description: {
-      en: 'GPA 3.26 / 4.0. Specializing in Software Engineering, Backend Architecture, HPC, and AI.',
-      vi: 'GPA 3.26 / 4.0. Chuyên ngành Công nghệ phần mềm, kiến trúc Backend, tính toán hiệu năng cao và AI.'
+      en: 'GPA 3.34 / 4.0. Specializing in Software Engineering, Backend Architecture, High-Performance Computing, and Vector Retrieval.',
+      vi: 'GPA 3.34 / 4.0. Chuyên ngành Kỹ thuật Phần mềm, Kiến trúc Backend, Tính toán Hiệu năng cao và Truy xuất Vector.'
     },
     type: 'education'
   },
@@ -24,12 +24,12 @@ export const timelineData: TimelineItem[] = [
       vi: 'Nền tảng Waterbase BaaS'
     },
     subtitle: {
-      en: 'Personal Product & Founder',
-      vi: 'Sản phẩm cá nhân & Tự phát triển'
+      en: 'Personal Platform & Builder',
+      vi: 'Nền tảng Cá nhân & Tự phát triển'
     },
     description: {
-      en: 'Architected & deployed an 8-microservice self-hosted BaaS platform supporting authentication, real-time DB, rule engines, and Gemini RAG.',
-      vi: 'Thiết kế & triển khai nền tảng BaaS tự host với 8 microservices hỗ trợ auth, real-time DB, security rules và Gemini RAG.'
+      en: 'Architected and deployed an 8-service modular BaaS platform supporting multi-tenancy, JWT auth, real-time WebSocket DB, declarative security rules, and Gemini RAG.',
+      vi: 'Thiết kế và triển khai nền tảng BaaS 8 dịch vụ mô-đun hỗ trợ multi-tenancy, xác thực JWT, real-time WebSocket DB, bộ luật bảo mật và Gemini RAG.'
     },
     type: 'project'
   },
@@ -40,45 +40,46 @@ export const timelineData: TimelineItem[] = [
       vi: 'Trợ lý AI Java RAG Doanh nghiệp'
     },
     subtitle: {
-      en: 'Team Leader & Infrastructure Engineer',
-      vi: 'Trưởng nhóm & Kỹ sư Hạ tầng'
+      en: 'Team Leader (6 Members) & Backend Architect',
+      vi: 'Trưởng nhóm (6 thành viên) & Kiến trúc sư Backend'
     },
     description: {
-      en: 'Led a team of 6 to build Spring Boot 3 + LangChain4j RAG chatbot with side-by-side A/B evaluation against LoRA Fine-Tuned models.',
-      vi: 'Lãnh đạo nhóm 6 người phát triển chatbot RAG Spring Boot 3 + LangChain4j với hệ thống thử nghiệm A/B so sánh với LoRA Fine-tuning.'
+      en: 'Led a 6-member team to design and build a Spring Boot 3 + LangChain4j + Qdrant RAG system with automated LLM-as-a-Judge evaluation and LoRA Fine-Tuning bridge.',
+      vi: 'Dẫn dắt nhóm 6 người thiết kế và phát triển hệ thống RAG Spring Boot 3 + LangChain4j + Qdrant với quy trình đánh giá tự động LLM-as-a-Judge và cầu nối LoRA Fine-Tuning.'
     },
     type: 'work'
   },
   {
     year: '2026',
     title: {
-      en: '⚡ Hackathon 2026 AI Assistant',
-      vi: '⚡ Hackathon 2026 AI Assistant'
+      en: 'Lotus Hackathon VNG 2026 — AI Assistant',
+      vi: 'Lotus Hackathon VNG 2026 — Trợ lý AI'
     },
     subtitle: {
-      en: 'Team Lead & AI Backend Architect',
-      vi: 'Trưởng nhóm & Kiến trúc sư AI Backend'
+      en: 'Team Leader & Full AI Backend (Team of 2)',
+      vi: 'Trưởng nhóm & Kỹ sư AI Backend (Đội 2 người)'
     },
     description: {
-      en: 'Built & deployed a functional enterprise RAG assistant with 3-tier intent parsing and n8n workflow automation in 36 hours.',
-      vi: 'Xây dựng & triển khai hoàn chỉnh trợ lý RAG doanh nghiệp xử lý ý định 3 lớp và tự động hóa quy trình n8n trong 36 giờ.'
+      en: 'Built and deployed an end-to-end working prototype in 36 hours among ~300 teams (~800 participants), featuring 3-tier intent routing and n8n workflow automation.',
+      vi: 'Phát triển và triển khai bản demo working prototype hoàn chỉnh trong 36 giờ giữa ~300 đội (~800 người), tích hợp bộ phân loại ý định 3 lớp và tự động hóa n8n.'
     },
     type: 'project'
   },
   {
     year: '2026',
     title: {
-      en: 'ARQ-RAG Thesis',
-      vi: 'Luận Văn Tốt Nghiệp ARQ-RAG'
+      en: 'ARQ-RAG Thesis (Grade: 9.0/10)',
+      vi: 'Khóa luận Tốt nghiệp ARQ-RAG (Điểm: 9.0/10)'
     },
     subtitle: {
-      en: 'Graduate Researcher',
-      vi: 'Nghiên cứu sinh Tốt nghiệp'
+      en: 'Graduate Researcher & Core Developer',
+      vi: 'Nghiên cứu sinh Tốt nghiệp & Kỹ sư Hệ thống'
     },
     description: {
-      en: 'Researched & built TurboQuant engine in Rust with SIMD AVX2, achieving 8-16x vector compression with >95% Recall@K retention.',
-      vi: 'Nghiên cứu & phát triển engine TurboQuant bằng Rust với SIMD AVX2, đạt tỷ lệ nén vector 8-16x và duy trì độ chính xác >95%.'
+      en: 'Researched and built a Rust-based SIMD AVX2 vector quantization & retrieval core with TurboQuant + IVF and mmap. Research paper submitted to AMI2026.',
+      vi: 'Nghiên cứu và phát triển core lượng tử hóa & truy xuất vector bằng Rust SIMD AVX2 kết hợp TurboQuant + IVF và mmap. Bài báo nghiên cứu đã submit tới AMI2026.'
     },
     type: 'achievement'
   }
 ];
+

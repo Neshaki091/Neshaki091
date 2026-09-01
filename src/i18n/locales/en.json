@@ -8,44 +8,41 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Backend & AI RAG Student Developer",
+    "badge": "Backend & AI Engineer",
     "titlePrefix": "Hello, I am ",
     "name": "Huỳnh Công Luyện",
-    "tagline": "IT Student with Extensive Practical Experience in High-Performance RAG Systems & Backend Infrastructure",
-    "subtext": "Passionate about building Rust SIMD vector quantization engines, microservices architectures, and hands-on projects.",
+    "tagline": "Backend & AI Engineer | RAG • Vector Search • AI Systems",
+    "subtext": "Focused on low-level vector quantization (Rust + SIMD AVX2), enterprise backends (Java/Spring Boot, Node.js), and production-grade RAG systems.",
     "ctaProjects": "View Projects",
     "ctaCv": "Download CV",
     "ctaContact": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Growth Journey, Education & Milestones",
-    "bio": "I am a senior IT undergraduate at University of Transport Ho Chi Minh City with a GPA of 3.26/4.0. I focus on gaining extensive hands-on engineering experience through practical projects in Backend Architecture, High-Performance Computing (HPC), Vector Databases, and RAG systems.",
+    "subtitle": "Engineering Journey, Education & Milestones",
+    "bio": "I am an Information Technology student at University of Transport Ho Chi Minh City (UTH) with a GPA of 3.34/4.0. I focus on low-level vector quantization algorithms, high-performance computing, enterprise backend systems, and verifiable RAG pipelines.",
     "education": "University of Transport Ho Chi Minh City",
     "degree": "Bachelor of Information Technology (2022 - 2026)",
-    "gpa": "GPA: 3.26 / 4.0",
-    "timelineTitle": "Journey & Milestones"
+    "gpa": "GPA: 3.34 / 4.0",
+    "timelineTitle": "Journey & Key Milestones"
   },
   "skills": {
-    "title": "Skills & Expertise",
-    "subtitle": "Technical skills acquired through hands-on development"
+    "title": "Technical Stack",
+    "subtitle": "Core backend technologies, AI retrieval pipelines, and distributed infrastructure"
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "Highlighted systems and applications built",
-    "viewDemo": "Live Demo",
-    "github": "GitHub Source",
-    "metricsTitle": "Technical Highlights"
+    "subtitle": "Selected engineering systems, BaaS platform, and RAG architectures"
   },
   "research": {
     "title": "Research & Thesis",
-    "subtitle": "Bachelor Thesis on RAG & High-Performance Vector Retrieval",
+    "subtitle": "Graduate Thesis on Vector Quantization & RAG (Score: 9.0/10 • Paper Submitted to AMI2026)",
     "abstractTitle": "ARQ-RAG Thesis Engine Abstract",
-    "highlightsTitle": "Key Innovations"
+    "highlightsTitle": "Key Technical Innovations"
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Feel free to reach out for career opportunities or project discussions",
+    "subtitle": "Available for Junior / Fresher Backend & AI Engineer opportunities in Ho Chi Minh City",
     "directEmail": "Direct Email",
     "socials": "Online Links & Profiles",
     "formName": "Your Name",
@@ -54,3 +51,4 @@
     "send": "Send Direct Email"
   }
 }
+

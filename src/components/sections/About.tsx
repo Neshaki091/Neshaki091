@@ -44,7 +44,7 @@ export const About: React.FC = () => {
 
               <div className="p-3 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] mb-4">
                 <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block">Academic Standing</span>
-                <span className="text-xl font-mono font-bold text-emerald-700 dark:text-[#3FB950]">GPA: {profile?.gpa || '3.26 / 4.0'}</span>
+                <span className="text-xl font-mono font-bold text-emerald-700 dark:text-[#3FB950]">GPA: {profile?.gpa || '3.34 / 4.0'}</span>
               </div>
 
               <p className="text-sm text-[#4A4E69] dark:text-[#C9D1D9] leading-relaxed">

@@ -44,7 +44,7 @@ export const Research: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#22223B] dark:text-[#E6EDF3]">{t('research.abstractTitle')}</h3>
-                  <p className="text-xs font-mono text-[#4A4E69] dark:text-[#00D9FF]">Graduate Thesis — 2026</p>
+                  <p className="text-xs font-mono text-[#4A4E69] dark:text-[#00D9FF]">Graduate Thesis (Score: 9.0/10) • Paper submitted to AMI2026</p>
                 </div>
               </div>
 

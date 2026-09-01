@@ -63,24 +63,24 @@ interface ContentState {
 }
 
 const defaultHighlights: ResearchHighlightItem[] = [
-  { id: 'h1', title: 'TurboQuant Quantization Engine', desc: 'Custom Rust implementation leveraging SIMD AVX2 intrinsic parallel execution.' },
-  { id: 'h2', title: 'ITQ (Iterative Quantization)', desc: 'Orthogonal Procrustes rotation minimizing quantization loss.' },
-  { id: 'h3', title: 'Max-Lloyd Percentile Clipping', desc: 'Optimal centroid codebook generation with P01-P99 outlier clipping.' },
-  { id: 'h4', title: 'Asymmetric Distance Computation (ADC)', desc: 'Lookup Table (LUT) acceleration bypassing Float32 decompression.' },
-  { id: 'h5', title: 'Memory-Mapped Vector Access (mmap)', desc: 'Disk-backed vector index handling datasets exceeding physical RAM.' },
+  { id: 'h1', title: 'TurboQuant + IVF Integration', desc: 'Custom Rust core synthesizing TurboQuant vector quantization with Inverted File Indexing.' },
+  { id: 'h2', title: 'SIMD AVX2 Hardware Acceleration', desc: '256-bit vector registers utilized for parallelized inner-product & asymmetric distance computation.' },
+  { id: 'h3', title: 'Memory-Mapped File Access (mmap)', desc: 'Disk-backed quantized index querying directly via OS page cache without full RAM residency.' },
+  { id: 'h4', title: 'Cluster-Centric Scan & Query Batching', desc: 'Maximizes CPU L1/L2/L3 cache locality and memory bandwidth utilization during multi-query retrieval.' },
+  { id: 'h5', title: 'ITQ & Max-Lloyd Quantization', desc: 'Orthogonal Procrustes rotation with P01-P99 outlier clipping and ADC via precomputed Lookup Tables (LUT).' },
 ];
 
 const defaultProfile: ProfileData = {
   avatarUrl: '/avatar.jpg',
-  badge: 'Backend & AI Software Engineer',
+  badge: 'Backend & AI Engineer',
   titlePrefix: 'Hello, I am ',
   name: 'Huỳnh Công Luyện',
-  tagline: 'Software Engineer Specializing in High-Performance RAG Systems & Scalable Infrastructure',
-  subtext: 'Building Rust SIMD vector quantization engines, scalable backend microservices, and production AI retrieval systems.',
-  bio: 'IT Graduate from University of Transport Ho Chi Minh City with a GPA of 3.26/4.0. Passionate about Backend Architecture, High-Performance Computing (HPC), Vector Databases, and production RAG systems.',
-  education: 'University of Transport Ho Chi Minh City',
+  tagline: 'Backend & AI Engineer | RAG • Vector Search • AI Systems',
+  subtext: 'Specializing in Rust SIMD vector quantization, enterprise Java/Node backends, and production-grade RAG pipelines.',
+  bio: 'Information Technology graduate from University of Transport Ho Chi Minh City (UTH) with a GPA of 3.34/4.0. Passionate about Low-Level Vector Retrieval, High-Performance Computing, Backend Systems, and RAG architectures.',
+  education: 'University of Transport Ho Chi Minh City (UTH)',
   degree: 'Bachelor of Information Technology (2022 - 2026)',
-  gpa: '3.26 / 4.0',
+  gpa: '3.34 / 4.0',
 };
 
 export const useContentStore = create<ContentState>((set, get) => {
@@ -91,11 +91,11 @@ export const useContentStore = create<ContentState>((set, get) => {
     timeline: timelineData,
     research: {
       abstractEn:
-        'ARQ-RAG introduces a high-performance retrieval engine implemented in Rust using SIMD AVX2 intrinsics and TurboQuant vector quantization. It reduces vector memory footprint by 8-16x (Float32 down to 2-4bit) while preserving >95% Recall@K accuracy and boosting throughput by 3-5x.',
+        'ARQ-RAG is a high-performance vector retrieval engine implemented in Rust using SIMD AVX2 intrinsics and TurboQuant vector quantization combined with IVF indexing and mmap memory management. It resolves the high-dimensional vector memory wall for dense retrieval in large-scale RAG systems.',
       abstractVi:
-        'ARQ-RAG phát triển engine truy xuất hiệu năng cao bằng ngôn ngữ Rust kết hợp tối ưu hóa phần cứng SIMD AVX2 và thuật toán TurboQuant. Hệ thống giảm dung lượng bộ nhớ vector 8-16 lần (Float32 xuống 2-4bit) trong khi duy trì độ chính xác Recall@K >95% và tăng thông lượng xử lý 3-5 lần.',
-      memoryReduction: '8x – 16x',
-      accuracyRetention: '> 95%',
+        'ARQ-RAG là engine truy xuất vector hiệu năng cao xây dựng bằng Rust kết hợp tối ưu phần cứng SIMD AVX2 và lượng tử hóa TurboQuant với chỉ mục IVF và quản lý bộ nhớ mmap. Hệ thống giải quyết bài toán nút thắt bộ nhớ vector trong các hệ thống RAG quy mô lớn.',
+      memoryReduction: '2-bit – 4-bit Quantization',
+      accuracyRetention: 'Recall@K vs Float32',
       highlights: defaultHighlights,
     },
     contactInfo: {

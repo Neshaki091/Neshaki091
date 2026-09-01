@@ -52,14 +52,14 @@ export const Hero: React.FC = () => {
                 <div className="inline-flex items-center gap-2">
                   <Badge variant="cyan" className="text-xs px-2.5 py-0.5">
                     <Cpu className="w-3 h-3 mr-1 animate-pulse" />
-                    {profile?.badge || 'Backend & AI Software Engineer'}
+                    {profile?.badge || 'Backend & AI Engineer'}
                   </Badge>
                   <Badge variant="green" className="text-xs px-2.5 py-0.5">
-                    GPA {profile?.gpa || '3.26 / 4.0'}
+                    GPA {profile?.gpa || '3.34 / 4.0'}
                   </Badge>
                 </div>
                 <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E]">
-                  {profile?.education || 'University of Transport Ho Chi Minh City'}
+                  {profile?.education || 'University of Transport Ho Chi Minh City (UTH)'}
                 </span>
               </div>
             </div>
@@ -151,15 +151,15 @@ export const Hero: React.FC = () => {
                 <p className="pl-4"><span className="text-[#FF7B72]">let</span> v_lut = _mm256_loadu_ps(adc_lut.as_ptr());</p>
                 <p className="pl-4"><span className="text-[#FF7B72]">let</span> score = _mm256_fmadd_ps(v_query, v_lut, _mm256_setzero_ps());</p>
 
-                <p className="pl-4 text-[#3FB950] mt-2">// 8x Memory footprint reduction (Float32 -&gt; 4bit)</p>
+                <p className="pl-4 text-[#3FB950] mt-2">// Quantized Memory Footprint Reduction (Float32 -&gt; 2-4bit)</p>
                 <p className="pl-4">_mm256_storeu_ps(res.as_mut_ptr(), score);</p>
                 <p className="pl-4">res</p>
                 <p>&#125;</p>
               </div>
 
               <div className="px-4 py-2 bg-[#0D1117] border-t border-[#30363D] flex items-center justify-between text-[11px] font-mono text-[#8B949E]">
-                <span>Status: <span className="text-[#3FB950]">8x Quantized Memory</span></span>
-                <span>Recall@K: <span className="text-[#00D9FF]">&gt; 95.4%</span></span>
+                <span>Status: <span className="text-[#3FB950]">TurboQuant + IVF Engine</span></span>
+                <span>Evaluation: <span className="text-[#00D9FF]">Recall@K Baseline</span></span>
               </div>
             </div>
           </motion.div>

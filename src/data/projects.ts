@@ -5,153 +5,175 @@ export const projectsData: Project[] = [
     id: 'arq-rag',
     title: 'ARQ-RAG',
     subtitle: 'Adaptive Retrieval with Quantization for RAG (Thesis)',
-    type: 'Graduate Thesis',
-    role: 'Researcher & Core Developer',
+    type: 'Graduate Thesis (Grade: 9.0/10)',
+    role: 'Lead Researcher & Core Systems Developer',
     description: {
-      en: 'High-performance RAG system utilizing TurboQuant vector quantization to compress vector memory footprints by 8-16x while maintaining >95% Recall@K accuracy.',
-      vi: 'Hệ thống RAG hiệu năng cao sử dụng thuật toán nén TurboQuant giúp giảm 8-16 lần dung lượng bộ nhớ vector nhưng vẫn giữ độ chính xác Recall@K trên 95%.'
+      en: 'High-performance RAG vector retrieval engine built in Rust with SIMD AVX2 acceleration and TurboQuant vector quantization, breaking the dense vector memory wall with mmap and IVF indexing.',
+      vi: 'Hệ thống truy xuất vector RAG hiệu năng cao xây dựng bằng Rust tối ưu SIMD AVX2 và lượng tử hóa TurboQuant, giải quyết nút thắt bộ nhớ vector bằng mmap và chỉ mục IVF.'
     },
-    technologies: ['Rust', 'SIMD AVX2', 'Python', 'Vector Quantization', 'mmap', 'Linear Algebra'],
+    technologies: ['Rust', 'SIMD (AVX2)', 'Vector Quantization', 'IVF', 'mmap', 'Python', 'RAG'],
     features: {
       en: [
-        'TurboQuant engine written in Rust with SIMD AVX2 intrinsic optimization',
-        'ITQ (Iterative Quantization) with Orthogonal Procrustes rotation',
-        'Max-Lloyd quantization with percentile clipping (P01-P99)',
-        'Asymmetric Distance Computation (ADC) via Lookup Tables (LUT)',
-        'Cluster-centric scan + SIMD Query Fusion for high throughput',
-        'mmap memory-mapped file support for handling datasets larger than RAM'
+        'Custom Rust-based vector quantization & retrieval core optimized with 256-bit SIMD AVX2 intrinsics',
+        'Novel integration of TurboQuant with Inverted File Index (IVF) for coarse-to-fine search space pruning',
+        'Memory-mapped file (mmap) support to query large quantized indices directly from disk without RAM bloat',
+        'Cluster-centric scan & query batching to maximize CPU L1/L2/L3 cache locality during multi-query retrieval',
+        'ITQ (Iterative Quantization) with orthogonal rotation and Max-Lloyd quantization with P01-P99 outlier clipping',
+        'Asymmetric Distance Computation (ADC) accelerated via precomputed Lookup Tables (LUT)'
       ],
       vi: [
-        'Engine TurboQuant viết bằng Rust với tối ưu hóa SIMD AVX2 phần cứng',
-        'Thuật toán ITQ (Iterative Quantization) kết hợp Orthogonal Procrustes',
-        'Lượng tử hóa Max-Lloyd với percentile clipping khống chế nhiễu (P01-P99)',
-        'Tính toán khoảng cách bất đối xứng ADC thông qua bảng tra Lookup Tables',
-        'Cluster-centric scan kết hợp SIMD Query Fusion tăng tối đa throughput',
-        'Hỗ trợ mmap truy xuất tập dữ liệu vượt quá giới hạn bộ nhớ RAM vật lý'
+        'Engine lượng tử hóa & truy xuất vector viết bằng Rust với tối ưu hóa thanh ghi 256-bit SIMD AVX2',
+        'Tích hợp thuật toán TurboQuant với chỉ mục IVF (Inverted File Index) giúp phân vùng và tỉa không gian tìm kiếm',
+        'Truy xuất file qua mmap cho phép đọc chỉ mục lượng tử hóa trực tiếp từ bộ nhớ đệm đĩa mà không tốn RAM',
+        'Quét theo cụm (Cluster-centric scan) và gom nhóm truy vấn (Query batching) tối ưu hóa CPU cache locality',
+        'Thuật toán ITQ (Iterative Quantization) với phép xoay trực giao & lượng tử hóa Max-Lloyd kết hợp lọc nhiễu P01-P99',
+        'Tính toán khoảng cách bất đối xứng ADC thông qua bảng tra Lookup Tables (LUT) bỏ qua giải nén Float32'
       ]
     },
     metrics: {
       en: [
-        '8x to 16x vector memory compression ratio (Float32 → 4-bit / 2-bit)',
-        '>95% Recall@K accuracy retention vs Float32 baseline',
-        '3-5x throughput acceleration via SIMD AVX2 parallel execution'
+        'Evaluation Baseline: Uncompressed Float32 dense vectors',
+        'Recall Formula: Recall@K = |TopK_compressed ∩ TopK_Float32| / K',
+        'Tested Datasets: Meta Wikipedia 5M vector dataset, HotpotQA, Qasper, Vietnamese Transport Law',
+        'Research paper submitted to AMI2026'
       ],
       vi: [
-        'Tỷ lệ nén bộ nhớ vector từ 8x đến 16x (Float32 xuống 4-bit / 2-bit)',
-        'Duy trì >95% độ chính xác Recall@K so với chuẩn Float32',
-        'Tăng thông lượng truy xuất 3-5 lần nhờ tối ưu hóa phần cứng SIMD'
+        'Chuẩn đối sánh (Baseline): Vector dense Float32 không nén',
+        'Công thức đo độ chính xác: Recall@K = |TopK_compressed ∩ TopK_Float32| / K',
+        'Tập dữ liệu thử nghiệm: Meta Wikipedia 5M vectors, HotpotQA, Qasper, Luật Giao thông Việt Nam',
+        'Bài báo nghiên cứu đã submit tới hội nghị AMI2026'
       ]
     },
-    links: {},
+    links: {
+      github: 'https://github.com/neshaki091/arq-rag'
+    },
     featured: true
   },
   {
     id: 'waterbase',
     title: 'Waterbase',
-    subtitle: 'Self-Hosted Backend-as-a-Service (BaaS)',
-    type: 'Personal Product',
-    role: 'Founder & Full-stack Architect',
+    subtitle: 'Self-Hosted Backend-as-a-Service (BaaS) Platform',
+    type: 'Personal Platform',
+    role: 'Founder & Full Backend Builder',
     description: {
-      en: 'A self-hosted Firebase alternative designed for developer teams. Includes 8 containerized microservices supporting multi-tenancy, authentication, real-time database, rule engines, and RAG AI assistants.',
-      vi: 'Nền tảng BaaS tự host thay thế Firebase dành cho developers. Gồm 8 microservices containerized hỗ trợ đa người dùng (multi-tenant), xác thực, cơ sở dữ liệu thời gian thực và trợ lý AI.'
+      en: 'A deployable, self-hosted Firebase alternative composed of 8 modular backend services. Provides authentication, dynamic NoSQL CRUD, real-time database sync, declarative security rules, storage, and contextual RAG AI assistance.',
+      vi: 'Nền tảng BaaS tự host thay thế Firebase gồm 8 backend services dạng mô-đun. Cung cấp xác thực JWT, NoSQL CRUD động, đồng bộ realtime WebSocket, bộ luật bảo mật, lưu trữ file và trợ lý RAG AI.'
     },
-    technologies: ['Node.js', 'MongoDB', 'Redis', 'RabbitMQ', 'Docker Compose', 'Nginx', 'React', 'Socket.io'],
+    technologies: ['Node.js', 'Express.js', 'MongoDB', 'Redis', 'RabbitMQ', 'Docker Compose', 'Nginx', 'Socket.io', 'React'],
     features: {
       en: [
-        'Multi-tenant architecture with isolated clientId spaces',
-        'JWT authentication with refresh token rotation & RBAC',
-        'Real-time document database with WebSocket broadcast subscriptions',
-        'Security rules execution engine for fine-grained access control',
-        'Built-in RAG AI assistant integration using Gemini API',
-        'Docker Compose orchestration for single-command self-hosting',
-        'Nginx reverse proxy with SSL termination and rate limiting'
+        'Modular architecture with 8 services: auth, app, waterdb, rtwaterdb, storage, rule, analytics, and rag-ai',
+        'Multi-tenant and multi-app data isolation secured with API keys and scoped JWT middleware',
+        'Real-time document synchronization via WebSockets (Socket.io) with room-based pub/sub',
+        'Declarative security rule evaluation engine enforcing fine-grained collection-level access policies',
+        'Asynchronous event decoupling using RabbitMQ message broker and Redis caching layer',
+        'Orchestrated via Docker Compose and deployed on Linux VPS with Nginx reverse proxy + SSL'
       ],
       vi: [
-        'Kiến trúc Multi-tenant cô lập không gian dữ liệu bằng clientId',
-        'Xác thực JWT với cơ chế refresh token rotation & phân quyền RBAC',
-        'Real-time database qua WebSocket truyền dữ liệu tức thì',
-        'Engine thực thi quy tắc bảo mật (Security Rules) chi tiết tới từng trường',
-        'Tích hợp trợ lý RAG AI tự động dựa trên Gemini API',
-        'Đóng gói Docker Compose giúp triển khai self-host chỉ với 1 câu lệnh',
-        'Nginx reverse proxy quản lý SSL termination và chống ddos/rate limit'
-      ]
-    },
-    links: {
-      demo: 'https://web.waterbase.click',
-      docs: 'https://api.waterbase.click'
-    },
-    featured: true
-  },
-  {
-    id: 'hackathon-ai',
-    title: 'Internal AI Assistant',
-    subtitle: 'Enterprise Action & Retrieval Bot (Hackathon 2026)',
-    type: 'Hackathon Project',
-    role: 'Team Lead & AI Backend Architect',
-    description: {
-      en: 'Built & deployed in 36 hours for Hackathon 2026. Fully functional enterprise AI assistant enabling employees to query internal policy documents via RAG and trigger automated workflows (leave requests, email sending) using natural conversation.',
-      vi: 'Xây dựng & triển khai hoàn chỉnh trong 36 giờ tại Hackathon 2026. Trợ lý AI doanh nghiệp cho phép nhân viên tra cứu quy chế nội bộ qua RAG và kích hoạt tự động quy trình làm việc (xin nghỉ phép, gửi mail) bằng hội thoại tự nhiên.'
-    },
-    technologies: ['Node.js', 'Express', 'Supabase (pgvector)', 'Gemini API', 'n8n', 'Socket.io'],
-    features: {
-      en: [
-        'RAG Pipeline: Gemini Embeddings + Supabase pgvector with anti-hallucination prompts',
-        '3-tier Intent Parser fallback: TinyFish AI (4s timeout) → Gemini 2.5 Flash → Keyword Matcher',
-        'Workflow Automation: n8n webhook triggers for Google Sheets, Gmail & Google Calendar',
-        'Multi-tenant database schema with dynamic organization isolation',
-        'Real-time safety moderation via Gemini AI prompt filtering'
-      ],
-      vi: [
-        'Quy trình RAG: Gemini Embeddings + Supabase pgvector kết hợp chống hallucination',
-        'Bộ phân tích ý định 3 lớp fallback: TinyFish AI → Gemini 2.5 Flash → Keyword Matching',
-        'Tự động hóa workflow: Kết nối n8n webhook cập nhật Google Sheet, Gmail, Calendar',
-        'Thiết kế CSDL Multi-tenant hỗ trợ nhiều doanh nghiệp dùng chung hạ tầng',
-        'Lọc nội dung vi phạm thời gian thực bằng Gemini AI'
+        'Kiến trúc 8 dịch vụ mô-đun: auth, app, waterdb, rtwaterdb, storage, rule, analytics, và rag-ai',
+        'Cô lập dữ liệu multi-tenant & multi-app với API key và middleware xác thực JWT phân quyền Owner / End-User',
+        'Đồng bộ dữ liệu thời gian thực qua WebSocket (Socket.io) với cơ chế pub/sub theo phòng',
+        'Engine thực thi quy tắc bảo mật (Rule Service) kiểm soát quyền truy cập chi tiết tới từng collection',
+        'Giao tiếp bất đồng bộ qua RabbitMQ message broker và tầng caching Redis tốc độ cao',
+        'Triển khai hoàn chỉnh bằng Docker Compose trên VPS Linux qua Nginx Reverse Proxy + SSL'
       ]
     },
     metrics: {
       en: [
-        '⚡ Fully Functional Production Demo — Built & Deployed in 36 hours',
-        '<1.2s average end-to-end intent resolution & document retrieval latency'
+        'Live Web Application: web.waterbase.click',
+        'Full multi-tenant authentication, dynamic collection CRUD, and real-time streaming pipelines'
       ],
       vi: [
-        '⚡ Demo chạy thực tế hoàn chỉnh — Xây dựng và triển khai thành công trong 36 giờ',
-        'Thời gian phản hồi RAG và phân tích ý định trung bình < 1.2s'
+        'Ứng dụng đang chạy thực tế: web.waterbase.click',
+        'Đầy đủ luồng xác thực multi-tenant, CRUD dynamic collection và streaming realtime'
+      ]
+    },
+    links: {
+      demo: 'https://web.waterbase.click'
+    },
+    featured: true
+  },
+  {
+    id: 'java-rag',
+    title: 'Enterprise Java RAG Chatbot',
+    subtitle: 'University Courseware Assistant & Fine-Tuning Benchmark',
+    type: 'University Capstone Project',
+    role: 'Team Leader (6 Members) & Backend Architect',
+    description: {
+      en: 'A high-throughput Vietnamese academic knowledge assistant built with Java 17, Spring Boot 3, and LangChain4j. Features side-by-side A/B testing and automated LLM-as-a-Judge evaluation comparing RAG vs LoRA Fine-Tuning.',
+      vi: 'Hệ thống trợ lý học tập tiếng Việt xây dựng trên Java 17, Spring Boot 3 và LangChain4j. Tích hợp A/B testing đối chiếu trực tiếp và đánh giá tự động LLM-as-a-Judge so sánh giữa RAG và mô hình LoRA Fine-tuning.'
+    },
+    technologies: ['Java 17', 'Spring Boot 3.x', 'Spring Security', 'LangChain4j', 'Python', 'FastAPI', 'Qdrant', 'Supabase', 'React'],
+    features: {
+      en: [
+        'Team Leadership: Authored System Requirements Specification (SRS), Database Owner Matrix, and conducted code reviews',
+        'Enterprise Spring Boot 3 Backend: Spring Security with JWT & refresh token rotation, Student/Admin RBAC, Global Exception Handler',
+        'Document Ingestion Pipeline: Apache Tika multi-format parsing (PDF, DOCX) with custom Vietnamese semantic text splitter',
+        'Vector Retrieval: LangChain4j with LLM query rewriting (Llama 3.1) and subject-scoped vector search on Qdrant',
+        'Java-Python Microservice Bridge: Spring WebClient asynchronous bridge connecting Spring Boot to a Python FastAPI LoRA model service',
+        'Automated Evaluation: Blind A/B comparison system and LLM-as-a-Judge evaluation for answer faithfulness'
+      ],
+      vi: [
+        'Vai trò Team Leader: Thiết kế tài liệu đặc tả SRS, ma trận phân quyền CSDL Database Owner Matrix và review code toàn nhóm',
+        'Backend Spring Boot 3 chuẩn enterprise: Spring Security JWT kèm refresh token, phân quyền Student/Admin RBAC, xử lý lỗi tập trung',
+        'Pipeline xử lý tài liệu: Tích hợp Apache Tika đọc đa định dạng (PDF, DOCX) kết hợp bộ tách câu ngữ nghĩa tiếng Việt',
+        'Truy xuất Vector: LangChain4j kết hợp Query Rewriting bằng LLM (Llama 3.1) và lọc vector theo môn học trên Qdrant',
+        'Cầu nối Java-Python: Spring WebClient bất đồng bộ kết nối Spring Boot với FastAPI phục vụ mô hình LoRA Fine-tuned',
+        'Đánh giá & Benchmark: Hệ thống A/B test ẩn danh và quy trình chấm điểm tự động LLM-as-a-Judge đo độ trung thực (faithfulness)'
+      ]
+    },
+    metrics: {
+      en: [
+        'Team of 6 engineers — Successfully integrated full enterprise RAG and LoRA inference pipelines',
+        'Automated faithfulness and hallucination rate evaluation with OpenRouter (Gemma/Llama)'
+      ],
+      vi: [
+        'Nhóm 6 thành viên — Tích hợp thành công toàn diện luồng Enterprise RAG và mô hình LoRA',
+        'Đánh giá tự động độ trung thực và tỷ lệ hallucination thông qua OpenRouter (Gemma/Llama)'
       ]
     },
     links: {},
     featured: true
   },
   {
-    id: 'java-rag',
-    title: 'Enterprise Java RAG Chatbot',
-    subtitle: 'Academic Courseware Assistant & Fine-Tuning Benchmark',
-    type: 'University Capstone Project',
-    role: 'Team Lead & Infrastructure Engineer',
+    id: 'hackathon-ai',
+    title: 'Internal AI Assistant',
+    subtitle: 'Lotus Hackathon VNG 2026 — 36-Hour Working Prototype',
+    type: 'Hackathon Project (Prototype)',
+    role: 'Team Leader & Full AI Backend (Team of 2)',
     description: {
-      en: 'A high-throughput Vietnamese academic RAG chatbot built with Java Spring Boot 3 & LangChain4j. Features side-by-side A/B testing and automated evaluation comparing RAG vs LoRA Fine-Tuning performance.',
-      vi: 'Trợ lý AI hỗ trợ sinh viên tra cứu tài liệu môn học viết bằng Java Spring Boot 3 & LangChain4j. Tích hợp hệ thống thử nghiệm A/B đánh giá so sánh hiệu năng giữa RAG và Fine-tuning.'
+      en: 'A 36-hour working prototype developed for Lotus Hackathon VNG 2026 (~800 participants / ~300 teams). Enables employees to query internal policies via RAG and trigger automated business workflows (leave requests, emails, calendar events) via natural language.',
+      vi: 'Bản prototype hoàn chỉnh xây dựng trong 36 giờ tại Lotus Hackathon VNG 2026 (~800 người / ~300 đội). Hỗ trợ nhân viên tra cứu chính sách nội bộ qua RAG và kích hoạt tự động quy trình làm việc (xin nghỉ phép, gửi mail, lịch họp) bằng hội thoại.'
     },
-    technologies: ['Java 17', 'Spring Boot 3.x', 'Python', 'FastAPI', 'LangChain4j', 'Qdrant', 'Supabase', 'React'],
+    technologies: ['Node.js', 'Express.js', 'Supabase (pgvector)', 'Gemini API', 'n8n', 'Socket.io'],
     features: {
       en: [
-        'Core Spring Boot Architecture: Standardized ApiResponse, Global Exception Handler, JPA BaseEntity',
-        'Qdrant Vector Database integration via LangChain4j with Vietnamese Query Rewriting',
-        'Fine-Tuning Bridge: Java-Python WebClient bridge linking Spring Boot to LoRA FastAPI models',
-        'Side-by-side Blind A/B Testing suite comparing RAG vs Fine-tuned responses',
-        'Automated LLM-as-a-Judge grading pipeline using Gemma model via OpenRouter'
+        '3-Tier Resilient Intent Classifier: TinyFish AI (4s timeout fallback) → Gemini API → Keyword classification fallback',
+        'RAG Knowledge Base: Document chunking, Gemini Embeddings, and Supabase pgvector semantic search with anti-hallucination prompting',
+        'Workflow Automation: Integrated n8n webhooks to automate actions across Google Sheets, Gmail, and Google Calendar',
+        'Multi-Tenant Schema: Isolated company organizational data via dynamic clientId tenancy checks',
+        'Real-time Content Moderation: Implemented input/output safety checks using Gemini Safety filters'
       ],
       vi: [
-        'Chuẩn hóa kiến trúc Spring Boot: ApiResponse, Global Exception Handler, BaseEntity JPA',
-        'Tích hợp Vector DB Qdrant qua LangChain4j kết hợp Query Rewriting tiếng Việt',
-        'Cầu nối Java-Python WebClient kết nối Spring Boot với mô hình LoRA Fine-tuned trên FastAPI',
-        'Hệ thống A/B Test ẩn danh so sánh kết quả RAG và Fine-tuning trực tiếp',
-        'Đánh giá tự động LLM-as-a-Judge sử dụng Gemma qua OpenRouter'
+        'Bộ phân loại ý định 3 lớp chịu lỗi: TinyFish AI (timeout 4s fallback) → Gemini API → Bộ khớp từ khóa fallback',
+        'Hệ thống RAG: Chunking tài liệu, Gemini Embeddings và tìm kiếm ngữ nghĩa qua Supabase pgvector chống hallucination',
+        'Tự động hóa workflow: Kết nối n8n webhooks tự động cập nhật Google Sheets, gửi Gmail và tạo lịch Google Calendar',
+        'Thiết kế CSDL Multi-Tenant: Phân tách không gian dữ liệu công ty an toàn thông qua kiểm tra clientId',
+        'Kiểm duyệt nội dung thời gian thực: Tích hợp bộ lọc an toàn Gemini Safety filters'
       ]
     },
-    links: {
-      docs: './report_tex/SR.md'
+    metrics: {
+      en: [
+        'Delivered complete end-to-end working prototype in a high-intensity 36-hour hackathon sprint',
+        'Team of 2 competing among ~300 teams (~800 participants)'
+      ],
+      vi: [
+        'Hoàn thiện bản demo working prototype đầy đủ chức năng trong 36 giờ thi đấu liên tục',
+        'Đội 2 thành viên thi đấu giữa khoảng 300 đội (~800 thí sinh tham gia)'
+      ]
     },
+    links: {},
     featured: true
   }
 ];
+
