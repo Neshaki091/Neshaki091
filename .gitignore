@@ -26,6 +26,9 @@ dist-ssr/
 *.dll
 *.exe
 
+# TypeScript Build Info Cache
+*.tsbuildinfo
+
 # Logs & Temporary Files
 logs/
 *.log

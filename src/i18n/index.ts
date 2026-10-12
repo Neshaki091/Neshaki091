@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { fetchTranslationFromSupabase } from '../lib/supabase';
 
 // Default English Key-Value Dictionary (No static JSON files needed)
 const defaultEnglishTranslations: Record<string, string> = {
@@ -37,6 +36,8 @@ const defaultEnglishTranslations: Record<string, string> = {
   "projects.results": "Technical Performance Metrics",
   "projects.viewDemo": "Live Demo",
   "projects.github": "GitHub Source",
+  "projects.viewGithub": "GitHub Source",
+  "projects.viewDocs": "Docs",
 
   "research.title": "Research & Thesis",
   "research.subtitle": "Bachelor Thesis on RAG & High-Performance Vector Retrieval",
@@ -52,7 +53,7 @@ const defaultEnglishTranslations: Record<string, string> = {
   "contact.formMessage": "Your Message",
   "contact.send": "Send Direct Email",
 
-  "footer.rights": "All rights reserved. Built with React & Supabase.",
+  "footer.rights": "All rights reserved. Built with React.",
   "footer.quote": "Crafting resilient software through hands-on engineering."
 };
 
@@ -70,16 +71,5 @@ i18n
       escapeValue: false,
     },
   });
-
-// Load key-value translations directly from Supabase Cloud DB
-export async function syncTranslationsWithSupabase() {
-  const remoteEn = await fetchTranslationFromSupabase('en');
-  if (remoteEn) {
-    i18n.addResourceBundle('en', 'translation', remoteEn, true, true);
-  }
-}
-
-// Trigger initial sync
-syncTranslationsWithSupabase();
 
 export default i18n;

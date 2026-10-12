@@ -45,7 +45,7 @@ export const projectsData: Project[] = [
       ]
     },
     links: {
-      github: 'https://github.com/neshaki091/arq-rag'
+      docs: 'https://drive.google.com/file/d/1CuYJQvmqH9g4N3WjXOtkQw9x_mnb0VC5/view?usp=drive_link'
     },
     featured: true
   },
@@ -80,16 +80,17 @@ export const projectsData: Project[] = [
     },
     metrics: {
       en: [
-        'Live Web Application: web.waterbase.click',
-        'Full multi-tenant authentication, dynamic collection CRUD, and real-time streaming pipelines'
+        'Self-hosted Firebase-like BaaS with RBAC and multi-tenant/multi-app data isolation',
+        'Full authentication, dynamic collection CRUD, and real-time streaming pipelines'
       ],
       vi: [
-        'Ứng dụng đang chạy thực tế: web.waterbase.click',
-        'Đầy đủ luồng xác thực multi-tenant, CRUD dynamic collection và streaming realtime'
+        'Nền tảng BaaS tự host giống Firebase với phân quyền RBAC và cô lập dữ liệu multi-tenant/multi-app',
+        'Đầy đủ luồng xác thực, CRUD dynamic collection và streaming realtime'
       ]
     },
     links: {
-      demo: 'https://web.waterbase.click'
+      github: 'https://github.com/Neshaki091/Waterbase_BaaS',
+      docs: 'https://drive.google.com/file/d/1DUNpvCczlFXdZzgPnyBH9FlTcZrbis9I/view?usp=drive_link'
     },
     featured: true
   },
@@ -132,7 +133,10 @@ export const projectsData: Project[] = [
         'Đánh giá tự động độ trung thực và tỷ lệ hallucination thông qua OpenRouter (Gemma/Llama)'
       ]
     },
-    links: {},
+    links: {
+      github: 'https://github.com/Neshaki091/Educhatbot',
+      docs: 'https://drive.google.com/file/d/14acLZAxLF20wkeRooSVNerm5vjZHqNKr/view?usp=drive_link'
+    },
     featured: true
   },
   {
@@ -172,7 +176,10 @@ export const projectsData: Project[] = [
         'Đội 2 thành viên thi đấu giữa khoảng 300 đội (~800 thí sinh tham gia)'
       ]
     },
-    links: {},
+    links: {
+      github: 'https://github.com/Neshaki091/InternalAssistant',
+      demo: 'https://devpost.com/software/internal-ai-assistant'
+    },
     featured: true
   }
 ];

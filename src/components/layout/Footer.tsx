@@ -1,23 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Github, Mail, Rocket, Lock } from 'lucide-react';
-import { AdminModal } from '../admin/AdminModal';
+import { Github, Mail, Rocket } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const [isAdminOpen, setIsAdminOpen] = useState(false);
-
-  // Keyboard shortcut listener Ctrl + Shift + A
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') {
-        e.preventDefault();
-        setIsAdminOpen(true);
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
 
   return (
     <footer className="border-t border-[#C9ADA7] dark:border-[#30363D] bg-[#F2E9E4] dark:bg-[#0D1117] pt-12 pb-8">
@@ -44,7 +29,7 @@ export const Footer: React.FC = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://web.waterbase.click"
+              href="https://github.com/Neshaki091/Waterbase_BaaS"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-[#22223B] dark:text-[#C9D1D9] hover:text-[#4A4E69] dark:hover:text-[#00D9FF] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
@@ -53,7 +38,7 @@ export const Footer: React.FC = () => {
               <Rocket className="w-5 h-5 text-[#4A4E69] dark:text-[#00D9FF]" />
             </a>
             <a
-              href="mailto:neshaki091@gmail.com"
+              href="mailto:huynhluyen839@gmail.com"
               className="p-2.5 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-[#22223B] dark:text-[#C9D1D9] hover:text-[#4A4E69] dark:hover:text-[#00D9FF] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
               title="Email"
             >
@@ -63,25 +48,12 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9A8C98] dark:text-[#6E7681]">
-          <div className="flex items-center gap-2">
-            <p>© {new Date().getFullYear()} Huỳnh Công Luyện. {t('footer.rights')}</p>
-            {/* Hidden Admin Lock Trigger */}
-            <button
-              onClick={() => setIsAdminOpen(true)}
-              className="p-1 rounded opacity-40 hover:opacity-100 text-[#4A4E69] dark:text-[#00D9FF] transition-opacity"
-              title="Admin Control Panel (Ctrl+Shift+A)"
-            >
-              <Lock className="w-3.5 h-3.5" />
-            </button>
-          </div>
+          <p>© {new Date().getFullYear()} Huỳnh Công Luyện. {t('footer.rights')}</p>
           <p className="font-mono italic text-[#4A4E69] dark:text-[#8B949E]">
             "{t('footer.quote')}"
           </p>
         </div>
       </div>
-
-      {/* Secret Admin Modal */}
-      <AdminModal isOpen={isAdminOpen} onClose={() => setIsAdminOpen(false)} />
     </footer>
   );
 };

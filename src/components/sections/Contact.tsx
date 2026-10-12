@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Mail, Send, Github, Rocket, Download, CheckCircle, FileText, Copy, Check } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Globe, CheckCircle, Copy, Check } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
@@ -82,48 +82,32 @@ export const Contact: React.FC = () => {
               </h4>
               <div className="space-y-3">
                 <a
-                  href={contactInfo?.github || '#'}
+                  href={contactInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-sm text-[#22223B] dark:text-[#C9D1D9] hover:text-[#4A4E69] dark:hover:text-[#00D9FF] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
                 >
                   <Github className="w-5 h-5 text-[#4A4E69] dark:text-[#00D9FF]" />
-                  <span className="font-mono">{(contactInfo?.github || 'github.com/neshaki091').replace('https://', '')}</span>
+                  <span className="font-mono">{contactInfo.github.replace('https://', '')}</span>
                 </a>
                 <a
-                  href={contactInfo?.waterbase || '#'}
+                  href={contactInfo.huggingface}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-sm text-[#22223B] dark:text-[#C9D1D9] hover:text-[#4A4E69] dark:hover:text-[#00D9FF] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
                 >
-                  <Rocket className="w-5 h-5 text-[#4A4E69] dark:text-[#00D9FF]" />
-                  <span className="font-mono">{(contactInfo?.waterbase || 'web.waterbase.click').replace('https://', '')}</span>
+                  <Globe className="w-5 h-5 text-[#4A4E69] dark:text-[#00D9FF]" />
+                  <span className="font-mono">{contactInfo.huggingface.replace('https://', '')}</span>
                 </a>
-              </div>
-
-              {/* Download CV Buttons */}
-              <div className="pt-6 border-t border-[#C9ADA7]/60 dark:border-[#30363D]/60 mt-6 space-y-3">
-                <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E] block">Curriculum Vitae</span>
-                <div className="flex gap-3">
-                  <a
-                    href={contactInfo.cvEn}
-                    download
-                    className="flex-1"
-                  >
-                    <Button variant="outline" size="sm" className="w-full" icon={<Download className="w-4 h-4" />}>
-                      CV (English)
-                    </Button>
-                  </a>
-                  <a
-                    href={contactInfo.cvVi}
-                    download
-                    className="flex-1"
-                  >
-                    <Button variant="secondary" size="sm" className="w-full" icon={<FileText className="w-4 h-4" />}>
-                      CV (Tiếng Việt)
-                    </Button>
-                  </a>
-                </div>
+                <a
+                  href={`https://${contactInfo.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-sm text-[#22223B] dark:text-[#C9D1D9] hover:text-[#4A4E69] dark:hover:text-[#00D9FF] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
+                >
+                  <Linkedin className="w-5 h-5 text-[#4A4E69] dark:text-[#00D9FF]" />
+                  <span className="font-mono">{contactInfo.linkedin}</span>
+                </a>
               </div>
             </Card>
           </div>

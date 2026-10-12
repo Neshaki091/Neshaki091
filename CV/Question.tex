@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\pagestyle{empty}
+
+\begin{document}
+
+{\LARGE \textbf{Interview Questions and Sample Answers}}\\
+{\large Huynh Cong Luyen -- AI / RAG Engineer}
+
+\vspace{8pt}
+\textbf{Note:} These are fresher/junior-level sample answers based only on confirmed experience from ARQ-RAG, EduChatbot, the VNG hackathon project, LangChain usage, backend deployment on GCP Cloud Functions, and data architecture guidance with Supabase plus Qdrant Cloud. Adjust wording to match the interviewer and your real delivery style.
+
+\begin{enumerate}[leftmargin=*, itemsep=10pt]
+
+\item \textbf{Tell me about yourself.}\\
+\textbf{English:} I am a recent IT graduate with hands-on experience in backend development and AI projects, especially RAG systems. My strongest projects are ARQ-RAG, where I worked on vector retrieval efficiency, and EduChatbot, where I designed a Vietnamese RAG workflow and deployed backend services on GCP Cloud Functions. I am now looking for a fresher or junior role where I can keep improving in LLM integration, backend services, and practical AI products.\\
+\textbf{Tiếng Việt:} Em là sinh viên IT mới tốt nghiệp, có kinh nghiệm thực hành về backend và các dự án AI, đặc biệt là hệ thống RAG. Hai dự án nổi bật của em là ARQ-RAG, nơi em tập trung vào tối ưu truy xuất vector, và EduChatbot, nơi em thiết kế workflow RAG tiếng Việt và triển khai backend trên GCP Cloud Functions. Hiện tại em đang tìm vị trí fresher hoặc junior để tiếp tục phát triển về tích hợp LLM, backend service và các sản phẩm AI thực tế.
+
+\item \textbf{Why do you want to join this role or company?}\\
+\textbf{English:} I want to join because this role matches the direction I want to grow in. I already have project experience with RAG, prompt experimentation, backend integration, and cloud deployment. What I want next is to work on real product problems, learn from a stronger team, and improve how I build AI features for users in production-like environments.\\
+\textbf{Tiếng Việt:} Em muốn ứng tuyển vì vị trí này rất phù hợp với hướng em muốn phát triển. Em đã có trải nghiệm dự án với RAG, thử nghiệm prompt, tích hợp backend và deploy lên cloud. Điều em muốn tiếp theo là được làm trên bài toán sản phẩm thật, học từ một team mạnh hơn, và cải thiện cách xây dựng tính năng AI cho người dùng trong môi trường gần với production.
+
+\item \textbf{Can you explain your EduChatbot project and your role?}\\
+\textbf{English:} In EduChatbot, I led a 6-person team and focused on the AI/backend side. I designed the RAG workflow from Vietnamese document parsing and chunking, to embeddings, Qdrant retrieval, and citation verification to reduce hallucination. I also built the FastAPI bridge that integrated with Spring Boot services, deployed the backend on GCP Cloud Functions, and guided the data architecture using Supabase for user data and Qdrant Cloud for vector search.\\
+\textbf{Tiếng Việt:} Ở dự án EduChatbot, em là trưởng nhóm 6 người và phụ trách chính phần AI/backend. Em thiết kế workflow RAG từ bước parsing và chunking tài liệu tiếng Việt, tạo embedding, truy xuất với Qdrant, đến bước đối chiếu trích dẫn để giảm hallucination. Em cũng xây dựng cầu nối FastAPI để tích hợp với các service Spring Boot, trực tiếp deploy backend lên GCP Cloud Functions, và định hướng kiến trúc dữ liệu dùng Supabase cho dữ liệu người dùng cùng Qdrant Cloud cho vector search.
+
+\item \textbf{What is RAG in simple terms?}\\
+\textbf{English:} RAG stands for Retrieval-Augmented Generation. In simple terms, it means the system first retrieves relevant information from documents, then sends that information to the language model so the answer is based on real sources instead of only the model's memory. I like this approach because it makes the system easier to update and usually more grounded.\\
+\textbf{Tiếng Việt:} RAG là viết tắt của Retrieval-Augmented Generation. Nói đơn giản, hệ thống sẽ lấy các thông tin liên quan từ tài liệu trước, rồi mới đưa vào cho mô hình ngôn ngữ để câu trả lời dựa trên nguồn thật thay vì chỉ dựa vào trí nhớ của mô hình. Em thích cách tiếp cận này vì nó giúp hệ thống dễ cập nhật và thường bám nguồn hơn.
+
+\item \textbf{How did you evaluate the quality of your RAG output?}\\
+\textbf{English:} I did not rely only on subjective judgment. In EduChatbot, I used Ragas and blind A/B evaluation to compare RAG and fine-tuning results. I looked at metrics like correctness, faithfulness, and latency. From that process, I learned that a stronger answer is not only about sounding natural, but also about staying grounded in source documents and returning results fast enough for users.\\
+\textbf{Tiếng Việt:} Em không đánh giá output chỉ bằng cảm nhận. Trong EduChatbot, em dùng Ragas và đánh giá A/B mù để so sánh giữa RAG và fine-tuning. Em quan tâm đến các tiêu chí như độ đúng, độ trung thực với nguồn, và độ trễ. Qua đó em học được rằng câu trả lời tốt không chỉ là trôi chảy, mà còn phải bám sát tài liệu nguồn và đủ nhanh để dùng thực tế.
+
+\item \textbf{What experience do you have with prompt engineering or LangChain?}\\
+\textbf{English:} I used LangChain mainly for prompt and chain experimentation in EduChatbot. My focus was not just writing one prompt, but iterating on prompt structure, retrieval context, and response constraints so the output stayed relevant and grounded. That experience taught me to treat prompt work as an engineering loop: test, measure, adjust, and compare.\\
+\textbf{Tiếng Việt:} Em đã dùng LangChain chủ yếu cho việc thử nghiệm prompt và chain trong EduChatbot. Em không chỉ viết một prompt rồi giữ nguyên, mà sẽ lặp lại việc chỉnh cấu trúc prompt, phần context truy xuất, và các ràng buộc đầu ra để câu trả lời vừa liên quan vừa bám nguồn. Trải nghiệm đó giúp em nhìn prompt engineering như một vòng lặp kỹ thuật: thử, đo, chỉnh, rồi so sánh.
+
+\item \textbf{How did you store data in EduChatbot?}\\
+\textbf{English:} For EduChatbot, I guided the team to separate the data by purpose. We used Supabase for user-related data and Qdrant Cloud for vector search. We also kept synchronization between them for backup support. I think this structure made the system easier to reason about because application data and vector retrieval had different requirements.\\
+\textbf{Tiếng Việt:} Trong EduChatbot, em định hướng nhóm tách dữ liệu theo mục đích sử dụng. Bọn em dùng Supabase cho dữ liệu người dùng và Qdrant Cloud cho vector search. Đồng thời có đồng bộ giữa hai bên để hỗ trợ backup. Em thấy cách tách này giúp hệ thống dễ quản lý hơn vì dữ liệu ứng dụng và dữ liệu truy xuất vector có yêu cầu khác nhau.
+
+\item \textbf{What experience do you have with cloud deployment?}\\
+\textbf{English:} In EduChatbot, I directly deployed the backend on GCP Cloud Functions. That gave me practical experience with packaging backend logic for cloud execution, connecting services, and making sure the deployed backend could work with the rest of the system. For me, that was an important step from building locally to building something usable by others.\\
+\textbf{Tiếng Việt:} Trong EduChatbot, em là người trực tiếp deploy backend lên GCP Cloud Functions. Việc này cho em trải nghiệm thực tế về cách đóng gói backend để chạy trên cloud, kết nối các service với nhau, và đảm bảo backend sau khi deploy vẫn hoạt động tốt với toàn bộ hệ thống. Với em, đó là bước quan trọng để đi từ làm local sang làm thứ người khác có thể dùng được.
+
+\item \textbf{How do you work with APIs and external services?}\\
+\textbf{English:} I am comfortable reading API documentation, building REST integrations, and connecting services together. In my projects, I worked with FastAPI, Spring Boot integration, Gemini API, Supabase, and automation through n8n webhooks. My usual approach is to define clear request/response contracts first, then test incrementally and add logging early so integration issues are easier to debug.\\
+\textbf{Tiếng Việt:} Em khá thoải mái với việc đọc tài liệu API, xây dựng tích hợp REST, và kết nối nhiều service với nhau. Trong các dự án trước, em đã làm với FastAPI, tích hợp cùng Spring Boot, Gemini API, Supabase, và tự động hóa qua webhook n8n. Cách em thường làm là chốt rõ request/response contract trước, sau đó test tăng dần từng phần và thêm logging sớm để dễ debug khi tích hợp.
+
+\item \textbf{What was one challenge you faced and how did you handle it?}\\
+\textbf{English:} One challenge was balancing answer quality and faithfulness in EduChatbot. Sometimes a response could sound better but be less grounded in the source. I handled that by comparing approaches through Ragas and blind A/B evaluation, then looking at correctness, faithfulness, and latency instead of guessing. That taught me to make decisions using evidence, even in a student project.\\
+\textbf{Tiếng Việt:} Một khó khăn của em là cân bằng giữa chất lượng câu trả lời và độ bám nguồn trong EduChatbot. Có những lúc câu trả lời nghe tự nhiên hơn nhưng lại ít bám vào tài liệu hơn. Em xử lý bằng cách so sánh các hướng tiếp cận qua Ragas và đánh giá A/B mù, rồi xem độ đúng, độ trung thực và độ trễ thay vì đoán cảm tính. Điều đó giúp em quen với việc ra quyết định dựa trên dữ liệu, kể cả trong đồ án.
+
+\item \textbf{Tell me about a time you worked under pressure.}\\
+\textbf{English:} During the Lotus Hackathon at VNG, my teammate and I had to deliver a working internal AI assistant demo in about 36 hours. I handled the backend, conversation flow, Gemini-based RAG, and tenant isolation. One important part was designing a fallback router so the demo still worked even if the primary parser failed. That experience taught me to prioritize reliability first, then polish.\\
+\textbf{Tiếng Việt:} Ở Lotus Hackathon tại VNG, em và đồng đội phải hoàn thành một demo trợ lý AI nội bộ hoạt động được trong khoảng 36 giờ. Em phụ trách backend, luồng hội thoại, RAG với Gemini, và cô lập dữ liệu tenant. Một phần quan trọng là em thiết kế router fallback để hệ thống vẫn chạy được ngay cả khi parser chính gặp lỗi. Trải nghiệm đó giúp em học cách ưu tiên độ ổn định trước, rồi mới tối ưu thêm.
+
+\item \textbf{How do you communicate technical work to non-technical people?}\\
+\textbf{English:} I try to explain technical decisions in terms of product impact, trade-offs, and user outcome instead of model jargon. For example, instead of saying only that retrieval improved, I would explain that the system becomes more grounded, easier to update, and less likely to answer from outdated memory. In team projects, that approach helped me align with teammates who were not focused on the AI internals.\\
+\textbf{Tiếng Việt:} Em cố gắng giải thích các quyết định kỹ thuật theo tác động sản phẩm, đánh đổi, và kết quả cho người dùng, thay vì chỉ dùng thuật ngữ mô hình. Ví dụ, thay vì chỉ nói retrieval tốt hơn, em sẽ nói rằng hệ thống bám nguồn hơn, dễ cập nhật kiến thức hơn, và giảm khả năng trả lời theo trí nhớ cũ. Trong các dự án nhóm, cách nói như vậy giúp em phối hợp tốt hơn với các bạn không đi sâu vào phần AI.
+
+\item \textbf{What do you want to improve next?}\\
+\textbf{English:} I want to improve in three areas: building more production-ready AI systems, writing cleaner backend services, and learning how to evaluate AI features more systematically. I already have a good project foundation, but I want real team experience where I can get feedback faster and grow from stronger engineering practices.\\
+\textbf{Tiếng Việt:} Em muốn cải thiện ở ba điểm: xây dựng hệ thống AI gần production hơn, viết backend service gọn và chắc hơn, và học cách đánh giá tính năng AI một cách bài bản hơn. Hiện tại em đã có nền tảng tốt từ dự án, nhưng em muốn có thêm trải nghiệm làm việc trong team thực tế để nhận feedback nhanh hơn và phát triển theo quy trình kỹ thuật tốt hơn.
+
+\end{enumerate}
+
+\end{document}

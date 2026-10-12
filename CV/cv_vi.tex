@@ -1,0 +1,181 @@
+%-------------------------------------------------------------------------------
+% Mẫu CV Chuẩn Harvard (Bản Tiếng Việt)
+% Tối ưu cho hệ thống ATS và bố cục chuẩn 1 trang
+% Ứng viên: HUỲNH CÔNG LUYỆN
+% Vị trí mục tiêu: Junior AI Engineer | Junior RAG Engineer | Junior ML/AI Engineer
+%                  Backend AI Engineer | AI Chatbot Engineer
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article}
+
+% --- Engine Detection & Hỗ trợ Tiếng Việt / Unicode ---
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{vietnam}
+\else
+  \usepackage{fontspec}
+\fi
+
+% --- Cấu hình lề trang (Đo lường chính xác cho 1 trang duy nhất) ---
+\usepackage[
+  letterpaper,
+  top=0.35in,
+  bottom=0.35in,
+  left=0.42in,
+  right=0.42in
+]{geometry}
+
+% --- Gói định dạng văn bản ---
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[verbose=silent]{microtype}
+\linespread{1.05}
+
+% --- Bảng màu ---
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{45, 45, 45}
+\definecolor{linkcolor}{RGB}{18, 65, 145}
+
+% --- Cấu hình Hyperref ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  filecolor=linkcolor,
+  urlcolor=linkcolor,
+  pdfauthor={Huỳnh Công Luyện},
+  pdftitle={Huỳnh Công Luyện - CV Tiếng Việt},
+  pdfsubject={Kỹ sư AI / RAG CV},
+  pdfkeywords={RAG, Vector Search, LLM, Rust, Python, Qdrant, Lượng tử hóa}
+}
+
+% --- Bỏ thụt lề và số trang ---
+\pagestyle{empty}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% --- Định dạng tiêu đề mục ---
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+% --- Định dạng danh sách ---
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.8pt, parsep=0pt, topsep=1.0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{1pt}
+}
+
+\begin{document}
+
+%===============================================================================
+% THÔNG TIN CÁ NHÂN / LIÊN HỆ
+%===============================================================================
+\begin{center}
+  {\Large \textbf{Huỳnh Công Luyện}} \\ \vspace{2pt}
+  {\large \textbf{\color{secondary}KỸ SƯ AI / RAG}} \quad{\small$|$\quad \textbf{Workflow RAG $\bullet$ Tích hợp LLM $\bullet$ Dịch vụ Backend}} \\ \vspace{2.5pt}
+  \small{
+    Email: \href{mailto:neshaki091@gmail.com}{neshaki091@gmail.com} \quad$\bullet$\quad
+    Điện thoại: (+84) [Số điện thoại của bạn] \quad$\bullet$\quad
+    Địa điểm: TP. Hồ Chí Minh, Việt Nam
+  } \\ \vspace{1.5pt}
+  \small{
+    GitHub: \href{https://github.com/neshaki091}{github.com/neshaki091} \quad$\bullet$\quad
+    Portfolio: \href{https://Neshaki091.vercel.app}{Neshaki091.vercel.app} \quad$\bullet$\quad
+    Trạng thái: Sẵn sàng làm việc toàn thời gian
+  }
+\end{center}
+\vspace{-3pt}
+
+%===============================================================================
+% TÓM TẮT CHUYÊN MÔN
+%===============================================================================
+\section{Tóm tắt Chuyên môn}
+\small{
+Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) với kinh nghiệm thực tế xây dựng hệ thống RAG/chatbot, tích hợp LLM API, đánh giá chất lượng prompt/output và triển khai dịch vụ backend. Tác giả \textbf{ARQ-RAG}, engine truy xuất vector giảm $18,8\times$ RAM so với FAISS trên 5M vector (Khóa luận: 9.0/10), đồng thời dẫn dắt dự án \textbf{EduChatbot}, nơi em thiết kế workflow RAG và triển khai backend trên GCP Cloud Functions.
+}
+\vspace{4pt}
+
+%===============================================================================
+% HỌC VẤN
+%===============================================================================
+\section{Học vấn}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \resumeSubheading
+    {Trường Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)}{TP. Hồ Chí Minh, Việt Nam}
+    {Cử nhân Công nghệ Thông tin \textnormal{(Đã hoàn thành chương trình; Chờ cấp bằng)}}{2022 -- 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 3.34 / 4.0 \quad$\bullet$\quad \textbf{Khóa luận:} ARQ-RAG --- Điểm bảo vệ: 9.0 / 10.0}
+    \resumeItemListEnd
+\end{itemize}
+\vspace{0pt}
+
+%===============================================================================
+% KỸ NĂNG CỐT LÕI
+%===============================================================================
+\section{Kỹ năng Cốt lõi}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.1pt]
+  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), RESTful API, Tích hợp cơ sở dữ liệu, Async I/O, Docker, GCP Cloud Functions, Git}
+  \item \small{\textbf{AI \& RAG:} Truy xuất ngữ nghĩa, Embeddings, Prompt Engineering, Đánh giá output, Viết lại truy vấn, Đối chiếu trích dẫn chống ảo giác, LangChain, QLoRA, Ragas}
+  \item \small{\textbf{Tìm kiếm Vector:} Qdrant, Supabase pgvector, Chỉ mục IVF, Lượng tử hóa Vector, Ánh xạ bộ nhớ (\texttt{mmap}), Đánh giá truy xuất}
+  \item \small{\textbf{Ngoại ngữ:} Tiếng Anh: A2 (đọc hiểu tài liệu kỹ thuật và papers) $\bullet$ Tiếng Việt: Bản ngữ}
+\end{itemize}
+\vspace{2pt}
+
+%===============================================================================
+% DỰ ÁN & NGHIÊN CỨU TIÊU BIỂU
+%===============================================================================
+\section{Dự án \& Nghiên cứu Tiêu biểu}
+\begin{itemize}[leftmargin=0pt, label={}]
+
+  % --- DỰ ÁN 1: ARQ-RAG ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large ARQ-RAG --- Engine Truy xuất Vector Thích ứng} & \textbf{\small 2026} \\
+    \textit{\small Tác giả chính \quad$|$\quad Thiết kế thuật toán \& Hiện thực Rust bằng AI \quad$|$\quad Repo riêng tư (theo yêu cầu)} & \textit{\small Khóa luận: \textbf{9.0 / 10.0}} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Vai trò:} Trực tiếp thiết kế toàn bộ kiến trúc hệ thống (chỉ mục IVF, lượng tử hóa phần dư trực tuyến, định tuyến cụm thích ứng). Sử dụng AI agent sinh mã Rust hiệu năng cao (AVX2 SIMD, \texttt{mmap}); tự mình review và xác thực toàn bộ logic mã nguồn.}
+    \resumeItem{\textbf{RAM:} Giảm RAM hoạt động từ 1.931 MB (FAISS) xuống \textbf{102,6 MB} ($18,8\times$) trên 5 triệu vector Wikipedia DPR ($D$=768, CPU đơn luồng) --- chỉ giữ mã 4-bit trên RAM, vector gốc đọc từ đĩa qua zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Tốc độ:} \textbf{4.522 QPS} / 87,2\% Recall@16 (trước rerank); \textbf{99,2\% Recall@16} sau Float32 reranking tại 3.450 QPS. Lập chỉ mục 500K vector trong 20,2s (nhanh $1,93\times$ so với FAISS IVFPQ).}
+    \resumeItem{\textbf{Học được:} Lý thuyết lượng tử hóa vector, phân tích đánh đổi bộ nhớ (RAM vs. đĩa vs. cache), và xây dựng benchmark có khả năng tái tạo. \textit{Bài báo đã submit AMI 2026 [Đang bình duyệt]}.}
+  \resumeItemListEnd
+  \vspace{6pt}
+
+  % --- DỰ ÁN 2: EduChatbot ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large EduChatbot --- Trợ lý Hỏi đáp Tài liệu RAG Tiếng Việt} & \textbf{\small 2025 -- 2026} \\
+    \textit{\small Trưởng nhóm (6 thành viên) \quad$|$\quad Python, FastAPI, Java 17, Spring Boot, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Đồ án Đại học} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Vai trò:} Thiết kế workflow RAG đầu-cuối (parsing/phân đoạn tiếng Việt $\rightarrow$ embedding 384 chiều $\rightarrow$ truy xuất Qdrant $\rightarrow$ đối chiếu trích dẫn với nguồn để giảm ảo giác) và xây dựng cầu nối FastAPI bất đồng bộ tích hợp với các service Spring Boot.}
+    \resumeItem{\textbf{Đánh giá \& prompt:} Sử dụng LangChain cho việc thử nghiệm prompt/chain, sau đó so sánh RAG với fine-tuning bằng đánh giá A/B mù qua Ragas --- fine-tuning đạt điểm đúng đắn cao hơn (0,438 vs. 0,318), còn RAG đạt độ trung thực cao hơn (0,303 vs. 0,292) và độ trễ thấp hơn (2,00s vs. 3,75s).}
+    \resumeItem{\textbf{Triển khai \& phối hợp:} Trực tiếp triển khai backend trên GCP Cloud Functions và định hướng nhóm dùng Supabase cho dữ liệu người dùng, Qdrant Cloud cho vector search, có đồng bộ để backup; điều phối nhóm 6 người thông qua bàn giao API, quản lý công việc kiểu sprint và code review.}
+  \resumeItemListEnd
+  \vspace{6pt}
+
+  % --- DỰ ÁN 3: Trợ lý AI Nội bộ ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Trợ lý AI Nội bộ --- Lotus Hackathon VNG 2026} & \textbf{\small Thg 03/2026} \\
+    \textit{\small Lập trình viên Backend (đội 2 người) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n} & \textit{\small Tập đoàn VNG} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Vai trò:} Xây dựng backend Node.js/Express xử lý phiên hội thoại, streaming phản hồi LLM, RAG trên Supabase \texttt{pgvector} qua Gemini embedding, và cô lập dữ liệu đa khách hàng bằng bộ lọc \texttt{clientId}. Giao demo hoạt động trong \textbf{36 giờ}.}
+    \resumeItem{\textbf{Xử lý lỗi:} Thiết kế router phân loại ý định 3 tầng (parser chuyên biệt $\rightarrow$ Gemini $\rightarrow$ khớp từ khóa) xử lý sự cố parser trong buổi demo trực tiếp; kết nối webhook n8n tự động hóa Google Workspace.}
+    \resumeItem{\textbf{Học được:} Xây dựng nguyên mẫu hoạt động dưới áp lực thời gian cao, debug tích hợp LLM trong thời gian thực, và thiết kế mẫu cô lập dữ liệu multi-tenant.}
+  \resumeItemListEnd
+
+\end{itemize}
+
+\end{document}

@@ -18,7 +18,7 @@ export const timelineData: TimelineItem[] = [
     type: 'education'
   },
   {
-    year: '2024',
+    year: 'Nov 2025',
     title: {
       en: 'Waterbase BaaS Platform',
       vi: 'Nền tảng Waterbase BaaS'
@@ -28,29 +28,13 @@ export const timelineData: TimelineItem[] = [
       vi: 'Nền tảng Cá nhân & Tự phát triển'
     },
     description: {
-      en: 'Architected and deployed an 8-service modular BaaS platform supporting multi-tenancy, JWT auth, real-time WebSocket DB, declarative security rules, and Gemini RAG.',
-      vi: 'Thiết kế và triển khai nền tảng BaaS 8 dịch vụ mô-đun hỗ trợ multi-tenancy, xác thực JWT, real-time WebSocket DB, bộ luật bảo mật và Gemini RAG.'
+      en: 'Architected and deployed an 8-service modular Firebase-like BaaS supporting multi-tenancy, JWT auth, RBAC, real-time WebSocket DB, declarative security rules, and RAG AI.',
+      vi: 'Thiết kế và triển khai nền tảng BaaS 8 dịch vụ mô-đun giống Firebase hỗ trợ multi-tenancy, xác thực JWT, RBAC, real-time WebSocket DB, bộ luật bảo mật và RAG AI.'
     },
     type: 'project'
   },
   {
-    year: '2025',
-    title: {
-      en: 'Enterprise Java RAG Chatbot',
-      vi: 'Trợ lý AI Java RAG Doanh nghiệp'
-    },
-    subtitle: {
-      en: 'Team Leader (6 Members) & Backend Architect',
-      vi: 'Trưởng nhóm (6 thành viên) & Kiến trúc sư Backend'
-    },
-    description: {
-      en: 'Led a 6-member team to design and build a Spring Boot 3 + LangChain4j + Qdrant RAG system with automated LLM-as-a-Judge evaluation and LoRA Fine-Tuning bridge.',
-      vi: 'Dẫn dắt nhóm 6 người thiết kế và phát triển hệ thống RAG Spring Boot 3 + LangChain4j + Qdrant với quy trình đánh giá tự động LLM-as-a-Judge và cầu nối LoRA Fine-Tuning.'
-    },
-    type: 'work'
-  },
-  {
-    year: '2026',
+    year: 'Mar 2026',
     title: {
       en: 'Lotus Hackathon VNG 2026 — AI Assistant',
       vi: 'Lotus Hackathon VNG 2026 — Trợ lý AI'
@@ -66,7 +50,7 @@ export const timelineData: TimelineItem[] = [
     type: 'project'
   },
   {
-    year: '2026',
+    year: 'Apr 2026',
     title: {
       en: 'ARQ-RAG Thesis (Grade: 9.0/10)',
       vi: 'Khóa luận Tốt nghiệp ARQ-RAG (Điểm: 9.0/10)'
@@ -80,6 +64,22 @@ export const timelineData: TimelineItem[] = [
       vi: 'Nghiên cứu và phát triển core lượng tử hóa & truy xuất vector bằng Rust SIMD AVX2 kết hợp TurboQuant + IVF và mmap. Bài báo nghiên cứu đã submit tới AMI2026.'
     },
     type: 'achievement'
+  },
+  {
+    year: 'Jul 2026',
+    title: {
+      en: 'Enterprise Java RAG Chatbot',
+      vi: 'Trợ lý AI Java RAG Doanh nghiệp'
+    },
+    subtitle: {
+      en: 'Team Leader (6 Members) & Backend Architect',
+      vi: 'Trưởng nhóm (6 thành viên) & Kiến trúc sư Backend'
+    },
+    description: {
+      en: 'Led a 6-member team to design and build a Spring Boot 3 + LangChain4j + Qdrant RAG system with automated LLM-as-a-Judge evaluation and LoRA Fine-Tuning bridge.',
+      vi: 'Dẫn dắt nhóm 6 người thiết kế và phát triển hệ thống RAG Spring Boot 3 + LangChain4j + Qdrant với quy trình đánh giá tự động LLM-as-a-Judge và cầu nối LoRA Fine-Tuning.'
+    },
+    type: 'work'
   }
 ];
 

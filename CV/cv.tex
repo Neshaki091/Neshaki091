@@ -1,0 +1,180 @@
+%-------------------------------------------------------------------------------
+% Harvard University Standard Resume / CV Template
+% Candidate: HUỲNH CÔNG LUYỆN
+% Target Roles: Junior AI Engineer | Junior RAG Engineer | Junior ML/AI Engineer
+%               Backend AI Engineer | AI Chatbot Engineer
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article}
+
+% --- Engine Detection & Vietnamese / Unicode Encoding Support ---
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{vietnam}
+\else
+  \usepackage{fontspec}
+\fi
+
+% --- Page Geometry (Calibrated for ATS & Exact 1-Page Layout) ---
+\usepackage[
+  letterpaper,
+  top=0.35in,
+  bottom=0.35in,
+  left=0.42in,
+  right=0.42in
+]{geometry}
+
+% --- Typography & Formatting Packages ---
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[verbose=silent]{microtype}
+\linespread{1.05}
+
+% --- Color Palette ---
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{45, 45, 45}
+\definecolor{linkcolor}{RGB}{18, 65, 145}
+
+% --- Hyperref Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  filecolor=linkcolor,
+  urlcolor=linkcolor,
+  pdfauthor={Huỳnh Công Luyện},
+  pdftitle={Huỳnh Công Luyện - CV},
+  pdfsubject={AI / RAG Engineer CV},
+  pdfkeywords={RAG, Vector Search, LLM, Rust, Python, Qdrant, Quantization}
+}
+
+% --- Remove Default Paragraph Indentation & Page Numbering ---
+\pagestyle{empty}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% --- Section Heading Styling ---
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+% --- Custom List Formatting ---
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.8pt, parsep=0pt, topsep=1.0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{1pt}
+}
+
+\begin{document}
+
+%===============================================================================
+% HEADER / CONTACT INFORMATION
+%===============================================================================
+\begin{center}
+  {\Large \textbf{Huỳnh Công Luyện}} \\ \vspace{2pt}
+  {\large \textbf{\color{secondary}AI / RAG ENGINEER}} \quad{\small$|$\quad \textbf{RAG Workflows $\bullet$ LLM Integration $\bullet$ Backend Services}} \\ \vspace{2.5pt}
+  \small{
+    Email: \href{mailto:huynhluyen839@gmail.com}{huynhluyen839@gmail.com} \quad$\bullet$\quad
+    Phone: (+84) 926072506 \quad$\bullet$\quad
+    Location: Ho Chi Minh City, Vietnam
+  } \\ \vspace{1.5pt}
+  \small{
+    GitHub: \href{https://github.com/neshaki091}{github.com/neshaki091} \quad$\bullet$\quad
+    Portfolio: \href{https://Neshaki091.vercel.app}{Neshaki091.vercel.app} \quad$\bullet$\quad
+    Status: Available for Full-time Roles
+  }
+\end{center}
+\vspace{-3pt}
+
+%===============================================================================
+% PROFESSIONAL SUMMARY
+%===============================================================================
+\section{Professional Summary}
+\small{
+Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot systems, integrating LLM APIs, evaluating prompt/output quality, and shipping backend services. Built \textbf{ARQ-RAG}, a vector retrieval engine that reduces RAM by $18.8\times$ compared to FAISS on 5M vectors (Thesis: 9.0/10), and led \textbf{EduChatbot}, where I designed the RAG workflow and deployed backend services on GCP Cloud Functions.
+}
+\vspace{4pt}
+
+%===============================================================================
+% EDUCATION
+%===============================================================================
+\section{Education}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \resumeSubheading
+    {University of Transport Ho Chi Minh City (UTH)}{Ho Chi Minh City, Vietnam}
+    {Bachelor of Information Technology \textnormal{(Coursework Completed; Graduation Pending)}}{2022 -- 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 3.34 / 4.0 \quad$\bullet$\quad \textbf{Thesis:} ARQ-RAG --- Defense Score: 9.0 / 10.0}
+    \resumeItemListEnd
+\end{itemize}
+\vspace{0pt}
+
+%===============================================================================
+% CORE SKILLS
+%===============================================================================
+\section{Core Skills}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.1pt]
+  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), RESTful APIs, Database Integration, Async I/O, Docker, GCP Cloud Functions, Git}
+  \item \small{\textbf{AI \& RAG:} Semantic Retrieval, Embeddings, Prompt Engineering, Output Evaluation, Query Rewriting, Citation Grounding, LangChain, QLoRA, Ragas}
+  \item \small{\textbf{Vector Search:} Qdrant, Supabase pgvector, IVF Indexing, Vector Quantization, Memory-Mapped I/O (\texttt{mmap}), Retrieval Evaluation}
+  \item \small{\textbf{Languages:} English: A2 (technical reading \& documentation) $\bullet$ Vietnamese: Native}
+\end{itemize}
+\vspace{2pt}
+
+%===============================================================================
+% SELECTED PROJECTS & RESEARCH
+%===============================================================================
+\section{Selected Projects \& Research}
+\begin{itemize}[leftmargin=0pt, label={}]
+
+  % --- PROJECT 1: ARQ-RAG ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large ARQ-RAG --- Adaptive Vector Retrieval Engine} & \textbf{\small 2026} \\
+    \textit{\small First Author \quad$|$\quad Algorithmic Design \& AI-Assisted Rust \quad$|$\quad Private Repo (on request)} & \textit{\small Thesis: \textbf{9.0 / 10.0}} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{My role:} Designed the full system architecture (IVF indexing, online residual quantization, adaptive cluster routing). Used AI coding agents to generate the low-level Rust engine (AVX2 SIMD, \texttt{mmap}); personally reviewed and validated all generated code.}
+    \resumeItem{\textbf{RAM:} Reduced active RAM from 1,931 MB (FAISS) to \textbf{102.6 MB} ($18.8\times$) on 5M Wikipedia DPR vectors ($D$=768, single-thread CPU) by keeping only 4-bit codes in memory; raw vectors served from disk via zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Speed:} \textbf{4,522 QPS} / 87.2\% Recall@16 pre-rerank; \textbf{99.2\% Recall@16} after Float32 reranking at 3,450 QPS. Indexed 500K vectors in 20.2s ($1.93\times$ faster than FAISS IVFPQ).}
+    \resumeItem{\textbf{Learned:} Vector quantization theory, memory hierarchy trade-offs (RAM vs. disk vs. cache), and building reproducible benchmarks. \textit{Paper submitted to AMI 2026 [Under Review]}.}
+  \resumeItemListEnd
+  \vspace{6pt}
+
+  % --- PROJECT 2: EduChatbot ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large EduChatbot --- Vietnamese RAG Courseware Assistant} & \textbf{\small 2026} \\
+    \textit{\small Project Lead (6-person team) \quad$|$\quad Python, FastAPI, Java 17, Spring Boot, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Capstone Project} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{My role:} Designed the RAG workflow end-to-end (Vietnamese parsing/chunking $\rightarrow$ 384D embeddings $\rightarrow$ Qdrant retrieval $\rightarrow$ citation verification against source chunks to reduce hallucinations) and built an async FastAPI bridge integrated with Spring Boot services.}
+    \resumeItem{\textbf{Evaluation \& prompt work:} Used LangChain for prompt and chain experimentation, then compared RAG vs. fine-tuning through blind A/B evaluation with Ragas --- fine-tuning scored higher correctness (0.438 vs. 0.318), while RAG scored higher faithfulness (0.303 vs. 0.292) and lower latency (2.00s vs. 3.75s).}
+    \resumeItem{\textbf{Deployment \& teamwork:} Deployed backend endpoints on GCP Cloud Functions and guided the team on a data architecture using Supabase for user data plus Qdrant Cloud for vector search, with synchronization for backup; coordinated a 6-person team through API handoff, sprint-style task tracking, and code reviews.}
+  \resumeItemListEnd
+  \vspace{6pt}
+
+  % --- PROJECT 3: Internal AI Assistant ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Internal AI Assistant --- Lotus Hackathon VNG 2026} & \textbf{\small Mar 2026} \\
+    \textit{\small Backend Developer (2-person team) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n} & \textit{\small VNG Corporation} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{My role:} Built the Node.js/Express backend handling conversation sessions, LLM response streaming, Gemini-powered RAG on Supabase \texttt{pgvector}, and \texttt{clientId}-based tenant isolation. Delivered working demo in \textbf{36 hours}.}
+    \resumeItem{\textbf{Resilience:} Designed a 3-tier fallback intent router (specialized parser $\rightarrow$ Gemini $\rightarrow$ keyword matching) that handled parser failures during live demo; connected n8n webhooks for Google Workspace automation.}
+    \resumeItem{\textbf{Learned:} Building production-ready prototypes under extreme time pressure, debugging LLM integration issues in real-time, and multi-tenant data isolation patterns.}
+  \resumeItemListEnd
+
+\end{itemize}
+
+\end{document}
