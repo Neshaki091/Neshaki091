@@ -45,7 +45,8 @@ export const projectsData: Project[] = [
       ]
     },
     links: {
-      docs: 'https://drive.google.com/file/d/1CuYJQvmqH9g4N3WjXOtkQw9x_mnb0VC5/view?usp=drive_link'
+      docs: 'https://drive.google.com/file/d/1CuYJQvmqH9g4N3WjXOtkQw9x_mnb0VC5/view?usp=drive_link',
+      demo: 'https://arq-rag-frontend.vercel.app/'
     },
     featured: true
   },
@@ -90,7 +91,8 @@ export const projectsData: Project[] = [
     },
     links: {
       github: 'https://github.com/Neshaki091/Waterbase_BaaS',
-      docs: 'https://drive.google.com/file/d/1DUNpvCczlFXdZzgPnyBH9FlTcZrbis9I/view?usp=drive_link'
+      docs: 'https://drive.google.com/file/d/1DUNpvCczlFXdZzgPnyBH9FlTcZrbis9I/view?usp=drive_link',
+      demo: 'https://tttn-project-waterbase-mini-clone-f.vercel.app/'
     },
     featured: true
   },
