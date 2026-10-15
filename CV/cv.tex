@@ -61,7 +61,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 % --- Custom List Formatting ---
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.8pt, parsep=0pt, topsep=1.0pt, partopsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.3pt, parsep=0pt, topsep=0.8pt, partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 \newcommand{\resumeItem}[1]{\item \small{#1}}
@@ -100,7 +100,7 @@
 %===============================================================================
 \section{Professional Summary}
 \small{
-Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot systems, integrating LLM APIs, evaluating prompt/output quality, and shipping backend services. Built \textbf{ARQ-RAG}, a vector retrieval engine that reduces RAM by $18.8\times$ compared to FAISS on 5M vectors (Thesis: 9.0/10), led \textbf{EduChatbot} (Vietnamese RAG workflow with GCP deployment), and engineered \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase}}, a 7-service BaaS running on a 1 GB RAM VPS.
+Recent IT graduate (GPA 3.34/4.0) specializing in RAG systems, vector retrieval, and backend services. Built \textbf{ARQ-RAG} ($18.8\times$ RAM reduction vs. FAISS, Thesis: 9.0/10), led \textbf{EduChatbot} (Vietnamese RAG on GCP), and built \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase}} (7-service BaaS on a 1 GB RAM VPS).
 }
 \vspace{4pt}
 
@@ -122,9 +122,9 @@ Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot 
 % CORE SKILLS
 %===============================================================================
 \section{Core Skills}
-\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.1pt]
-  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP Cloud Functions, Git}
-  \item \small{\textbf{Backend Architecture (Waterbase):} Solely built \& deployed \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase}} (\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Live Demo}) --- Self-hosted 7-service BaaS (Database-per-App multi-tenancy, declarative RBAC, Realtime WebSocket) on a 1 GB RAM / 1 vCPU VPS.}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.0pt]
+  \item \small{\textbf{Backend \& Cloud:} Node.js, Express, Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP}
+  \item \small{\textbf{Backend Highlight:} \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase (Live Demo)}} --- 7-service BaaS (DB-per-App, RBAC) deployed on 1 GB RAM / 1 vCPU VPS.}
   \item \small{\textbf{AI \& RAG:} Semantic Retrieval, Embeddings, Prompt Engineering, Output Evaluation, Query Rewriting, Citation Grounding, LangChain, QLoRA, Ragas}
   \item \small{\textbf{Vector Search:} Qdrant, Supabase pgvector, IVF Indexing, Vector Quantization, Memory-Mapped I/O (\texttt{mmap}), Retrieval Evaluation}
   \item \small{\textbf{Languages:} English: A2 (technical reading \& documentation) $\bullet$ Vietnamese: Native}
@@ -149,7 +149,7 @@ Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot 
     \resumeItem{\textbf{Speed:} \textbf{4,522 QPS} / 87.2\% Recall@16 pre-rerank; \textbf{99.2\% Recall@16} after Float32 reranking at 3,450 QPS. Indexed 500K vectors in 20.2s ($1.93\times$ faster than FAISS IVFPQ).}
     \resumeItem{\textbf{Learned:} Vector quantization theory, memory hierarchy trade-offs (RAM vs. disk vs. cache), and building reproducible benchmarks. \textit{Paper submitted to AMI 2026 [Under Review]}.}
   \resumeItemListEnd
-  \vspace{6pt}
+  \vspace{4pt}
 
   % --- PROJECT 2: EduChatbot ---
   \item[]
@@ -162,7 +162,7 @@ Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot 
     \resumeItem{\textbf{Evaluation \& prompt work:} Used LangChain for prompt and chain experimentation, then compared RAG vs. fine-tuning through blind A/B evaluation with Ragas --- fine-tuning scored higher correctness (0.438 vs. 0.318), while RAG scored higher faithfulness (0.303 vs. 0.292) and lower latency (2.00s vs. 3.75s).}
     \resumeItem{\textbf{Deployment \& teamwork:} Deployed backend endpoints on GCP Cloud Functions and guided the team on a data architecture using Supabase for user data plus Qdrant Cloud for vector search, with synchronization for backup; coordinated a 6-person team through API handoff, sprint-style task tracking, and code reviews.}
   \resumeItemListEnd
-  \vspace{6pt}
+  \vspace{4pt}
 
   % --- PROJECT 3: Internal AI Assistant ---
   \item[]
