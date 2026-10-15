@@ -100,7 +100,7 @@
 %===============================================================================
 \section{Professional Summary}
 \small{
-Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot systems, integrating LLM APIs, evaluating prompt/output quality, and shipping backend services. Built \textbf{ARQ-RAG}, a vector retrieval engine that reduces RAM by $18.8\times$ compared to FAISS on 5M vectors (Thesis: 9.0/10), and led \textbf{EduChatbot}, where I designed the RAG workflow and deployed backend services on GCP Cloud Functions.
+Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot systems, integrating LLM APIs, evaluating prompt/output quality, and shipping backend services. Built \textbf{ARQ-RAG}, a vector retrieval engine that reduces RAM by $18.8\times$ compared to FAISS on 5M vectors (Thesis: 9.0/10), led \textbf{EduChatbot} (Vietnamese RAG workflow with GCP deployment), and engineered \textbf{\href{https://web.waterbase.click}{Waterbase}}, a 7-service BaaS running on a 1 GB RAM VPS.
 }
 \vspace{4pt}
 
@@ -123,7 +123,8 @@ Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot 
 %===============================================================================
 \section{Core Skills}
 \begin{itemize}[leftmargin=0pt, label={}, itemsep=1.1pt]
-  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), RESTful APIs, Database Integration, Async I/O, Docker, GCP Cloud Functions, Git}
+  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP Cloud Functions, Git}
+  \item \small{\textbf{Backend Architecture (Waterbase):} Solely built \& deployed \textbf{\href{https://web.waterbase.click}{Waterbase}} (\href{https://web.waterbase.click}{Live Demo}) --- Self-hosted 7-service BaaS (Database-per-App multi-tenancy, declarative RBAC, Realtime WebSocket) on a 1 GB RAM / 1 vCPU VPS.}
   \item \small{\textbf{AI \& RAG:} Semantic Retrieval, Embeddings, Prompt Engineering, Output Evaluation, Query Rewriting, Citation Grounding, LangChain, QLoRA, Ragas}
   \item \small{\textbf{Vector Search:} Qdrant, Supabase pgvector, IVF Indexing, Vector Quantization, Memory-Mapped I/O (\texttt{mmap}), Retrieval Evaluation}
   \item \small{\textbf{Languages:} English: A2 (technical reading \& documentation) $\bullet$ Vietnamese: Native}
@@ -163,27 +164,16 @@ Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot 
   \resumeItemListEnd
   \vspace{6pt}
 
-  % --- PROJECT 3: Waterbase ---
-  \item[]
-  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{\large Waterbase --- Self-Hosted Multi-Tenant BaaS Platform} & \textbf{\small Nov 2025} \\
-    \textit{\small Sole Developer \quad$|$\quad Node.js, Express, MongoDB, Redis, Docker Compose, Nginx \quad$|$\quad \href{https://web.waterbase.click}{Live Demo}} & \textit{\small Graduation Internship Project} \\
-  \end{tabular*}\vspace{0pt}
-  \resumeItemListStart
-    \resumeItem{\textbf{Backend architecture:} Designed and deployed a modular 7-service backend platform using Node.js, Express, MongoDB, and Docker Compose on a 1 GB RAM / 1 vCPU VPS.}
-    \resumeItem{\textbf{Multi-tenancy \& security:} Implemented database-per-application isolation, JWT authentication, and declarative access-control rules, demonstrating backend architecture and production deployment capabilities.}
-  \resumeItemListEnd
-  \vspace{4pt}
-
-  % --- PROJECT 4: Internal AI Assistant ---
+  % --- PROJECT 3: Internal AI Assistant ---
   \item[]
   \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{\large Internal AI Assistant --- Lotus Hackathon VNG 2026} & \textbf{\small Mar 2026} \\
     \textit{\small Backend Developer (2-person team) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n} & \textit{\small VNG Corporation} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{Rapid RAG backend (36h):} Built the Node.js/Express backend delivering conversation sessions, LLM streaming, Gemini-powered RAG on Supabase \texttt{pgvector}, and \texttt{clientId} tenant isolation under a 36-hour deadline.}
-    \resumeItem{\textbf{Resilience \& automation:} Designed a 3-tier fallback intent router (parser $\rightarrow$ Gemini $\rightarrow$ keyword matching) to prevent demo failure; connected n8n webhooks for Google Workspace automation.}
+    \resumeItem{\textbf{My role:} Built the Node.js/Express backend handling conversation sessions, LLM response streaming, Gemini-powered RAG on Supabase \texttt{pgvector}, and \texttt{clientId}-based tenant isolation. Delivered working demo in \textbf{36 hours}.}
+    \resumeItem{\textbf{Resilience:} Designed a 3-tier fallback intent router (specialized parser $\rightarrow$ Gemini $\rightarrow$ keyword matching) that handled parser failures during live demo; connected n8n webhooks for Google Workspace automation.}
+    \resumeItem{\textbf{Learned:} Building production-ready prototypes under extreme time pressure, debugging LLM integration issues in real-time, and multi-tenant data isolation patterns.}
   \resumeItemListEnd
 
 \end{itemize}
