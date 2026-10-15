@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/neshaki091"><img src="https://img.shields.io/badge/GitHub-neshaki091-181717?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="https://web.waterbase.click"><img src="https://img.shields.io/badge/Live_Project-Waterbase-00D9FF?style=flat-square&logo=rocket" alt="Waterbase" /></a>
+  <a href="https://tttn-project-waterbase-mini-clone-f.vercel.app/"><img src="https://img.shields.io/badge/Live_Project-Waterbase-00D9FF?style=flat-square&logo=rocket" alt="Waterbase" /></a>
   <a href="https://github.com/neshaki091/arq-rag"><img src="https://img.shields.io/badge/Thesis-ARQ--RAG-orange?style=flat-square&logo=rust" alt="ARQ-RAG" /></a>
 </p>
 
@@ -121,10 +121,10 @@
 ---
 
 ### 2. 💧 Waterbase: Self-Hosted Multi-Tenant Backend-as-a-Service (BaaS)
-**Graduation Internship Project / Sole Developer** | **Live App:** [web.waterbase.click](https://web.waterbase.click)  
+**Graduation Internship Project / Sole Developer** | **Live App:** [tttn-project-waterbase-mini-clone-f.vercel.app](https://tttn-project-waterbase-mini-clone-f.vercel.app/)  
 **Tech Stack:** `Node.js` · `Express` · `MongoDB` · `Redis` · `Docker Compose` · `Nginx (API Gateway)` · `WebSocket (RTWaterDB)`
 
-> **Overview**: Researched and developed end-to-end as a graduation internship project, Waterbase is a lightweight, self-hosted Backend-as-a-Service (BaaS) engineered as an open-source Firebase alternative tailored for the Vietnamese market and low-resource infrastructure (currently running all 7 services in production on a 1GB RAM / 1 vCPU VPS).
+> **Overview**: Researched and developed end-to-end as a graduation internship project, Waterbase is a lightweight, self-hosted Backend-as-a-Service (BaaS) platform designed for multi-tenancy and low-resource infrastructure (currently running all 7 services in production on a minimal 1GB RAM / 1 vCPU VPS).
 
 ```
                      ┌───────────────────────────────┐
@@ -234,7 +234,7 @@
     <img src="https://img.shields.io/badge/GitHub-neshaki091-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
   &nbsp;
-  <a href="https://web.waterbase.click">
+  <a href="https://tttn-project-waterbase-mini-clone-f.vercel.app/">
     <img src="https://img.shields.io/badge/Live_App-Waterbase-00D9FF?style=for-the-badge&logo=rocket" alt="Waterbase Live" />
   </a>
   &nbsp;

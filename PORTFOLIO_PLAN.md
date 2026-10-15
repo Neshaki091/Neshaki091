@@ -125,29 +125,26 @@ ARQ-RAG (Adaptive Retrieval with Quantization for RAG) là hệ thống RAG hi�
 #### Project 2: Waterbase
 **Type**: Personal Project | **Role**: Founder & Full-stack Developer
 **Tech**: Node.js, MongoDB, Redis, RabbitMQ, Docker, Nginx, React
-**Live**: [web.waterbase.click](https://web.waterbase.click)
+**Live**: [tttn-project-waterbase-mini-clone-f.vercel.app](https://tttn-project-waterbase-mini-clone-f.vercel.app/)
 
 **Description**: 
-Waterbase là nền tảng BaaS (Backend as a Service) tự host, cung cấp giải pháp thay thế Firebase cho developers Việt Nam. Hệ thống bao gồm 8 microservices containerized, hỗ trợ authentication, real-time database, file storage, và AI assistant integration.
+Waterbase là nền tảng BaaS (Backend as a Service) tự host cho developers. Hệ thống bao gồm 7 microservices containerized, hỗ trợ authentication, real-time database, file storage, và declarative rule engine.
 
 **Key Features**:
-- Multi-tenant architecture với clientId isolation
+- Multi-tenant architecture với Database-per-Application isolation
 - JWT-based authentication với refresh token rotation
-- Real-time database qua WebSocket (Socket.io)
-- Security rules engine cho fine-grained access control
-- AI assistant với RAG integration (Gemini API)
-- Docker Compose orchestration cho easy self-hosting
-- Nginx reverse proxy với SSL termination
+- Real-time database qua WebSocket
+- Declarative security rules engine (RBAC)
+- Docker Compose orchestration triển khai trên VPS 1GB RAM / 1 vCPU
+- Nginx API Gateway với SSL reverse proxy
 
 **Architecture:**
-- 8 Microservices: Auth, App, WaterDB, Realtime, Storage, Rule, Analytics, RAG-AI
-- Message Queue: RabbitMQ cho inter-service communication
+- 7 Microservices: Auth, App, WaterDB, RTWaterDB, Storage, Rule Engine, Analytics
 - Caching: Redis cho session và real-time data
-- Database: MongoDB cho flexible document storage
+- Database: MongoDB với mô hình Database-per-Application
 
 **Links**:
-- Live Demo: [web.waterbase.click](https://web.waterbase.click)
-- API Docs: [api.waterbase.click](https://api.waterbase.click)
+- Live Demo: [tttn-project-waterbase-mini-clone-f.vercel.app](https://tttn-project-waterbase-mini-clone-f.vercel.app/)
 - GitHub: *(Coming Soon)*
 
 ---
@@ -247,7 +244,7 @@ Hệ thống chatbot RAG (Retrieval-Augmented Generation) hỗ trợ sinh viên 
   <a href="https://github.com/neshaki091">
     <img src="https://img.shields.io/badge/GitHub-neshaki091-181717?style=for-the-badge&logo=github" />
   </a>
-  <a href="https://web.waterbase.click">
+  <a href="https://tttn-project-waterbase-mini-clone-f.vercel.app/">
     <img src="https://img.shields.io/badge/Waterbase-Live_Demo-00D9FF?style=for-the-badge&logo=rocket" />
   </a>
 </p>
