@@ -45,7 +45,7 @@ export interface SkillCategory {
 }
 
 export interface TimelineItem {
-  year: string;
+  year: string | { en: string; vi: string };
   title: {
     en: string;
     vi: string;

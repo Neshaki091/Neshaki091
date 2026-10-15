@@ -104,7 +104,7 @@ export const About: React.FC = () => {
                   <Card className="p-5">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                       <span className="text-xs font-mono px-2 py-0.5 rounded bg-[#4A4E69]/10 dark:bg-[#00D9FF]/10 text-[#4A4E69] dark:text-[#00D9FF] font-bold">
-                        {item.year}
+                        {typeof item.year === 'string' ? item.year : (item.year?.[language] || item.year?.en || '')}
                       </span>
                       <Badge variant={item.type === 'achievement' ? 'orange' : 'dark'}>
                         {language === 'vi' ? (

@@ -18,7 +18,10 @@ export const timelineData: TimelineItem[] = [
     type: 'education'
   },
   {
-    year: 'Nov 2025',
+    year: {
+      en: 'Nov 2025',
+      vi: 'Thg 11/2025'
+    },
     title: {
       en: 'Waterbase — Self-Hosted BaaS',
       vi: 'Waterbase — BaaS Đa người dùng Tự host'
@@ -34,7 +37,10 @@ export const timelineData: TimelineItem[] = [
     type: 'project'
   },
   {
-    year: 'Mar 2026',
+    year: {
+      en: 'Mar 2026',
+      vi: 'Thg 03/2026'
+    },
     title: {
       en: 'Lotus Hackathon VNG 2026 — AI Assistant',
       vi: 'Lotus Hackathon VNG 2026 — Trợ lý AI'
@@ -50,7 +56,10 @@ export const timelineData: TimelineItem[] = [
     type: 'project'
   },
   {
-    year: 'Apr 2026',
+    year: {
+      en: 'Apr 2026',
+      vi: 'Thg 04/2026'
+    },
     title: {
       en: 'ARQ-RAG Thesis (Grade: 9.0/10)',
       vi: 'Khóa luận Tốt nghiệp ARQ-RAG (Điểm: 9.0/10)'
@@ -66,7 +75,10 @@ export const timelineData: TimelineItem[] = [
     type: 'achievement'
   },
   {
-    year: '2025 - 2026',
+    year: {
+      en: 'Jun 2026',
+      vi: 'Thg 06/2026'
+    },
     title: {
       en: 'EduChatbot — Java RAG Assistant',
       vi: 'EduChatbot — Trợ lý AI Môn học Java'
