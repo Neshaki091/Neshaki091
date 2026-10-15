@@ -1,0 +1,191 @@
+%-------------------------------------------------------------------------------
+% Harvard University Standard Resume / CV Template
+% Candidate: HUỲNH CÔNG LUYỆN
+% Target Roles: Junior Backend AI Engineer | Junior AI Backend Engineer
+%               Junior Backend Engineer (AI Systems)
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article}
+
+% --- Engine Detection & Vietnamese / Unicode Encoding Support ---
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{vietnam}
+\else
+  \usepackage{fontspec}
+\fi
+
+% --- Page Geometry (Calibrated for ATS & Exact 1-Page Layout) ---
+\usepackage[
+  letterpaper,
+  top=0.33in,
+  bottom=0.33in,
+  left=0.42in,
+  right=0.42in
+]{geometry}
+
+% --- Typography & Formatting Packages ---
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[verbose=silent]{microtype}
+\linespread{1.04}
+
+% --- Color Palette ---
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{45, 45, 45}
+\definecolor{linkcolor}{RGB}{18, 65, 145}
+
+% --- Hyperref Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  filecolor=linkcolor,
+  urlcolor=linkcolor,
+  pdfauthor={Huỳnh Công Luyện},
+  pdftitle={Huỳnh Công Luyện - Backend AI Engineer CV},
+  pdfsubject={Backend AI Engineer CV},
+  pdfkeywords={Backend, AI Systems, RAG, REST APIs, Microservices, Node.js, Spring Boot, FastAPI, Docker}
+}
+
+% --- Remove Default Paragraph Indentation & Page Numbering ---
+\pagestyle{empty}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% --- Section Heading Styling ---
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+% --- Custom List Formatting ---
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.1pt, parsep=0pt, topsep=0.6pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{1pt}
+}
+
+\begin{document}
+
+%===============================================================================
+% HEADER / CONTACT INFORMATION
+%===============================================================================
+\begin{center}
+  {\Large \textbf{Huỳnh Công Luyện}} \\ \vspace{2pt}
+  {\large \textbf{\color{secondary}BACKEND AI ENGINEER}} \quad{\small$|$\quad \textbf{Backend Architecture $\bullet$ REST APIs $\bullet$ AI/LLM Integration $\bullet$ Retrieval Systems}} \\ \vspace{2.5pt}
+  \small{
+    Email: \href{mailto:huynhluyen839@gmail.com}{huynhluyen839@gmail.com} \quad$\bullet$\quad
+    Phone: (+84) 926072506 \quad$\bullet$\quad
+    Location: Ho Chi Minh City, Vietnam
+  } \\ \vspace{1.5pt}
+  \small{
+    GitHub: \href{https://github.com/neshaki091}{github.com/neshaki091} \quad$\bullet$\quad
+    Portfolio: \href{https://Neshaki091.vercel.app}{Neshaki091.vercel.app} \quad$\bullet$\quad
+    Status: Available for Full-time Roles
+  }
+\end{center}
+\vspace{-3pt}
+
+%===============================================================================
+% PROFESSIONAL SUMMARY
+%===============================================================================
+\section{Professional Summary}
+\small{
+IT candidate (Coursework Completed, GPA: 3.34/4.0) with hands-on experience designing backend services, integrating LLM APIs, and building end-to-end RAG applications. Developed \textbf{Waterbase}, a self-hosted multi-tenant backend platform, and \textbf{ARQ-RAG}, a memory-efficient vector retrieval engine. Experienced with Node.js, Python/FastAPI, Java/Spring Boot, databases, Docker, and cloud deployment.
+}
+\vspace{3.5pt}
+
+%===============================================================================
+% EDUCATION
+%===============================================================================
+\section{Education}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \resumeSubheading
+    {University of Transport Ho Chi Minh City (UTH)}{Ho Chi Minh City, Vietnam}
+    {Bachelor of Information Technology \textnormal{(Coursework Completed; Graduation Pending)}}{2022 -- 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 3.34 / 4.0 \quad$\bullet$\quad \textbf{Thesis:} ARQ-RAG --- Defense Score: 9.0 / 10.0}
+    \resumeItemListEnd
+\end{itemize}
+\vspace{0pt}
+
+%===============================================================================
+% CORE SKILLS
+%===============================================================================
+\section{Core Skills}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.0pt]
+  \item \small{\textbf{Backend Development:} Node.js, Express, Python, FastAPI, Java, Spring Boot, REST APIs, asynchronous I/O}
+  \item \small{\textbf{Databases \& Data Systems:} MongoDB, Redis, Qdrant, Supabase pgvector, database integration, vector indexing, memory-mapped I/O (\texttt{mmap})}
+  \item \small{\textbf{Infrastructure \& Security:} Docker Compose, Nginx, JWT, refresh-token rotation, RBAC, GCP Cloud Functions, Git}
+  \item \small{\textbf{AI Systems:} LLM API Integration, RAG Pipelines, Embeddings, Semantic Retrieval, Prompt Engineering, RAG Evaluation, QLoRA}
+  \item \small{\textbf{Languages:} English: A2 (technical reading \& documentation) $\bullet$ Vietnamese: Native}
+\end{itemize}
+\vspace{2pt}
+
+%===============================================================================
+% SELECTED PROJECTS & RESEARCH
+%===============================================================================
+\section{Selected Projects \& Research}
+\begin{itemize}[leftmargin=0pt, label={}]
+
+  % --- PROJECT 1: EduChatbot ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large EduChatbot --- Vietnamese RAG Courseware Assistant} & \textbf{\small Jun 2026} \\
+    \textit{\small Project Lead (6-person team) \quad$|$\quad Java 17, Spring Boot, Python, FastAPI, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Java Course Project} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Backend Architecture \& Integration:} Built core Java 17 / Spring Boot backend services with Spring Security JWT and role-based access control (\texttt{@PreAuthorize}); integrated an asynchronous Python/FastAPI bridge via Spring WebClient for decoupled LLM inference and model serving.}
+    \resumeItem{\textbf{AI Integration, Evaluation \& Deployment:} Engineered document ingestion with Vietnamese text splitting, 384D embeddings, and Qdrant retrieval; deployed backend endpoints on GCP Cloud Functions with Supabase + Qdrant Cloud; led 6-person team and ran blind A/B Ragas evaluation (faithfulness 0.303 vs. 0.292 over fine-tuning).}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- PROJECT 2: Waterbase ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Waterbase --- Self-Hosted Multi-Tenant BaaS Platform} & \textbf{\small Nov 2025} \\
+    \textit{\small Sole Developer \quad$|$\quad Architecture, Development \& Deployment \quad$|$\quad \href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Live Demo}} & \textit{\small Graduation Internship Project} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Backend Architecture \& Deployment:} Designed and deployed a modular 7-service backend platform (Auth, App, WaterDB, Realtime, Storage, Rule Engine, Analytics) using Node.js, Express, MongoDB, Redis, and Docker Compose on a 1 GB RAM / 1 vCPU VPS.}
+    \resumeItem{\textbf{Multi-Tenancy \& Security:} Implemented database-per-application isolation to prevent cross-tenant data leaks, JWT authentication with refresh-token rotation, and declarative collection-level access-control rules.}
+    \resumeItem{\textbf{Realtime \& API Infrastructure:} Implemented WebSocket-based realtime data synchronization (RTWaterDB) and configured Nginx as an API gateway for reverse proxying, SSL termination, and microservice routing.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- PROJECT 3: ARQ-RAG ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large ARQ-RAG --- Adaptive Vector Retrieval Engine} & \textbf{\small 2026} \\
+    \textit{\small First Author \quad$|$\quad Retrieval Infrastructure \& AI-Assisted Rust \quad$|$\quad Private Repo (on request)} & \textit{\small Thesis: \textbf{9.0 / 10.0}} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{System Architecture:} Designed IVF indexing, residual quantization, and adaptive cluster routing; implemented and validated a Rust retrieval engine with AVX2 SIMD intrinsics and memory-mapped I/O (\texttt{mmap}) using AI-assisted development.}
+    \resumeItem{\textbf{Memory Efficiency:} Reduced active RAM from 1,931 MB (FAISS baseline) to \textbf{102.6 MB} ($18.8\times$) on 5M Wikipedia DPR vectors (768D, single-thread CPU) by keeping 4-bit codes in RAM while serving raw vectors via zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Performance:} Achieved \textbf{4,522 QPS} at 87.2\% Recall@16 before reranking and \textbf{99.2\% Recall@16} after Float32 reranking at 3,450 QPS. Built 500K vector index in 20.2s ($1.93\times$ faster than FAISS IVFPQ).}
+    \resumeItem{\textbf{Research:} Authored research paper submitted to AMI 2026 [Under Review]; established reproducible benchmarking pipelines and cache-friendly clustering.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- PROJECT 4: Internal AI Assistant ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Internal AI Assistant --- Lotus Hackathon VNG 2026} & \textbf{\small Mar 2026} \\
+    \textit{\small Backend Developer (2-person team) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n \quad$|$\quad \href{https://devpost.com/software/internal-ai-assistance}{Video Demo}} & \textit{\small VNG Corporation} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{AI Backend Integration:} Built a Node.js/Express backend integrating Gemini API, Supabase \texttt{pgvector}, and n8n automation, with \texttt{clientId}-based tenant isolation and a 3-tier fallback intent router (parser $\rightarrow$ Gemini $\rightarrow$ keyword matching); delivered a working demo in \textbf{36 hours}.}
+  \resumeItemListEnd
+
+\end{itemize}
+
+\end{document}

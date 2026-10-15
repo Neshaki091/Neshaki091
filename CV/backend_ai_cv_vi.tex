@@ -1,0 +1,190 @@
+%-------------------------------------------------------------------------------
+% Mẫu CV / Resume Chuẩn Đại học Harvard
+% Ứng viên: HUỲNH CÔNG LUYỆN
+% Vị trí mục tiêu: Kỹ sư Backend AI | Kỹ sư AI Backend | Kỹ sư Backend (Hệ thống AI)
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article}
+
+% --- Nhận diện Engine & Hỗ trợ Tiếng Việt / Unicode ---
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{vietnam}
+\else
+  \usepackage{fontspec}
+\fi
+
+% --- Căn chỉnh lề trang (Chuẩn ATS & Khớp đúng 1 trang A4/Letter) ---
+\usepackage[
+  letterpaper,
+  top=0.33in,
+  bottom=0.33in,
+  left=0.42in,
+  right=0.42in
+]{geometry}
+
+% --- Gói định dạng văn bản ---
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[verbose=silent]{microtype}
+\linespread{1.04}
+
+% --- Bảng màu ---
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{45, 45, 45}
+\definecolor{linkcolor}{RGB}{18, 65, 145}
+
+% --- Cấu hình Hyperref ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  filecolor=linkcolor,
+  urlcolor=linkcolor,
+  pdfauthor={Huỳnh Công Luyện},
+  pdftitle={Huỳnh Công Luyện - CV Kỹ sư Backend AI},
+  pdfsubject={CV Kỹ sư Backend AI},
+  pdfkeywords={Backend, AI Systems, RAG, REST APIs, Microservices, Node.js, Spring Boot, FastAPI, Docker}
+}
+
+% --- Bỏ thụt lề đầu dòng & Số trang ---
+\pagestyle{empty}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% --- Định dạng tiêu đề Section ---
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+% --- Định dạng danh sách ---
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.1pt, parsep=0pt, topsep=0.6pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{1pt}
+}
+
+\begin{document}
+
+%===============================================================================
+% THÔNG TIN CÁ NHÂN / LIÊN HỆ
+%===============================================================================
+\begin{center}
+  {\Large \textbf{Huỳnh Công Luyện}} \\ \vspace{2pt}
+  {\large \textbf{\color{secondary}KỸ SƯ BACKEND AI}} \quad{\small$|$\quad \textbf{Kiến trúc Backend $\bullet$ REST APIs $\bullet$ Tích hợp AI/LLM $\bullet$ Hệ thống Truy xuất}} \\ \vspace{2.5pt}
+  \small{
+    Email: \href{mailto:huynhluyen839@gmail.com}{huynhluyen839@gmail.com} \quad$\bullet$\quad
+    Điện thoại: (+84) 926072506 \quad$\bullet$\quad
+    Địa điểm: TP. Hồ Chí Minh, Việt Nam
+  } \\ \vspace{1.5pt}
+  \small{
+    GitHub: \href{https://github.com/neshaki091}{github.com/neshaki091} \quad$\bullet$\quad
+    Portfolio: \href{https://Neshaki091.vercel.app}{Neshaki091.vercel.app} \quad$\bullet$\quad
+    Trạng thái: Sẵn sàng làm việc toàn thời gian
+  }
+\end{center}
+\vspace{-3pt}
+
+%===============================================================================
+% TÓM TẮT CHUYÊN MÔN
+%===============================================================================
+\section{Tóm tắt Chuyên môn}
+\small{
+Ứng viên IT (Đã hoàn thành chương trình, GPA: 3.34/4.0) có kinh nghiệm thực tế về thiết kế dịch vụ backend, tích hợp LLM API và xây dựng ứng dụng RAG end-to-end. Tác giả nền tảng \textbf{Waterbase} (hệ thống BaaS đa người dùng tự host) và \textbf{ARQ-RAG} (engine truy xuất vector tối ưu hóa bộ nhớ). Thành thạo Node.js, Python/FastAPI, Java/Spring Boot, cơ sở dữ liệu, Docker và triển khai cloud.
+}
+\vspace{3.5pt}
+
+%===============================================================================
+% HỌC VẤN
+%===============================================================================
+\section{Học vấn}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \resumeSubheading
+    {Trường Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)}{TP. Hồ Chí Minh, Việt Nam}
+    {Cử nhân Công nghệ Thông tin \textnormal{(Đã hoàn thành chương trình; Chờ cấp bằng)}}{2022 -- 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 3.34 / 4.0 \quad$\bullet$\quad \textbf{Khóa luận:} ARQ-RAG --- Điểm bảo vệ: 9.0 / 10.0}
+    \resumeItemListEnd
+\end{itemize}
+\vspace{0pt}
+
+%===============================================================================
+% KỸ NĂNG CỐT LÕI
+%===============================================================================
+\section{Kỹ năng Cốt lõi}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=1.0pt]
+  \item \small{\textbf{Phát triển Backend:} Node.js, Express, Python, FastAPI, Java, Spring Boot, REST APIs, Xử lý I/O bất đồng bộ}
+  \item \small{\textbf{Cơ sở Dữ liệu \& Dữ liệu lớn:} MongoDB, Redis, Qdrant, Supabase pgvector, Tích hợp CSDL, Chỉ mục vector, Memory-mapped I/O (\texttt{mmap})}
+  \item \small{\textbf{Hạ tầng \& Bảo mật:} Docker Compose, Nginx, JWT, Refresh-token rotation, Phân quyền RBAC, GCP Cloud Functions, Git}
+  \item \small{\textbf{Hệ thống AI:} Tích hợp API LLM, Pipeline RAG, Embeddings, Truy xuất ngữ nghĩa, Prompt Engineering, Đánh giá RAG, QLoRA}
+  \item \small{\textbf{Ngoại ngữ:} Tiếng Anh: A2 (đọc hiểu tài liệu kỹ thuật và papers) $\bullet$ Tiếng Việt: Bản ngữ}
+\end{itemize}
+\vspace{2pt}
+
+%===============================================================================
+% DỰ ÁN & NGHIÊN CỨU TIÊU BIỂU
+%===============================================================================
+\section{Dự án \& Nghiên cứu Tiêu biểu}
+\begin{itemize}[leftmargin=0pt, label={}]
+
+  % --- DỰ ÁN 1: EduChatbot ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large EduChatbot --- Trợ lý Hỏi đáp Tài liệu RAG Tiếng Việt} & \textbf{\small Thg 06/2026} \\
+    \textit{\small Trưởng nhóm (6 thành viên) \quad$|$\quad Java 17, Spring Boot, Python, FastAPI, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Đồ án Môn học Java} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Kiến trúc Backend \& Tích hợp:} Xây dựng các service core Java 17 / Spring Boot với Spring Security JWT và phân quyền chi tiết (\texttt{@PreAuthorize}); tích hợp cầu nối bất đồng bộ Python/FastAPI qua Spring WebClient để phân tách mô hình LLM và xử lý inference.}
+    \resumeItem{\textbf{Tích hợp AI, Đánh giá \& Triển khai:} Xử lý pipeline nạp tài liệu tiếng Việt, embedding 384 chiều và truy xuất vector Qdrant; trực tiếp deploy backend lên GCP Cloud Functions với Supabase + Qdrant Cloud; điều phối nhóm 6 người và thực hiện đánh giá mù A/B Ragas (faithfulness 0,303 vs. 0,292 so với fine-tuning).}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- DỰ ÁN 2: Waterbase ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Waterbase --- Nền tảng BaaS Đa người dùng Tự host} & \textbf{\small Thg 11/2025} \\
+    \textit{\small Lập trình viên duy nhất \quad$|$\quad Thiết kế Kiến trúc, Lập trình \& Triển khai \quad$|$\quad \href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Live Demo}} & \textit{\small Đồ án Thực tập Tốt nghiệp} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Kiến trúc Backend \& Triển khai:} Thiết kế và triển khai nền tảng microservices gồm 7 services (Auth, App, WaterDB, Realtime, Storage, Rule Engine, Analytics) bằng Node.js, Express, MongoDB, Redis và Docker Compose trên VPS tối thiểu 1 GB RAM / 1 vCPU.}
+    \resumeItem{\textbf{Multi-Tenancy \& Bảo mật:} Hiện thực cô lập dữ liệu theo mô hình Database-per-Application triệt tiêu rủi ro rò rỉ dữ liệu, xác thực JWT kèm xoay vòng refresh token, và Rule Engine (RBAC) phân quyền khai báo chi tiết cấp collection.}
+    \resumeItem{\textbf{Hạ tầng Realtime \& API:} Xây dựng đồng bộ dữ liệu thời gian thực qua WebSocket (RTWaterDB) và cấu hình Nginx làm API Gateway cho reverse proxy, SSL termination và định tuyến microservice.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- DỰ ÁN 3: ARQ-RAG ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large ARQ-RAG --- Engine Truy xuất Vector Thích ứng} & \textbf{\small 2026} \\
+    \textit{\small Tác giả chính \quad$|$\quad Hạ tầng Truy xuất \& Hiện thực Rust bằng AI \quad$|$\quad Repo riêng tư (theo yêu cầu)} & \textit{\small Khóa luận: \textbf{9.0 / 10.0}} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Kiến trúc Hệ thống:} Thiết kế chỉ mục IVF, lượng tử hóa phần dư và định tuyến cụm thích ứng; hiện thực và xác thực engine truy xuất Rust với SIMD AVX2 và memory-mapped I/O (\texttt{mmap}) thông qua hỗ trợ từ AI coding agent.}
+    \resumeItem{\textbf{Tối ưu Bộ nhớ:} Giảm RAM hoạt động từ 1.931 MB (FAISS baseline) xuống \textbf{102,6 MB} ($18,8\times$) trên 5 triệu vector Wikipedia DPR (768D, CPU đơn luồng) bằng cách chỉ giữ mã 4-bit trên RAM, phục vụ vector gốc từ đĩa qua zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Hiệu năng:} Đạt \textbf{4.522 QPS} tại 87,2\% Recall@16 trước rerank và \textbf{99,2\% Recall@16} sau khi Float32 rerank tại 3.450 QPS. Lập chỉ mục 500K vector trong 20,2s (nhanh hơn $1,93\times$ so với FAISS IVFPQ).}
+    \resumeItem{\textbf{Nghiên cứu:} Tác giả bài báo nghiên cứu đã submit tới hội nghị AMI 2026 [Đang bình duyệt]; thiết lập pipeline benchmark có khả năng tái tạo và kỹ thuật gom cụm thân thiện với CPU cache.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- DỰ ÁN 4: Trợ lý AI Nội bộ ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Trợ lý AI Nội bộ --- Lotus Hackathon VNG 2026} & \textbf{\small Thg 03/2026} \\
+    \textit{\small Lập trình viên Backend (đội 2 người) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n \quad$|$\quad \href{https://devpost.com/software/internal-ai-assistance}{Video Demo}} & \textit{\small Tập đoàn VNG} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Tích hợp AI Backend:} Xây dựng backend Node.js/Express tích hợp Gemini API, Supabase \texttt{pgvector} và tự động hóa n8n, cô lập đa khách hàng theo \texttt{clientId} và router dự phòng ý định 3 tầng (parser $\rightarrow$ Gemini $\rightarrow$ từ khóa); bàn giao demo hoạt động trong \textbf{36 giờ}.}
+  \resumeItemListEnd
+
+\end{itemize}
+
+\end{document}
