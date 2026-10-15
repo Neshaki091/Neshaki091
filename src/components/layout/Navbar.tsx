@@ -96,12 +96,12 @@ export const Navbar: React.FC = () => {
           <button
             onClick={handleToggleLang}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] text-xs font-mono text-[#22223B] dark:text-[#E6EDF3] hover:border-[#4A4E69] dark:hover:border-[#00D9FF] transition-colors"
-            title="Switch Language (Google Smart Translate)"
+            title="Switch Language (EN / VI)"
           >
             <Globe className="w-3.5 h-3.5 text-indigo-600 dark:text-[#00D9FF]" />
             <span className={language === 'en' ? 'font-bold text-indigo-600 dark:text-[#00D9FF]' : 'text-slate-500 dark:text-gray-400'}>EN</span>
             <span className="text-slate-400 dark:text-gray-600">/</span>
-            <span className={language === 'vi' ? 'font-bold text-indigo-600 dark:text-[#00D9FF]' : 'text-slate-500 dark:text-gray-400'}>VI (Google Translate)</span>
+            <span className={language === 'vi' ? 'font-bold text-indigo-600 dark:text-[#00D9FF]' : 'text-slate-500 dark:text-gray-400'}>VI</span>
           </button>
 
           <Button

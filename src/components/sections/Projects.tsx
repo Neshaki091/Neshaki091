@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, FileText, CheckCircle2, TrendingUp, Sparkles, Zap } from 'lucide-react';
+import { ExternalLink, Github, FileText, CheckCircle2, TrendingUp, Sparkles, Zap, Play, Server } from 'lucide-react';
 import { useContentStore } from '../../stores/contentStore';
 import { useLanguageStore } from '../../stores/languageStore';
 import { Card } from '../ui/Card';
@@ -49,11 +49,18 @@ export const Projects: React.FC = () => {
                       </Badge>
                       {project.id === 'hackathon-ai' && (
                         <Badge variant="orange" className="flex items-center gap-1 font-bold">
-                          <Zap className="w-3 h-3 text-[#4A4E69] dark:text-[#F78166]" /> 36h Working Demo ⚡
+                          <Zap className="w-3 h-3 text-[#4A4E69] dark:text-[#F78166]" />
+                          {language === 'vi' ? 'Demo Hoàn Thiện Trong 36h ⚡' : '36h Working Demo ⚡'}
+                        </Badge>
+                      )}
+                      {project.id === 'waterbase' && (
+                        <Badge variant="green" className="flex items-center gap-1 font-mono font-medium">
+                          <Server className="w-3 h-3 text-emerald-700 dark:text-[#3FB950]" />
+                          <span>VPS 1GB RAM • 1 vCPU</span>
                         </Badge>
                       )}
                       <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E]">
-                        Role: {typeof project.role === 'string'
+                        {t('projects.role', 'Role')}: {typeof project.role === 'string'
                           ? project.role
                           : (project.role?.[language] || project.role?.en || '')}
                       </span>
@@ -134,6 +141,13 @@ export const Projects: React.FC = () => {
 
                     {/* Links Buttons */}
                     <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-[#C9ADA7]/40 dark:border-[#30363D]/40">
+                      {project.links.video && (
+                        <a href={project.links.video} target="_blank" rel="noopener noreferrer">
+                          <Button variant="primary" size="sm" icon={<Play className="w-4 h-4" />}>
+                            {t('projects.viewVideo')}
+                          </Button>
+                        </a>
+                      )}
                       {project.links.demo && (
                         <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
                           <Button variant="primary" size="sm" icon={<ExternalLink className="w-4 h-4" />}>

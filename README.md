@@ -24,7 +24,7 @@
 | **Education** | **University of Transport Ho Chi Minh City (UTH)** — GPA: **3.34 / 4.0** |
 | **Graduate Thesis** | **ARQ-RAG** (Thesis Grade: **9.0 / 10**) — Research paper submitted to **AMI2026** |
 | **Technical Focus** | High-performance vector quantization (Rust/SIMD AVX2), enterprise backend (Java/Spring Boot 3, Node.js), and end-to-end RAG pipelines (Qdrant, pgvector, LangChain4j) |
-| **Key Projects** | 1. **ARQ-RAG**: Rust + SIMD AVX2 vector quantization & IVF memory-efficient retrieval core<br/>2. **Waterbase**: Self-hosted Multi-tenant BaaS (Graduation Internship Project, 7 microservices, Database-per-App, Rule Engine RBAC, Realtime WebSocket on ~3GB RAM)<br/>3. **EduChatbot**: Java Spring Boot 3 + Qdrant + LangChain4j with A/B testing & LLM evaluation (Java Course Project, Team Lead)<br/>4. **Internal AI Assistant**: Lotus Hackathon VNG 2026 36h prototype (Team Lead, RAG & n8n workflow automation) |
+| **Key Projects** | 1. **ARQ-RAG**: Rust + SIMD AVX2 vector quantization & IVF memory-efficient retrieval core<br/>2. **Waterbase**: Self-hosted Multi-tenant BaaS (Graduation Internship Project, 7 microservices, Database-per-App, Rule Engine RBAC, Realtime WebSocket, deployed on 1GB RAM / 1 vCPU VPS)<br/>3. **EduChatbot**: Java Spring Boot 3 + Qdrant + LangChain4j with A/B testing & LLM evaluation (Java Course Project, Team Lead)<br/>4. **Internal AI Assistant**: Lotus Hackathon VNG 2026 36h prototype (Team Lead, RAG & n8n workflow automation, Video Demo) |
 | **Technical Leadership** | Team Lead for 6-member Java RAG Course project (System Design, SRS, Code Review) & 2-member Hackathon team |
 
 ---
@@ -124,7 +124,7 @@
 **Graduation Internship Project / Sole Developer** | **Live App:** [web.waterbase.click](https://web.waterbase.click)  
 **Tech Stack:** `Node.js` · `Express` · `MongoDB` · `Redis` · `Docker Compose` · `Nginx (API Gateway)` · `WebSocket (RTWaterDB)`
 
-> **Overview**: Researched and developed end-to-end as a graduation internship project, Waterbase is a lightweight, self-hosted Backend-as-a-Service (BaaS) engineered as an open-source Firebase alternative tailored for the Vietnamese market and low-resource infrastructure (~3GB RAM).
+> **Overview**: Researched and developed end-to-end as a graduation internship project, Waterbase is a lightweight, self-hosted Backend-as-a-Service (BaaS) engineered as an open-source Firebase alternative tailored for the Vietnamese market and low-resource infrastructure (currently running all 7 services in production on a 1GB RAM / 1 vCPU VPS).
 
 ```
                      ┌───────────────────────────────┐

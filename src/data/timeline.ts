@@ -28,8 +28,8 @@ export const timelineData: TimelineItem[] = [
       vi: 'Lập trình viên duy nhất | Đồ án Thực tập Tốt nghiệp'
     },
     description: {
-      en: 'Researched and built a 7-service microservices BaaS (Database-per-App multi-tenancy, declarative Rule Engine RBAC, WebSocket realtime, Docker Compose on ~3GB RAM) as a lightweight Firebase alternative.',
-      vi: 'Nghiên cứu và phát triển hệ thống BaaS 7 microservices (cô lập dữ liệu Database-per-App, Rule Engine RBAC, đồng bộ realtime WebSocket, triển khai Docker Compose trên VPS ~3GB RAM) thay thế Firebase.'
+      en: 'Researched and built a 7-service microservices BaaS (Database-per-App multi-tenancy, declarative Rule Engine RBAC, WebSocket realtime, Docker Compose deployed on a 1GB RAM / 1 vCPU VPS).',
+      vi: 'Nghiên cứu và phát triển hệ thống BaaS 7 microservices (cô lập dữ liệu Database-per-App, Rule Engine RBAC, đồng bộ realtime WebSocket, triển khai Docker Compose ổn định trên VPS chỉ 1GB RAM, 1 vCPU).'
     },
     type: 'project'
   },

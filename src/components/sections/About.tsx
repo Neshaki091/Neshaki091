@@ -37,18 +37,18 @@ export const About: React.FC = () => {
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#22223B] dark:text-[#E6EDF3] text-lg">{profile?.education || ''}</h3>
-                  <p className="text-sm text-[#4A4E69] dark:text-[#00D9FF] font-medium">{profile?.degree || ''}</p>
+                  <h3 className="font-bold text-[#22223B] dark:text-[#E6EDF3] text-lg">{t('about.education')}</h3>
+                  <p className="text-sm text-[#4A4E69] dark:text-[#00D9FF] font-medium">{t('about.degree')}</p>
                 </div>
               </div>
 
               <div className="p-3 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] border border-[#C9ADA7] dark:border-[#30363D] mb-4">
-                <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block">Academic Standing</span>
+                <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block">{t('about.academicStanding')}</span>
                 <span className="text-xl font-mono font-bold text-emerald-700 dark:text-[#3FB950]">GPA: {profile?.gpa || '3.34 / 4.0'}</span>
               </div>
 
               <p className="text-sm text-[#4A4E69] dark:text-[#C9D1D9] leading-relaxed">
-                {profile?.bio || ''}
+                {t('about.bio')}
               </p>
             </Card>
 
@@ -56,20 +56,26 @@ export const About: React.FC = () => {
             <Card hoverEffect={false}>
               <h4 className="font-bold text-[#22223B] dark:text-[#E6EDF3] mb-3 text-sm font-mono flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#4A4E69] dark:text-[#58A6FF]" />
-                Core Engineering Philosophy
+                {t('about.philosophy')}
               </h4>
               <ul className="space-y-2 text-xs text-[#9A8C98] dark:text-[#8B949E]">
                 <li className="flex items-center gap-2">
                   <ChevronRight className="w-3.5 h-3.5 text-[#4A4E69] dark:text-[#00D9FF]" />
-                  SIMD Hardware acceleration & vector memory compression
+                  {language === 'vi' 
+                    ? 'Tăng tốc phần cứng SIMD & nén không gian bộ nhớ vector'
+                    : 'SIMD Hardware acceleration & vector memory compression'}
                 </li>
                 <li className="flex items-center gap-2">
                   <ChevronRight className="w-3.5 h-3.5 text-[#4A4E69] dark:text-[#00D9FF]" />
-                  Clean microservice separation with event-driven message queues
+                  {language === 'vi'
+                    ? 'Kiến trúc microservices phân tách module rõ ràng & tối ưu tài nguyên'
+                    : 'Clean microservice separation with resource-efficient deployment'}
                 </li>
                 <li className="flex items-center gap-2">
                   <ChevronRight className="w-3.5 h-3.5 text-[#4A4E69] dark:text-[#00D9FF]" />
-                  Empirical benchmarking & automated LLM evaluation
+                  {language === 'vi'
+                    ? 'Đánh giá thực nghiệm có khả năng tái tạo & benchmark tự động bằng LLM'
+                    : 'Empirical benchmarking & automated LLM evaluation'}
                 </li>
               </ul>
             </Card>
@@ -101,7 +107,11 @@ export const About: React.FC = () => {
                         {item.year}
                       </span>
                       <Badge variant={item.type === 'achievement' ? 'orange' : 'dark'}>
-                        {item.type.toUpperCase()}
+                        {language === 'vi' ? (
+                          item.type === 'education' ? 'HỌC VẤN' :
+                          item.type === 'achievement' ? 'THÀNH TÍCH' :
+                          item.type === 'work' ? 'KINH NGHIỆM' : 'DỰ ÁN'
+                        ) : item.type.toUpperCase()}
                       </Badge>
                     </div>
 

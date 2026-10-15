@@ -14,6 +14,14 @@ export const Research: React.FC = () => {
 
   const highlights = research.highlights || [];
 
+  const viHighlightsMap: Record<string, { title: string; desc: string }> = {
+    h1: { title: 'Tích hợp TurboQuant + Chỉ mục IVF', desc: 'Core Rust tùy biến kết hợp lượng tử hóa vector TurboQuant với chỉ mục phân vùng Inverted File (IVF).' },
+    h2: { title: 'Tăng tốc Phần cứng SIMD AVX2', desc: 'Khai thác tập lệnh thanh ghi vector 256-bit tính tích vô hướng song song và khoảng cách bất đối xứng (ADC).' },
+    h3: { title: 'Truy xuất Bộ nhớ Ánh xạ Tệp (mmap)', desc: 'Truy vấn chỉ mục lượng tử hóa trực tiếp từ page cache của đĩa mà không chiếm dụng đầy RAM.' },
+    h4: { title: 'Quét theo Cụm & Gom nhóm Truy vấn', desc: 'Tối đa hóa CPU cache locality (L1/L2/L3) và băng thông bộ nhớ trong quá trình truy xuất đa truy vấn.' },
+    h5: { title: 'Lượng tử hóa ITQ & Max-Lloyd', desc: 'Phép xoay trực giao Procrustes kết hợp lọc nhiễu ngoại lai P01-P99 và bảng tra trước Lookup Tables (LUT).' },
+  };
+
   return (
     <section id="research" className="py-20 relative bg-[#F2E9E4] dark:bg-[#0D1117]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +52,7 @@ export const Research: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#22223B] dark:text-[#E6EDF3]">{t('research.abstractTitle')}</h3>
-                  <p className="text-xs font-mono text-[#4A4E69] dark:text-[#00D9FF]">Graduate Thesis (Score: 9.0/10) • Paper submitted to AMI2026</p>
+                  <p className="text-xs font-mono text-[#4A4E69] dark:text-[#00D9FF]">{t('research.thesisMeta')}</p>
                 </div>
               </div>
 
@@ -55,14 +63,18 @@ export const Research: React.FC = () => {
               {/* Specs Box */}
               <div className="grid grid-cols-2 gap-4 p-4 rounded-lg bg-[#FAF6F0] dark:bg-[#0D1117] border border-[#C9ADA7] dark:border-[#30363D]">
                 <div>
-                  <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block font-mono">Memory Reduction</span>
+                  <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block font-mono">{t('research.memoryReduction')}</span>
                   <span className="text-xl font-bold text-[#4A4E69] dark:text-[#00D9FF] font-mono">{research.memoryReduction}</span>
-                  <span className="text-[10px] text-[#9A8C98] dark:text-[#6E7681] block">Float32 → 2-4bit</span>
+                  <span className="text-[10px] text-[#9A8C98] dark:text-[#6E7681] block">
+                    {language === 'vi' ? 'Float32 → Lượng tử 2-4bit' : 'Float32 → 2-4bit'}
+                  </span>
                 </div>
                 <div>
-                  <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block font-mono">Accuracy Retention</span>
+                  <span className="text-xs text-[#9A8C98] dark:text-[#8B949E] block font-mono">{t('research.accuracyRetention')}</span>
                   <span className="text-xl font-bold text-emerald-700 dark:text-[#3FB950] font-mono">{research.accuracyRetention}</span>
-                  <span className="text-[10px] text-[#9A8C98] dark:text-[#6E7681] block">Recall@K vs Baseline</span>
+                  <span className="text-[10px] text-[#9A8C98] dark:text-[#6E7681] block">
+                    {language === 'vi' ? 'Recall@K so với Chuẩn đối sánh' : 'Recall@K vs Baseline'}
+                  </span>
                 </div>
               </div>
             </Card>
@@ -76,28 +88,32 @@ export const Research: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {highlights.map((item, idx) => (
-              <div
-                key={item.id || idx}
-                className="p-4 rounded-xl glass-card border border-[#C9ADA7] dark:border-[#30363D] hover:border-[#4A4E69]/60 dark:hover:border-[#00D9FF]/50 transition-all flex items-start gap-4"
-              >
-                <div className="p-2 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] text-[#4A4E69] dark:text-[#00D9FF] shrink-0 border border-[#C9ADA7] dark:border-[#30363D]">
-                  {idx % 5 === 0 && <Cpu className="w-5 h-5" />}
-                  {idx % 5 === 1 && <Zap className="w-5 h-5 text-[#4A4E69] dark:text-[#58A6FF]" />}
-                  {idx % 5 === 2 && <Layers className="w-5 h-5 text-[#9A8C98] dark:text-[#F78166]" />}
-                  {idx % 5 === 3 && <Database className="w-5 h-5 text-emerald-700 dark:text-[#3FB950]" />}
-                  {idx % 5 === 4 && <BookOpen className="w-5 h-5 text-[#4A4E69] dark:text-[#D2A8FF]" />}
+            {highlights.map((item, idx) => {
+              const itemTitle = language === 'vi' && viHighlightsMap[item.id]?.title ? viHighlightsMap[item.id].title : item.title;
+              const itemDesc = language === 'vi' && viHighlightsMap[item.id]?.desc ? viHighlightsMap[item.id].desc : item.desc;
+              return (
+                <div
+                  key={item.id || idx}
+                  className="p-4 rounded-xl glass-card border border-[#C9ADA7] dark:border-[#30363D] hover:border-[#4A4E69]/60 dark:hover:border-[#00D9FF]/50 transition-all flex items-start gap-4"
+                >
+                  <div className="p-2 rounded-lg bg-[#FAF6F0] dark:bg-[#161B22] text-[#4A4E69] dark:text-[#00D9FF] shrink-0 border border-[#C9ADA7] dark:border-[#30363D]">
+                    {idx % 5 === 0 && <Cpu className="w-5 h-5" />}
+                    {idx % 5 === 1 && <Zap className="w-5 h-5 text-[#4A4E69] dark:text-[#58A6FF]" />}
+                    {idx % 5 === 2 && <Layers className="w-5 h-5 text-[#9A8C98] dark:text-[#F78166]" />}
+                    {idx % 5 === 3 && <Database className="w-5 h-5 text-emerald-700 dark:text-[#3FB950]" />}
+                    {idx % 5 === 4 && <BookOpen className="w-5 h-5 text-[#4A4E69] dark:text-[#D2A8FF]" />}
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-[#22223B] dark:text-[#E6EDF3] font-mono">
+                      {itemTitle}
+                    </h4>
+                    <p className="text-xs text-[#9A8C98] dark:text-[#8B949E] mt-1 leading-relaxed">
+                      {itemDesc}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-bold text-[#22223B] dark:text-[#E6EDF3] font-mono">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs text-[#9A8C98] dark:text-[#8B949E] mt-1 leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </motion.div>
 
         </div>

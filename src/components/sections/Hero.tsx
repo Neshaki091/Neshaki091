@@ -52,31 +52,31 @@ export const Hero: React.FC = () => {
                 <div className="inline-flex items-center gap-2">
                   <Badge variant="cyan" className="text-xs px-2.5 py-0.5">
                     <Cpu className="w-3 h-3 mr-1 animate-pulse" />
-                    {profile?.badge || 'Backend & AI Engineer'}
+                    {t('hero.badge')}
                   </Badge>
                   <Badge variant="green" className="text-xs px-2.5 py-0.5">
                     GPA {profile?.gpa || '3.34 / 4.0'}
                   </Badge>
                 </div>
                 <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E]">
-                  {profile?.education || 'University of Transport Ho Chi Minh City (UTH)'}
+                  {t('about.education')}
                 </span>
               </div>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#22223B] dark:text-[#E6EDF3] tracking-tight leading-none">
-              {profile?.titlePrefix || 'Hello, I am '}
+              {t('hero.titlePrefix')}
               <span className="text-gradient block mt-2">
                 {profile?.name || 'Huỳnh Công Luyện'}
               </span>
             </h1>
 
             <p className="text-xl text-[#4A4E69] dark:text-[#00D9FF] font-mono font-medium max-w-2xl">
-              {profile?.tagline || ''}
+              {t('hero.tagline')}
             </p>
 
             <p className="text-base text-[#9A8C98] dark:text-[#8B949E] leading-relaxed max-w-xl">
-              {profile?.subtext || ''}
+              {t('hero.subtext')}
             </p>
 
             {/* CTAs */}

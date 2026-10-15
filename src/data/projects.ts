@@ -66,8 +66,8 @@ export const projectsData: Project[] = [
       vi: 'Lập trình viên duy nhất (Thiết kế kiến trúc • Code • Triển khai)'
     },
     description: {
-      en: 'A lightweight, self-hosted Backend-as-a-Service (BaaS) designed as an open-source Firebase alternative optimized for low-resource environments. Researched, architected, and built end-to-end with 7 modular microservices and strict multi-tenant data isolation.',
-      vi: 'Hệ thống Backend-as-a-Service (BaaS) tự host được nghiên cứu, thiết kế kiến trúc và phát triển toàn diện như một giải pháp thay thế Firebase gọn nhẹ, tối ưu chi phí cho thị trường Việt Nam và vận hành bền bỉ trên hạ tầng phần cứng giới hạn.'
+      en: 'A lightweight, self-hosted multi-tenant Backend-as-a-Service (BaaS) platform researched, architected, and built end-to-end with 7 modular microservices, currently running live in production on a minimal 1GB RAM / 1 vCPU VPS.',
+      vi: 'Hệ thống Backend-as-a-Service (BaaS) đa người dùng tự host được nghiên cứu, thiết kế kiến trúc và phát triển toàn diện; hiện đang triển khai thực tế toàn bộ 7 services ổn định trên VPS chỉ 1GB RAM, 1 vCPU.'
     },
     technologies: ['Node.js', 'Express', 'MongoDB', 'Redis', 'Docker Compose', 'Nginx (API Gateway)', 'WebSocket (Realtime)', 'JWT'],
     features: {
@@ -75,24 +75,24 @@ export const projectsData: Project[] = [
         '7-service decoupled microservices architecture (Auth, App, WaterDB, RTWaterDB, Storage, Rule Engine, Analytics) orchestrated via Nginx API Gateway for high modularity',
         'Database-per-Application multi-tenancy model: provisions dedicated MongoDB databases per tenant application, guaranteeing physical data segregation and privacy',
         'Declarative Rule Engine & RBAC: evaluates scoped JWT credentials and compiles dynamic expression-based rules for granular collection-level read/write permission control',
-        'Bi-directional realtime data synchronization via WebSocket (RTWaterDB) and turn-key Docker Compose deployment, running smoothly on low-spec servers (~3GB RAM)'
+        'Bi-directional realtime data synchronization via WebSocket (RTWaterDB) and turn-key Docker Compose deployment, currently deploying all 7 services in production on a minimal 1GB RAM / 1 vCPU VPS'
       ],
       vi: [
         'Kiến trúc Microservices gồm 7 services độc lập (Auth, App, WaterDB, RTWaterDB, Storage, Rule Engine, Analytics) điều phối qua Nginx API Gateway, đảm bảo tính phân tách module',
         'Mô hình Multi-tenancy Database-per-Application: tự động cấp phát và cô lập hoàn toàn database MongoDB riêng biệt theo từng ứng dụng tenant, triệt tiêu rủi ro rò rỉ dữ liệu chéo',
         'Bảo mật phân quyền khai báo (Rule Engine & RBAC): thẩm định JWT kết hợp biên dịch dynamic security rules dạng biểu thức để kiểm soát quyền đọc/ghi chi tiết tới từng collection',
-        'Đồng bộ dữ liệu thời gian thực hai chiều qua WebSocket (RTWaterDB) và đóng gói trọn gói bằng Docker Compose, tối ưu mức tiêu thụ tài nguyên chỉ ~3GB RAM trên VPS'
+        'Đồng bộ dữ liệu thời gian thực hai chiều qua WebSocket (RTWaterDB) và đóng gói trọn gói bằng Docker Compose, hiện đang triển khai thực tế toàn bộ 7 services chạy mượt mà trên VPS chỉ 1GB RAM, 1 vCPU'
       ]
     },
     metrics: {
       en: [
         'Graduation Internship Project: 100% solo architected, developed, and deployed end-to-end',
-        'Cost-effective Firebase alternative: tailored for lightweight deployments, running smoothly on ~3GB RAM',
+        'Ultra resource-efficient: currently hosting all 7 services live on a minimal 1GB RAM / 1 vCPU VPS',
         'Guaranteed cross-tenant data isolation via Database-per-App separation and declarative Rule Engine'
       ],
       vi: [
         'Đồ án Thực tập Tốt nghiệp: Tự chủ 100% từ thiết kế kiến trúc hệ thống, lập trình backend đến đóng gói triển khai',
-        'Giải pháp BaaS thay thế Firebase: Tối ưu chi phí và tài nguyên, vận hành ổn định trên máy chủ cấu hình thấp (~3GB RAM)',
+        'Tối ưu tài nguyên vượt trội: Vận hành ổn định toàn bộ 7 services trên VPS cấu hình tối thiểu (1GB RAM, 1 vCPU)',
         'Bảo mật và cô lập tenant tuyệt đối nhờ mô hình Database-per-App và Rule Engine thẩm định quyền khai báo'
       ]
     },
@@ -196,7 +196,7 @@ export const projectsData: Project[] = [
     },
     links: {
       github: 'https://github.com/Neshaki091/InternalAssistant',
-      demo: 'https://devpost.com/software/internal-ai-assistant'
+      video: 'https://devpost.com/software/internal-ai-assistant'
     },
     featured: true
   }

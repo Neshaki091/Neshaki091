@@ -20,6 +20,7 @@ export interface Project {
   };
   links: {
     demo?: string;
+    video?: string;
     github?: string;
     docs?: string;
     paper?: string;

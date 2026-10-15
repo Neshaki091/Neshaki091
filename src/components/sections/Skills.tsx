@@ -55,7 +55,7 @@ export const Skills: React.FC = () => {
                     </h3>
                   </div>
                   <Badge variant="dark" className="text-[11px]">
-                    {(cat.items || []).length} Techs
+                    {(cat.items || []).length} {language === 'vi' ? 'Công nghệ' : 'Techs'}
                   </Badge>
                 </div>
 
