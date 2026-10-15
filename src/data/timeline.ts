@@ -20,16 +20,16 @@ export const timelineData: TimelineItem[] = [
   {
     year: 'Nov 2025',
     title: {
-      en: 'Waterbase BaaS Platform',
-      vi: 'Nền tảng Waterbase BaaS'
+      en: 'Waterbase — Self-Hosted BaaS',
+      vi: 'Waterbase — BaaS Đa người dùng Tự host'
     },
     subtitle: {
-      en: 'Personal Platform & Builder',
-      vi: 'Nền tảng Cá nhân & Tự phát triển'
+      en: 'Sole Developer | Graduation Internship Project',
+      vi: 'Lập trình viên duy nhất | Đồ án Thực tập Tốt nghiệp'
     },
     description: {
-      en: 'Architected and deployed an 8-service modular Firebase-like BaaS supporting multi-tenancy, JWT auth, RBAC, real-time WebSocket DB, declarative security rules, and RAG AI.',
-      vi: 'Thiết kế và triển khai nền tảng BaaS 8 dịch vụ mô-đun giống Firebase hỗ trợ multi-tenancy, xác thực JWT, RBAC, real-time WebSocket DB, bộ luật bảo mật và RAG AI.'
+      en: 'Researched and built a 7-service microservices BaaS (Database-per-App multi-tenancy, declarative Rule Engine RBAC, WebSocket realtime, Docker Compose on ~3GB RAM) as a lightweight Firebase alternative.',
+      vi: 'Nghiên cứu và phát triển hệ thống BaaS 7 microservices (cô lập dữ liệu Database-per-App, Rule Engine RBAC, đồng bộ realtime WebSocket, triển khai Docker Compose trên VPS ~3GB RAM) thay thế Firebase.'
     },
     type: 'project'
   },
@@ -66,20 +66,20 @@ export const timelineData: TimelineItem[] = [
     type: 'achievement'
   },
   {
-    year: 'Jul 2026',
+    year: '2025 - 2026',
     title: {
-      en: 'Enterprise Java RAG Chatbot',
-      vi: 'Trợ lý AI Java RAG Doanh nghiệp'
+      en: 'EduChatbot — Java RAG Assistant',
+      vi: 'EduChatbot — Trợ lý AI Môn học Java'
     },
     subtitle: {
-      en: 'Team Leader (6 Members) & Backend Architect',
-      vi: 'Trưởng nhóm (6 thành viên) & Kiến trúc sư Backend'
+      en: 'Team Leader (6 Members) | Java Course Project',
+      vi: 'Trưởng nhóm (6 thành viên) | Đồ án Môn học Java'
     },
     description: {
-      en: 'Led a 6-member team to design and build a Spring Boot 3 + LangChain4j + Qdrant RAG system with automated LLM-as-a-Judge evaluation and LoRA Fine-Tuning bridge.',
-      vi: 'Dẫn dắt nhóm 6 người thiết kế và phát triển hệ thống RAG Spring Boot 3 + LangChain4j + Qdrant với quy trình đánh giá tự động LLM-as-a-Judge và cầu nối LoRA Fine-Tuning.'
+      en: 'Led a 6-member team to design and build a Spring Boot 3 + LangChain4j + Qdrant courseware assistant with automated LLM-as-a-Judge evaluation and an async Python FastAPI LoRA bridge.',
+      vi: 'Dẫn dắt nhóm 6 thành viên thiết kế và phát triển trợ lý hỏi đáp tài liệu môn học Spring Boot 3 + LangChain4j + Qdrant với quy trình đánh giá tự động LLM-as-a-Judge và cầu nối FastAPI phục vụ mô hình LoRA.'
     },
-    type: 'work'
+    type: 'project'
   }
 ];
 

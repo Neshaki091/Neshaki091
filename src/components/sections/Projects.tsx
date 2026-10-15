@@ -42,20 +42,30 @@ export const Projects: React.FC = () => {
                   {/* Left Column: Details & Tech Stack */}
                   <div className="lg:col-span-7 space-y-4">
                     <div className="flex flex-wrap items-center gap-2">
-                      <Badge variant="cyan">{project.type}</Badge>
+                      <Badge variant="cyan">
+                        {typeof project.type === 'string'
+                          ? project.type
+                          : (project.type?.[language] || project.type?.en || '')}
+                      </Badge>
                       {project.id === 'hackathon-ai' && (
                         <Badge variant="orange" className="flex items-center gap-1 font-bold">
                           <Zap className="w-3 h-3 text-[#4A4E69] dark:text-[#F78166]" /> 36h Working Demo ⚡
                         </Badge>
                       )}
-                      <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E]">Role: {project.role}</span>
+                      <span className="text-xs font-mono text-[#9A8C98] dark:text-[#8B949E]">
+                        Role: {typeof project.role === 'string'
+                          ? project.role
+                          : (project.role?.[language] || project.role?.en || '')}
+                      </span>
                     </div>
 
                     <div>
                       <h3 className="text-2xl font-bold text-[#22223B] dark:text-[#E6EDF3] flex items-center gap-2">
                         {project.title}
                         <span className="text-[#4A4E69] dark:text-[#00D9FF] text-lg font-mono font-normal">
-                          — {project.subtitle}
+                          — {typeof project.subtitle === 'string'
+                            ? project.subtitle
+                            : (project.subtitle?.[language] || project.subtitle?.en || '')}
                         </span>
                       </h3>
                     </div>

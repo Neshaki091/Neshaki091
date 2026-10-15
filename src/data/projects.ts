@@ -53,40 +53,47 @@ export const projectsData: Project[] = [
   {
     id: 'waterbase',
     title: 'Waterbase',
-    subtitle: 'Self-Hosted Backend-as-a-Service (BaaS) Platform',
-    type: 'Personal Platform',
-    role: 'Founder & Full Backend Builder',
-    description: {
-      en: 'A deployable, self-hosted Firebase alternative composed of 8 modular backend services. Provides authentication, dynamic NoSQL CRUD, real-time database sync, declarative security rules, storage, and contextual RAG AI assistance.',
-      vi: 'Nền tảng BaaS tự host thay thế Firebase gồm 8 backend services dạng mô-đun. Cung cấp xác thực JWT, NoSQL CRUD động, đồng bộ realtime WebSocket, bộ luật bảo mật, lưu trữ file và trợ lý RAG AI.'
+    subtitle: {
+      en: 'Self-Hosted Multi-Tenant BaaS Platform',
+      vi: 'Hệ thống Backend-as-a-Service (BaaS) Đa người dùng Tự host'
     },
-    technologies: ['Node.js', 'Express.js', 'MongoDB', 'Redis', 'RabbitMQ', 'Docker Compose', 'Nginx', 'Socket.io', 'React'],
+    type: {
+      en: 'Graduation Internship Project',
+      vi: 'Đồ án Thực tập Tốt nghiệp'
+    },
+    role: {
+      en: 'Sole Developer (Architecture • Code • Deployment)',
+      vi: 'Lập trình viên duy nhất (Thiết kế kiến trúc • Code • Triển khai)'
+    },
+    description: {
+      en: 'A lightweight, self-hosted Backend-as-a-Service (BaaS) designed as an open-source Firebase alternative optimized for low-resource environments. Researched, architected, and built end-to-end with 7 modular microservices and strict multi-tenant data isolation.',
+      vi: 'Hệ thống Backend-as-a-Service (BaaS) tự host được nghiên cứu, thiết kế kiến trúc và phát triển toàn diện như một giải pháp thay thế Firebase gọn nhẹ, tối ưu chi phí cho thị trường Việt Nam và vận hành bền bỉ trên hạ tầng phần cứng giới hạn.'
+    },
+    technologies: ['Node.js', 'Express', 'MongoDB', 'Redis', 'Docker Compose', 'Nginx (API Gateway)', 'WebSocket (Realtime)', 'JWT'],
     features: {
       en: [
-        'Modular architecture with 8 services: auth, app, waterdb, rtwaterdb, storage, rule, analytics, and rag-ai',
-        'Multi-tenant and multi-app data isolation secured with API keys and scoped JWT middleware',
-        'Real-time document synchronization via WebSockets (Socket.io) with room-based pub/sub',
-        'Declarative security rule evaluation engine enforcing fine-grained collection-level access policies',
-        'Asynchronous event decoupling using RabbitMQ message broker and Redis caching layer',
-        'Orchestrated via Docker Compose and deployed on Linux VPS with Nginx reverse proxy + SSL'
+        '7-service decoupled microservices architecture (Auth, App, WaterDB, RTWaterDB, Storage, Rule Engine, Analytics) orchestrated via Nginx API Gateway for high modularity',
+        'Database-per-Application multi-tenancy model: provisions dedicated MongoDB databases per tenant application, guaranteeing physical data segregation and privacy',
+        'Declarative Rule Engine & RBAC: evaluates scoped JWT credentials and compiles dynamic expression-based rules for granular collection-level read/write permission control',
+        'Bi-directional realtime data synchronization via WebSocket (RTWaterDB) and turn-key Docker Compose deployment, running smoothly on low-spec servers (~3GB RAM)'
       ],
       vi: [
-        'Kiến trúc 8 dịch vụ mô-đun: auth, app, waterdb, rtwaterdb, storage, rule, analytics, và rag-ai',
-        'Cô lập dữ liệu multi-tenant & multi-app với API key và middleware xác thực JWT phân quyền Owner / End-User',
-        'Đồng bộ dữ liệu thời gian thực qua WebSocket (Socket.io) với cơ chế pub/sub theo phòng',
-        'Engine thực thi quy tắc bảo mật (Rule Service) kiểm soát quyền truy cập chi tiết tới từng collection',
-        'Giao tiếp bất đồng bộ qua RabbitMQ message broker và tầng caching Redis tốc độ cao',
-        'Triển khai hoàn chỉnh bằng Docker Compose trên VPS Linux qua Nginx Reverse Proxy + SSL'
+        'Kiến trúc Microservices gồm 7 services độc lập (Auth, App, WaterDB, RTWaterDB, Storage, Rule Engine, Analytics) điều phối qua Nginx API Gateway, đảm bảo tính phân tách module',
+        'Mô hình Multi-tenancy Database-per-Application: tự động cấp phát và cô lập hoàn toàn database MongoDB riêng biệt theo từng ứng dụng tenant, triệt tiêu rủi ro rò rỉ dữ liệu chéo',
+        'Bảo mật phân quyền khai báo (Rule Engine & RBAC): thẩm định JWT kết hợp biên dịch dynamic security rules dạng biểu thức để kiểm soát quyền đọc/ghi chi tiết tới từng collection',
+        'Đồng bộ dữ liệu thời gian thực hai chiều qua WebSocket (RTWaterDB) và đóng gói trọn gói bằng Docker Compose, tối ưu mức tiêu thụ tài nguyên chỉ ~3GB RAM trên VPS'
       ]
     },
     metrics: {
       en: [
-        'Self-hosted Firebase-like BaaS with RBAC and multi-tenant/multi-app data isolation',
-        'Full authentication, dynamic collection CRUD, and real-time streaming pipelines'
+        'Graduation Internship Project: 100% solo architected, developed, and deployed end-to-end',
+        'Cost-effective Firebase alternative: tailored for lightweight deployments, running smoothly on ~3GB RAM',
+        'Guaranteed cross-tenant data isolation via Database-per-App separation and declarative Rule Engine'
       ],
       vi: [
-        'Nền tảng BaaS tự host giống Firebase với phân quyền RBAC và cô lập dữ liệu multi-tenant/multi-app',
-        'Đầy đủ luồng xác thực, CRUD dynamic collection và streaming realtime'
+        'Đồ án Thực tập Tốt nghiệp: Tự chủ 100% từ thiết kế kiến trúc hệ thống, lập trình backend đến đóng gói triển khai',
+        'Giải pháp BaaS thay thế Firebase: Tối ưu chi phí và tài nguyên, vận hành ổn định trên máy chủ cấu hình thấp (~3GB RAM)',
+        'Bảo mật và cô lập tenant tuyệt đối nhờ mô hình Database-per-App và Rule Engine thẩm định quyền khai báo'
       ]
     },
     links: {
@@ -98,41 +105,50 @@ export const projectsData: Project[] = [
   },
   {
     id: 'java-rag',
-    title: 'Enterprise Java RAG Chatbot',
-    subtitle: 'University Courseware Assistant & Fine-Tuning Benchmark',
-    type: 'University Capstone Project',
-    role: 'Team Leader (6 Members) & Backend Architect',
+    title: 'EduChatbot',
+    subtitle: {
+      en: 'Vietnamese RAG Courseware Assistant & Fine-Tuning Benchmark',
+      vi: 'Trợ lý Hỏi đáp Tài liệu Môn học RAG & Phân tích Thực nghiệm Fine-tuning'
+    },
+    type: {
+      en: 'Java Course Project (Team of 6)',
+      vi: 'Đồ án Môn học Lập trình Java (Nhóm 6 người)'
+    },
+    role: {
+      en: 'Team Leader & Backend Architect',
+      vi: 'Trưởng nhóm (6 thành viên) & Thiết kế Kiến trúc Backend'
+    },
     description: {
-      en: 'A high-throughput Vietnamese academic knowledge assistant built with Java 17, Spring Boot 3, and LangChain4j. Features side-by-side A/B testing and automated LLM-as-a-Judge evaluation comparing RAG vs LoRA Fine-Tuning.',
-      vi: 'Hệ thống trợ lý học tập tiếng Việt xây dựng trên Java 17, Spring Boot 3 và LangChain4j. Tích hợp A/B testing đối chiếu trực tiếp và đánh giá tự động LLM-as-a-Judge so sánh giữa RAG và mô hình LoRA Fine-tuning.'
+      en: 'A Vietnamese academic courseware assistant developed as a Java Course Project. Built with Java 17, Spring Boot 3, and LangChain4j, featuring an async bridge to a Python FastAPI LoRA service and automated LLM-as-a-Judge evaluation comparing RAG vs Fine-Tuning.',
+      vi: 'Hệ thống trợ lý ảo hỏi đáp tài liệu môn học tiếng Việt phát triển trong khuôn khổ Đồ án Môn học Lập trình Java. Xây dựng trên Java 17, Spring Boot 3 và LangChain4j, tích hợp cầu nối bất đồng bộ tới mô hình LoRA (Python FastAPI) và đánh giá thực nghiệm RAG vs Fine-tuning.'
     },
     technologies: ['Java 17', 'Spring Boot 3.x', 'Spring Security', 'LangChain4j', 'Python', 'FastAPI', 'Qdrant', 'Supabase', 'React'],
     features: {
       en: [
-        'Team Leadership: Authored System Requirements Specification (SRS), Database Owner Matrix, and conducted code reviews',
-        'Enterprise Spring Boot 3 Backend: Spring Security with JWT & refresh token rotation, Student/Admin RBAC, Global Exception Handler',
+        'Team Leadership (6 Members): Authored System Requirements Specification (SRS), Database Owner Matrix, and conducted cross-module code reviews',
+        'Spring Boot 3 Backend Architecture: Spring Security with JWT & refresh token rotation, Student/Teacher/Admin RBAC, and centralized exception handling',
         'Document Ingestion Pipeline: Apache Tika multi-format parsing (PDF, DOCX) with custom Vietnamese semantic text splitter',
         'Vector Retrieval: LangChain4j with LLM query rewriting (Llama 3.1) and subject-scoped vector search on Qdrant',
         'Java-Python Microservice Bridge: Spring WebClient asynchronous bridge connecting Spring Boot to a Python FastAPI LoRA model service',
-        'Automated Evaluation: Blind A/B comparison system and LLM-as-a-Judge evaluation for answer faithfulness'
+        'Empirical Benchmark: Blind A/B comparison system and automated LLM-as-a-Judge evaluation for answer faithfulness and latency'
       ],
       vi: [
-        'Vai trò Team Leader: Thiết kế tài liệu đặc tả SRS, ma trận phân quyền CSDL Database Owner Matrix và review code toàn nhóm',
-        'Backend Spring Boot 3 chuẩn enterprise: Spring Security JWT kèm refresh token, phân quyền Student/Admin RBAC, xử lý lỗi tập trung',
+        'Vai trò Trưởng nhóm (6 thành viên): Thiết kế tài liệu đặc tả SRS, ma trận phân quyền CSDL Database Owner Matrix và review/tái cấu trúc code toàn nhóm',
+        'Kiến trúc Backend Spring Boot 3: Spring Security JWT kèm refresh token, phân quyền Student/Teacher/Admin RBAC và xử lý lỗi tập trung',
         'Pipeline xử lý tài liệu: Tích hợp Apache Tika đọc đa định dạng (PDF, DOCX) kết hợp bộ tách câu ngữ nghĩa tiếng Việt',
         'Truy xuất Vector: LangChain4j kết hợp Query Rewriting bằng LLM (Llama 3.1) và lọc vector theo môn học trên Qdrant',
         'Cầu nối Java-Python: Spring WebClient bất đồng bộ kết nối Spring Boot với FastAPI phục vụ mô hình LoRA Fine-tuned',
-        'Đánh giá & Benchmark: Hệ thống A/B test ẩn danh và quy trình chấm điểm tự động LLM-as-a-Judge đo độ trung thực (faithfulness)'
+        'Đánh giá & Benchmark: Hệ thống A/B test ẩn danh và quy trình chấm điểm tự động LLM-as-a-Judge đo độ trung thực (faithfulness) và độ trễ'
       ]
     },
     metrics: {
       en: [
-        'Team of 6 engineers — Successfully integrated full enterprise RAG and LoRA inference pipelines',
-        'Automated faithfulness and hallucination rate evaluation with OpenRouter (Gemma/Llama)'
+        'Team of 6 engineers — Led system design, database schemas, and codebase coordination across 4 functional modules',
+        'Empirical evaluation: conducted automated faithfulness, hallucination, and latency benchmarks (RAG vs LoRA Fine-Tuning)'
       ],
       vi: [
-        'Nhóm 6 thành viên — Tích hợp thành công toàn diện luồng Enterprise RAG và mô hình LoRA',
-        'Đánh giá tự động độ trung thực và tỷ lệ hallucination thông qua OpenRouter (Gemma/Llama)'
+        'Nhóm 6 thành viên — Trưởng nhóm chủ trì thiết kế kiến trúc, ma trận CSDL và điều phối tích hợp 4 module chức năng',
+        'Đánh giá thực nghiệm: hoàn thành quy trình benchmark đối kháng tự động đo độ trung thực, tỷ lệ hallucination và độ trễ (RAG vs LoRA)'
       ]
     },
     links: {

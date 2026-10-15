@@ -1,13 +1,13 @@
 export interface Project {
   id: string;
   title: string;
-  subtitle: string;
+  subtitle: string | { en: string; vi: string };
   description: {
     en: string;
     vi: string;
   };
-  type: string;
-  role: string;
+  type: string | { en: string; vi: string };
+  role: string | { en: string; vi: string };
   image?: string;
   technologies: string[];
   features: {

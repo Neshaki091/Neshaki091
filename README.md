@@ -24,8 +24,8 @@
 | **Education** | **University of Transport Ho Chi Minh City (UTH)** — GPA: **3.34 / 4.0** |
 | **Graduate Thesis** | **ARQ-RAG** (Thesis Grade: **9.0 / 10**) — Research paper submitted to **AMI2026** |
 | **Technical Focus** | High-performance vector quantization (Rust/SIMD AVX2), enterprise backend (Java/Spring Boot 3, Node.js), and end-to-end RAG pipelines (Qdrant, pgvector, LangChain4j) |
-| **Key Projects** | 1. **ARQ-RAG**: Rust + SIMD AVX2 vector quantization & IVF memory-efficient retrieval core<br/>2. **Waterbase**: Self-hosted BaaS platform (Firebase alternative) with 8 modular backend services<br/>3. **Enterprise RAG Chatbot**: Java Spring Boot 3 + Qdrant + LangChain4j with A/B testing & LLM-as-a-Judge evaluation<br/>4. **Internal AI Assistant**: Lotus Hackathon VNG 2026 36h prototype (Team Lead, RAG & n8n workflow automation) |
-| **Technical Leadership** | Team Lead for 6-member Enterprise Java RAG project (System Design, SRS, Code Review) & 2-member Hackathon team |
+| **Key Projects** | 1. **ARQ-RAG**: Rust + SIMD AVX2 vector quantization & IVF memory-efficient retrieval core<br/>2. **Waterbase**: Self-hosted Multi-tenant BaaS (Graduation Internship Project, 7 microservices, Database-per-App, Rule Engine RBAC, Realtime WebSocket on ~3GB RAM)<br/>3. **EduChatbot**: Java Spring Boot 3 + Qdrant + LangChain4j with A/B testing & LLM evaluation (Java Course Project, Team Lead)<br/>4. **Internal AI Assistant**: Lotus Hackathon VNG 2026 36h prototype (Team Lead, RAG & n8n workflow automation) |
+| **Technical Leadership** | Team Lead for 6-member Java RAG Course project (System Design, SRS, Code Review) & 2-member Hackathon team |
 
 ---
 
@@ -120,11 +120,11 @@
 
 ---
 
-### 2. 💧 Waterbase: Self-Hosted Backend-as-a-Service (BaaS) Platform
-**Personal Project / Founder & Builder** | **Live App:** [web.waterbase.click](https://web.waterbase.click)  
-**Tech Stack:** `Node.js` · `Express.js` · `MongoDB` · `Redis` · `RabbitMQ` · `Docker Compose` · `Nginx` · `Socket.io` · `React`
+### 2. 💧 Waterbase: Self-Hosted Multi-Tenant Backend-as-a-Service (BaaS)
+**Graduation Internship Project / Sole Developer** | **Live App:** [web.waterbase.click](https://web.waterbase.click)  
+**Tech Stack:** `Node.js` · `Express` · `MongoDB` · `Redis` · `Docker Compose` · `Nginx (API Gateway)` · `WebSocket (RTWaterDB)`
 
-> **Problem**: Web and mobile applications need rapid backend scaffolding (authentication, dynamic database, realtime sync, storage, security rules) without expensive third-party cloud lock-in.
+> **Overview**: Researched and developed end-to-end as a graduation internship project, Waterbase is a lightweight, self-hosted Backend-as-a-Service (BaaS) engineered as an open-source Firebase alternative tailored for the Vietnamese market and low-resource infrastructure (~3GB RAM).
 
 ```
                      ┌───────────────────────────────┐
@@ -133,35 +133,30 @@
                      └───────────────┬───────────────┘
                                      │
     ┌────────────────────────────────┴────────────────────────────────┐
-    │               Modular Backend Services (Docker Compose)         │
+    │           7 Decoupled Microservices (Docker Compose)            │
     │  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌─────────┐ │
-    │  │ auth-services│ │ app-services │ │  waterdb-svc │ │ rtwaterdb│ │
+    │  │ auth-services│ │ app-services │ │  waterdb-svc │ │rtwaterdb│ │
     │  └──────────────┘ └──────────────┘ └──────────────┘ └─────────┘ │
-    │  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌─────────┐ │
-    │  │ storage-svc  │ │  rule-svc    │ │analytics-svc │ │rag-ai-svc│ │
-    │  └──────────────┘ └──────────────┘ └──────────────┘ └─────────┘ │
+    │  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐           │ │
+    │  │ storage-svc  │ │ rule-engine  │ │analytics-svc │           │ │
+    │  └──────────────┘ └──────────────┘ └──────────────┘           │ │
     └────────────────────────────────┬────────────────────────────────┘
                                      │
                      ┌───────────────┴───────────────┐
-                     │   MongoDB • Redis • RabbitMQ  │
+                     │   MongoDB • Redis (Cache)     │
+                     │  (Database-per-Application)   │
                      └───────────────────────────────┘
 ```
 
-- **Modular Backend Architecture**: Designed and deployed a deployable, self-hosted BaaS platform composed of 8 specialized backend services orchestrated via **Docker Compose**.
-- **Multi-Tenant Data Isolation**: Implemented a multi-tenant hierarchy supporting multi-app and multi-collection structures, secured with API keys and scoped JWT middleware (Owner vs. End-User access + refresh token rotation).
-- **Core Platform Services**:
-  - `auth-services`: User authentication, JWT issuance/validation, and identity lifecycle.
-  - `waterdb-services`: Dynamic NoSQL document CRUD engine with collection-level access controls.
-  - `rtwaterdb-services`: Real-time bidirectional database synchronization over WebSockets (`Socket.io`).
-  - `storage-services`: File and binary asset upload, metadata tracking, and retrieval pipelines.
-  - `rule-services`: Declarative security rules evaluation engine protecting tenant data collections.
-  - `analytics-service` & `rag-ai-service`: Platform usage tracking, rate limits, and contextual RAG AI assistance.
-- **Infrastructure & Deployment**: Configured **Nginx** reverse proxy with SSL termination, **Redis** for caching, and **RabbitMQ** for asynchronous background event messaging on a Linux VPS.
+- **7-Service Microservices Architecture**: Auth Service, App Service, WaterDB, RTWaterDB (Realtime), Storage, Rule Engine, and Analytics orchestrated via Nginx API Gateway.
+- **Database-per-Application Multi-Tenancy**: Dedicated MongoDB databases dynamically provisioned per tenant application, strictly isolating tenant data and preventing cross-application data leaks.
+- **Declarative Rule Engine & RBAC**: JWT credential validation combined with dynamic expression-based security rule compilation for fine-grained, collection-level read/write access control.
+- **Realtime Synchronization & Low-Spec VPS Deployment**: Bi-directional streaming via WebSocket (RTWaterDB) with full Docker Compose containerization, running reliably on ~3GB RAM servers.
 
 ---
 
-### 3. 📚 Enterprise RAG Chatbot System
-**University Project** | **Role:** Team Leader (6 Members)  
+### 3. 📚 EduChatbot: Vietnamese RAG Courseware Assistant
+**Java Course Project** | **Role:** Team Leader (6 Members) & Backend Architect  
 **Tech Stack:** `Java 17` · `Spring Boot 3.x` · `Spring Security` · `LangChain4j` · `Python` · `FastAPI` · `Qdrant` · `pgvector` · `React`
 
 > **Problem**: University students need accurate, subject-scoped institutional answers, while the university requires verifiable accuracy and a benchmark comparing RAG vs Fine-tuning.
@@ -180,7 +175,7 @@
 ```
 
 - **Team Leadership & System Architecture**: Led a team of 6 engineers. Authored the **System Requirements Specification (SRS)**, designed the **Database Owner Matrix**, established coding conventions, and conducted technical code reviews.
-- **Enterprise Spring Boot Backend**: Built the core system with Java 17 and Spring Boot 3.x, incorporating **Spring Security** (JWT authentication, refresh tokens), Student/Admin role-based access control (RBAC), global exception handlers, and unified API response schemas.
+- **Spring Boot 3 Backend Architecture**: Built the core system with Java 17 and Spring Boot 3.x, incorporating **Spring Security** (JWT authentication, refresh tokens), Student/Teacher/Admin role-based access control (RBAC), global exception handlers, and unified API response schemas.
 - **RAG Ingestion & Vector Retrieval Pipeline**:
   - Parsed unstructured documents (PDF, DOCX, TXT) using **Apache Tika** paired with a custom Vietnamese text splitter.
   - Implemented semantic retrieval using **LangChain4j**, query rewriting via LLM (Llama 3.1), and subject-scoped vector filtering on **Qdrant**.
