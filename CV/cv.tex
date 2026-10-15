@@ -18,8 +18,8 @@
 % --- Page Geometry (Calibrated for ATS & Exact 1-Page Layout) ---
 \usepackage[
   letterpaper,
-  top=0.35in,
-  bottom=0.35in,
+  top=0.33in,
+  bottom=0.33in,
   left=0.42in,
   right=0.42in
 ]{geometry}
@@ -31,7 +31,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage[verbose=silent]{microtype}
-\linespread{1.05}
+\linespread{1.04}
 
 % --- Color Palette ---
 \definecolor{primary}{RGB}{0, 0, 0}
@@ -61,7 +61,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 % --- Custom List Formatting ---
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.3pt, parsep=0pt, topsep=0.8pt, partopsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.1pt, parsep=0pt, topsep=0.6pt, partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 \newcommand{\resumeItem}[1]{\item \small{#1}}
@@ -100,9 +100,9 @@
 %===============================================================================
 \section{Professional Summary}
 \small{
-Recent IT graduate (GPA 3.34/4.0) specializing in RAG systems, vector retrieval, and backend services. Built \textbf{ARQ-RAG} ($18.8\times$ RAM reduction vs. FAISS, Thesis: 9.0/10), led \textbf{EduChatbot} (Vietnamese RAG on GCP), and built \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase}} (7-service BaaS on a 1 GB RAM VPS).
+Recent IT graduate (GPA 3.34/4.0) with hands-on experience building RAG/chatbot systems, integrating LLM APIs, evaluating prompt/output quality, and shipping backend services. Built \textbf{ARQ-RAG}, a vector retrieval engine that reduces active RAM by $18.8\times$ compared to FAISS on 5M vectors (Thesis: 9.0/10), and led \textbf{EduChatbot}, where I designed the RAG workflow and deployed backend services on GCP Cloud Functions.
 }
-\vspace{4pt}
+\vspace{3.5pt}
 
 %===============================================================================
 % EDUCATION
@@ -123,10 +123,9 @@ Recent IT graduate (GPA 3.34/4.0) specializing in RAG systems, vector retrieval,
 %===============================================================================
 \section{Core Skills}
 \begin{itemize}[leftmargin=0pt, label={}, itemsep=1.0pt]
-  \item \small{\textbf{Backend \& Cloud:} Node.js, Express, Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP}
-  \item \small{\textbf{Backend Highlight:} \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase (Live Demo)}} --- 7-service BaaS (DB-per-App, RBAC) deployed on 1 GB RAM / 1 vCPU VPS.}
   \item \small{\textbf{AI \& RAG:} Semantic Retrieval, Embeddings, Prompt Engineering, Output Evaluation, Query Rewriting, Citation Grounding, LangChain, QLoRA, Ragas}
   \item \small{\textbf{Vector Search:} Qdrant, Supabase pgvector, IVF Indexing, Vector Quantization, Memory-Mapped I/O (\texttt{mmap}), Retrieval Evaluation}
+  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP Cloud Functions, Git}
   \item \small{\textbf{Languages:} English: A2 (technical reading \& documentation) $\bullet$ Vietnamese: Native}
 \end{itemize}
 \vspace{2pt}
@@ -144,12 +143,12 @@ Recent IT graduate (GPA 3.34/4.0) specializing in RAG systems, vector retrieval,
     \textit{\small First Author \quad$|$\quad Algorithmic Design \& AI-Assisted Rust \quad$|$\quad Private Repo (on request)} & \textit{\small Thesis: \textbf{9.0 / 10.0}} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{My role:} Designed the full system architecture (IVF indexing, online residual quantization, adaptive cluster routing). Used AI coding agents to generate the low-level Rust engine (AVX2 SIMD, \texttt{mmap}); personally reviewed and validated all generated code.}
-    \resumeItem{\textbf{RAM:} Reduced active RAM from 1,931 MB (FAISS) to \textbf{102.6 MB} ($18.8\times$) on 5M Wikipedia DPR vectors ($D$=768, single-thread CPU) by keeping only 4-bit codes in memory; raw vectors served from disk via zero-copy \texttt{mmap}.}
-    \resumeItem{\textbf{Speed:} \textbf{4,522 QPS} / 87.2\% Recall@16 pre-rerank; \textbf{99.2\% Recall@16} after Float32 reranking at 3,450 QPS. Indexed 500K vectors in 20.2s ($1.93\times$ faster than FAISS IVFPQ).}
-    \resumeItem{\textbf{Learned:} Vector quantization theory, memory hierarchy trade-offs (RAM vs. disk vs. cache), and building reproducible benchmarks. \textit{Paper submitted to AMI 2026 [Under Review]}.}
+    \resumeItem{\textbf{My role:} Designed system architecture (IVF indexing, residual quantization, adaptive cluster routing). Generated low-level Rust engine (AVX2 SIMD, \texttt{mmap}) with AI coding agents; reviewed and verified all code.}
+    \resumeItem{\textbf{RAM:} Cut active RAM from 1,931 MB (FAISS) to \textbf{102.6 MB} ($18.8\times$) on 5M Wikipedia DPR vectors ($D$=768, single-thread CPU) by keeping only 4-bit codes in RAM; raw vectors served via zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Speed \& Recall:} Achieved \textbf{4,522 QPS} (87.2\% Recall@16 pre-rerank) and \textbf{99.2\% Recall@16} after Float32 rerank at 3,450 QPS. Built 500K vector index in 20.2s ($1.93\times$ faster than FAISS IVFPQ).}
+    \resumeItem{\textbf{Learned:} Vector quantization theory, memory hierarchy trade-offs (RAM vs. disk vs. cache), and reproducible benchmarks. \textit{Paper submitted to AMI 2026 [Under Review]}.}
   \resumeItemListEnd
-  \vspace{4pt}
+  \vspace{3.5pt}
 
   % --- PROJECT 2: EduChatbot ---
   \item[]
@@ -158,22 +157,31 @@ Recent IT graduate (GPA 3.34/4.0) specializing in RAG systems, vector retrieval,
     \textit{\small Project Lead (6-person team) \quad$|$\quad Python, FastAPI, Java 17, Spring Boot, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Java Course Project} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{My role:} Designed the RAG workflow end-to-end (Vietnamese parsing/chunking $\rightarrow$ 384D embeddings $\rightarrow$ Qdrant retrieval $\rightarrow$ citation verification against source chunks to reduce hallucinations) and built an async FastAPI bridge integrated with Spring Boot services.}
-    \resumeItem{\textbf{Evaluation \& prompt work:} Used LangChain for prompt and chain experimentation, then compared RAG vs. fine-tuning through blind A/B evaluation with Ragas --- fine-tuning scored higher correctness (0.438 vs. 0.318), while RAG scored higher faithfulness (0.303 vs. 0.292) and lower latency (2.00s vs. 3.75s).}
-    \resumeItem{\textbf{Deployment \& teamwork:} Deployed backend endpoints on GCP Cloud Functions and guided the team on a data architecture using Supabase for user data plus Qdrant Cloud for vector search, with synchronization for backup; coordinated a 6-person team through API handoff, sprint-style task tracking, and code reviews.}
+    \resumeItem{\textbf{RAG Pipeline \& Integration:} Designed end-to-end RAG workflow (Vietnamese document parsing/chunking, 384D embeddings, Qdrant vector retrieval, citation verification to reduce hallucinations); built async FastAPI bridge integrating with Spring Boot services.}
+    \resumeItem{\textbf{Evaluation, Cloud \& Team Lead:} Led a 6-person team (sprint tracking, code reviews) and deployed endpoints on GCP Cloud Functions with Supabase + Qdrant Cloud; ran blind A/B Ragas evaluation showing RAG achieved higher faithfulness (0.303 vs. 0.292) and lower latency (2.00s vs. 3.75s) over fine-tuning.}
   \resumeItemListEnd
-  \vspace{4pt}
+  \vspace{3.5pt}
 
-  % --- PROJECT 3: Internal AI Assistant ---
+  % --- PROJECT 3: Waterbase ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Waterbase --- Self-Hosted Multi-Tenant BaaS Platform} & \textbf{\small Nov 2025} \\
+    \textit{\small Sole Developer \quad$|$\quad Node.js, Express, MongoDB, Redis, Docker Compose, Nginx \quad$|$\quad \href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Live Demo}} & \textit{\small Graduation Internship Project} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Backend Architecture \& Ops:} Solely architected and deployed a modular 7-service microservices platform (Auth, App, WaterDB, Realtime, Storage, Rule Engine, Analytics) with Nginx API Gateway, running reliably in production on a 1 GB RAM / 1 vCPU VPS.}
+    \resumeItem{\textbf{Multi-Tenancy \& Access Control:} Implemented Database-per-Application isolation guaranteeing physical tenant separation, JWT auth with refresh rotation, and a declarative Rule Engine (RBAC) for collection-level permissions.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- PROJECT 4: Internal AI Assistant ---
   \item[]
   \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{\large Internal AI Assistant --- Lotus Hackathon VNG 2026} & \textbf{\small Mar 2026} \\
-    \textit{\small Backend Developer (2-person team) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n} & \textit{\small VNG Corporation} \\
+    \textit{\small Backend Developer (2-person team) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n \quad$|$\quad \href{https://devpost.com/software/internal-ai-assistance}{Video Demo}} & \textit{\small VNG Corporation} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{My role:} Built the Node.js/Express backend handling conversation sessions, LLM response streaming, Gemini-powered RAG on Supabase \texttt{pgvector}, and \texttt{clientId}-based tenant isolation. Delivered working demo in \textbf{36 hours}.}
-    \resumeItem{\textbf{Resilience:} Designed a 3-tier fallback intent router (specialized parser $\rightarrow$ Gemini $\rightarrow$ keyword matching) that handled parser failures during live demo; connected n8n webhooks for Google Workspace automation.}
-    \resumeItem{\textbf{Learned:} Building production-ready prototypes under extreme time pressure, debugging LLM integration issues in real-time, and multi-tenant data isolation patterns.}
+    \resumeItem{\textbf{Rapid AI Backend (36h):} Built and delivered a working Node.js/Express backend in \textbf{36 hours}, featuring Gemini-powered RAG on Supabase \texttt{pgvector}, \texttt{clientId}-based multi-tenant isolation, and a 3-tier fallback intent router (parser $\rightarrow$ Gemini $\rightarrow$ keyword matching) with n8n automation.}
   \resumeItemListEnd
 
 \end{itemize}

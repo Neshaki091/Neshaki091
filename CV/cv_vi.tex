@@ -19,8 +19,8 @@
 % --- Cấu hình lề trang (Đo lường chính xác cho 1 trang duy nhất) ---
 \usepackage[
   letterpaper,
-  top=0.35in,
-  bottom=0.35in,
+  top=0.33in,
+  bottom=0.33in,
   left=0.42in,
   right=0.42in
 ]{geometry}
@@ -32,7 +32,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage[verbose=silent]{microtype}
-\linespread{1.05}
+\linespread{1.04}
 
 % --- Bảng màu ---
 \definecolor{primary}{RGB}{0, 0, 0}
@@ -62,7 +62,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 % --- Định dạng danh sách ---
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.3pt, parsep=0pt, topsep=0.8pt, partopsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.15em, label={\small$\bullet$}, itemsep=1.1pt, parsep=0pt, topsep=0.6pt, partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 \newcommand{\resumeItem}[1]{\item \small{#1}}
@@ -84,8 +84,8 @@
   {\Large \textbf{Huỳnh Công Luyện}} \\ \vspace{2pt}
   {\large \textbf{\color{secondary}KỸ SƯ AI / RAG}} \quad{\small$|$\quad \textbf{Workflow RAG $\bullet$ Tích hợp LLM $\bullet$ Dịch vụ Backend}} \\ \vspace{2.5pt}
   \small{
-    Email: \href{mailto:neshaki091@gmail.com}{neshaki091@gmail.com} \quad$\bullet$\quad
-    Điện thoại: (+84) [Số điện thoại của bạn] \quad$\bullet$\quad
+    Email: \href{mailto:huynhluyen839@gmail.com}{huynhluyen839@gmail.com} \quad$\bullet$\quad
+    Điện thoại: (+84) 926072506 \quad$\bullet$\quad
     Địa điểm: TP. Hồ Chí Minh, Việt Nam
   } \\ \vspace{1.5pt}
   \small{
@@ -101,9 +101,9 @@
 %===============================================================================
 \section{Tóm tắt Chuyên môn}
 \small{
-Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) chuyên sâu về hệ thống RAG, truy xuất vector và dịch vụ backend. Tác giả \textbf{ARQ-RAG} (giảm $18,8\times$ RAM so với FAISS, Khóa luận: 9.0/10), trưởng nhóm \textbf{EduChatbot} (workflow RAG, deploy GCP), và phát triển \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase}} (BaaS 7 microservices trên VPS 1 GB RAM).
+Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) với kinh nghiệm thực tế xây dựng hệ thống RAG/chatbot, tích hợp LLM API, đánh giá chất lượng prompt/output và triển khai dịch vụ backend. Tác giả \textbf{ARQ-RAG}, engine truy xuất vector giảm $18,8\times$ RAM hoạt động so với FAISS trên 5M vector (Khóa luận: 9.0/10), và dẫn dắt dự án \textbf{EduChatbot}, nơi em trực tiếp thiết kế workflow RAG và triển khai backend trên GCP Cloud Functions.
 }
-\vspace{4pt}
+\vspace{3.5pt}
 
 %===============================================================================
 % HỌC VẤN
@@ -124,10 +124,9 @@ Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) chuyên sâu về hệ thống
 %===============================================================================
 \section{Kỹ năng Cốt lõi}
 \begin{itemize}[leftmargin=0pt, label={}, itemsep=1.0pt]
-  \item \small{\textbf{Backend \& Cloud:} Node.js, Express, Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP}
-  \item \small{\textbf{Dự án Backend tiêu biểu:} \textbf{\href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Waterbase (Live Demo)}} --- BaaS 7 microservices (cô lập DB-per-App, RBAC) chạy trên VPS 1 GB RAM / 1 vCPU.}
   \item \small{\textbf{AI \& RAG:} Truy xuất ngữ nghĩa, Embeddings, Prompt Engineering, Đánh giá output, Viết lại truy vấn, Đối chiếu trích dẫn chống ảo giác, LangChain, QLoRA, Ragas}
   \item \small{\textbf{Tìm kiếm Vector:} Qdrant, Supabase pgvector, Chỉ mục IVF, Lượng tử hóa Vector, Ánh xạ bộ nhớ (\texttt{mmap}), Đánh giá truy xuất}
+  \item \small{\textbf{Backend \& Cloud:} JavaScript (Node.js, Express), Python (FastAPI), Java (Spring Boot), Docker Compose, Nginx, MongoDB, Redis, GCP Cloud Functions, Git}
   \item \small{\textbf{Ngoại ngữ:} Tiếng Anh: A2 (đọc hiểu tài liệu kỹ thuật và papers) $\bullet$ Tiếng Việt: Bản ngữ}
 \end{itemize}
 \vspace{2pt}
@@ -145,12 +144,12 @@ Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) chuyên sâu về hệ thống
     \textit{\small Tác giả chính \quad$|$\quad Thiết kế thuật toán \& Hiện thực Rust bằng AI \quad$|$\quad Repo riêng tư (theo yêu cầu)} & \textit{\small Khóa luận: \textbf{9.0 / 10.0}} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{Vai trò:} Trực tiếp thiết kế toàn bộ kiến trúc hệ thống (chỉ mục IVF, lượng tử hóa phần dư trực tuyến, định tuyến cụm thích ứng). Sử dụng AI agent sinh mã Rust hiệu năng cao (AVX2 SIMD, \texttt{mmap}); tự mình review và xác thực toàn bộ logic mã nguồn.}
-    \resumeItem{\textbf{RAM:} Giảm RAM hoạt động từ 1.931 MB (FAISS) xuống \textbf{102,6 MB} ($18,8\times$) trên 5 triệu vector Wikipedia DPR ($D$=768, CPU đơn luồng) --- chỉ giữ mã 4-bit trên RAM, vector gốc đọc từ đĩa qua zero-copy \texttt{mmap}.}
-    \resumeItem{\textbf{Tốc độ:} \textbf{4.522 QPS} / 87,2\% Recall@16 (trước rerank); \textbf{99,2\% Recall@16} sau Float32 reranking tại 3.450 QPS. Lập chỉ mục 500K vector trong 20,2s (nhanh $1,93\times$ so với FAISS IVFPQ).}
+    \resumeItem{\textbf{Vai trò:} Thiết kế kiến trúc hệ thống (chỉ mục IVF, lượng tử hóa phần dư, định tuyến cụm thích ứng). Sử dụng AI agent sinh mã Rust hiệu năng cao (AVX2 SIMD, \texttt{mmap}); tự mình review và xác thực toàn bộ mã nguồn.}
+    \resumeItem{\textbf{RAM:} Giảm RAM hoạt động từ 1.931 MB (FAISS) xuống \textbf{102,6 MB} ($18,8\times$) trên 5 triệu vector Wikipedia DPR ($D$=768, CPU đơn luồng) bằng cách chỉ lưu mã 4-bit trên RAM; vector gốc truy xuất từ đĩa qua zero-copy \texttt{mmap}.}
+    \resumeItem{\textbf{Tốc độ \& Recall:} Đạt \textbf{4.522 QPS} (87,2\% Recall@16 trước rerank) và \textbf{99,2\% Recall@16} sau khi Float32 rerank tại 3.450 QPS. Lập chỉ mục 500K vector trong 20,2s (nhanh $1,93\times$ so với FAISS IVFPQ).}
     \resumeItem{\textbf{Học được:} Lý thuyết lượng tử hóa vector, phân tích đánh đổi bộ nhớ (RAM vs. đĩa vs. cache), và xây dựng benchmark có khả năng tái tạo. \textit{Bài báo đã submit AMI 2026 [Đang bình duyệt]}.}
   \resumeItemListEnd
-  \vspace{4pt}
+  \vspace{3.5pt}
 
   % --- DỰ ÁN 2: EduChatbot ---
   \item[]
@@ -159,22 +158,31 @@ Sinh viên IT mới tốt nghiệp (GPA 3.34/4.0) chuyên sâu về hệ thống
     \textit{\small Trưởng nhóm (6 thành viên) \quad$|$\quad Python, FastAPI, Java 17, Spring Boot, Qdrant, Llama 3.1 8B \quad$|$\quad \href{https://github.com/Neshaki091/Educhatbot}{GitHub}} & \textit{\small Đồ án Môn học Java} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{Vai trò:} Thiết kế workflow RAG đầu-cuối (parsing/phân đoạn tiếng Việt $\rightarrow$ embedding 384 chiều $\rightarrow$ truy xuất Qdrant $\rightarrow$ đối chiếu trích dẫn với nguồn để giảm ảo giác) và xây dựng cầu nối FastAPI bất đồng bộ tích hợp với các service Spring Boot.}
-    \resumeItem{\textbf{Đánh giá \& prompt:} Sử dụng LangChain cho việc thử nghiệm prompt/chain, sau đó so sánh RAG với fine-tuning bằng đánh giá A/B mù qua Ragas --- fine-tuning đạt điểm đúng đắn cao hơn (0,438 vs. 0,318), còn RAG đạt độ trung thực cao hơn (0,303 vs. 0,292) và độ trễ thấp hơn (2,00s vs. 3,75s).}
-    \resumeItem{\textbf{Triển khai \& phối hợp:} Trực tiếp triển khai backend trên GCP Cloud Functions và định hướng nhóm dùng Supabase cho dữ liệu người dùng, Qdrant Cloud cho vector search, có đồng bộ để backup; điều phối nhóm 6 người thông qua bàn giao API, quản lý công việc kiểu sprint và code review.}
+    \resumeItem{\textbf{Pipeline RAG \& Tích hợp:} Thiết kế workflow RAG toàn diện (parsing/phân đoạn tiếng Việt, embedding 384 chiều, truy xuất vector Qdrant, đối chiếu trích dẫn chống ảo giác); xây cầu nối FastAPI tích hợp với Spring Boot.}
+    \resumeItem{\textbf{Đánh giá, Cloud \& Trưởng nhóm:} Điều phối nhóm 6 người (theo dõi sprint, review mã nguồn) và deploy GCP Cloud Functions kết hợp Supabase + Qdrant Cloud; đánh giá A/B Ragas chứng minh RAG đạt độ trung thực cao hơn (0,303 vs. 0,292) và độ trễ thấp hơn (2,00s vs. 3,75s) so với fine-tuning.}
   \resumeItemListEnd
-  \vspace{4pt}
+  \vspace{3.5pt}
 
-  % --- DỰ ÁN 3: Trợ lý AI Nội bộ ---
+  % --- DỰ ÁN 3: Waterbase ---
+  \item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large Waterbase --- Nền tảng BaaS Đa người dùng Tự host} & \textbf{\small Thg 11/2025} \\
+    \textit{\small Lập trình viên duy nhất \quad$|$\quad Node.js, Express, MongoDB, Redis, Docker Compose, Nginx \quad$|$\quad \href{https://tttn-project-waterbase-mini-clone-f.vercel.app/}{Live Demo}} & \textit{\small Đồ án Thực tập Tốt nghiệp} \\
+  \end{tabular*}\vspace{0pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Kiến trúc Backend \& Triển khai:} Tự thiết kế và điều phối nền tảng microservices gồm 7 services (Auth, App, WaterDB, Realtime, Storage, Rule Engine, Analytics) qua Nginx Gateway, vận hành thực tế ổn định trên VPS 1 GB RAM / 1 vCPU.}
+    \resumeItem{\textbf{Multi-Tenancy \& Phân quyền:} Triển khai mô hình cô lập dữ liệu Database-per-Application triệt tiêu rủi ro rò rỉ dữ liệu, xác thực JWT kèm xoay vòng refresh token, và Rule Engine (RBAC) phân quyền khai báo chi tiết cấp collection.}
+  \resumeItemListEnd
+  \vspace{3.5pt}
+
+  % --- DỰ ÁN 4: Trợ lý AI Nội bộ ---
   \item[]
   \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{\large Trợ lý AI Nội bộ --- Lotus Hackathon VNG 2026} & \textbf{\small Thg 03/2026} \\
-    \textit{\small Lập trình viên Backend (đội 2 người) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n} & \textit{\small Tập đoàn VNG} \\
+    \textit{\small Lập trình viên Backend (đội 2 người) \quad$|$\quad Node.js, Express, Supabase pgvector, Gemini API, n8n \quad$|$\quad \href{https://devpost.com/software/internal-ai-assistance}{Video Demo}} & \textit{\small Tập đoàn VNG} \\
   \end{tabular*}\vspace{0pt}
   \resumeItemListStart
-    \resumeItem{\textbf{Vai trò:} Xây dựng backend Node.js/Express xử lý phiên hội thoại, streaming phản hồi LLM, RAG trên Supabase \texttt{pgvector} qua Gemini embedding, và cô lập dữ liệu đa khách hàng bằng bộ lọc \texttt{clientId}. Giao demo hoạt động trong \textbf{36 giờ}.}
-    \resumeItem{\textbf{Xử lý lỗi:} Thiết kế router phân loại ý định 3 tầng (parser chuyên biệt $\rightarrow$ Gemini $\rightarrow$ khớp từ khóa) xử lý sự cố parser trong buổi demo trực tiếp; kết nối webhook n8n tự động hóa Google Workspace.}
-    \resumeItem{\textbf{Học được:} Xây dựng nguyên mẫu hoạt động dưới áp lực thời gian cao, debug tích hợp LLM trong thời gian thực, và thiết kế mẫu cô lập dữ liệu multi-tenant.}
+    \resumeItem{\textbf{Backend AI Thần tốc (36h):} Xây dựng backend Node.js/Express hoàn chỉnh trong \textbf{36 giờ}, tích hợp RAG trên Supabase \texttt{pgvector} qua Gemini, cô lập dữ liệu multi-tenant bằng \texttt{clientId}, và router dự phòng ý định 3 tầng (parser $\rightarrow$ Gemini $\rightarrow$ từ khóa) kết hợp n8n.}
   \resumeItemListEnd
 
 \end{itemize}
